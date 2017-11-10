@@ -1,0 +1,790 @@
+[ 2017-08-09T11:04:01+08:00 ] 124.239.137.27 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-09T11:04:01+08:00 ] 124.239.137.27 /index.php/Admin/Login/loadlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-08-09T11:04:08+08:00 ] 110.249.130.170 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_root` [ RunTime:0.1019s ]
+SQL: SELECT * FROM `et_root` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0460s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-09T11:04:08+08:00 ] 110.249.130.170 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3 LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-08-09T11:04:13+08:00 ] 124.239.137.27 /index.php/Admin/Shop/outthis.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 4 ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `states` = 2 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `et_backtalk` [ RunTime:0.0448s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.1839s ]
+SQL: SHOW COLUMNS FROM `et_backmessage` [ RunTime:0.0598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backmessage` LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\eb3a254593c55e1dcad454506313897c.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-08-09T11:04:17+08:00 ] 124.239.137.27 /index.php/Admin/Shop/outshop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0035s ]
+SQL: DELETE FROM `et_shopmessage` WHERE `shopid` = 43 [ RunTime:0.0479s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0023s ]
+SQL: DELETE FROM `et_shop` WHERE `shopid` = 43 [ RunTime:0.0231s ]
+
+[ 2017-08-09T11:04:18+08:00 ] 124.239.137.27 /index.php/Admin/Shop/outthis.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 4 ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `states` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_backtalk` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_backmessage` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backmessage` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\eb3a254593c55e1dcad454506313897c.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-08-09T15:22:59+08:00 ] 124.239.137.27 /index.php/Admin/Login/loadlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.242586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2017-08-09T15:23:08+08:00 ] 124.239.137.29 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_root` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `et_root` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-09T15:23:08+08:00 ] 124.239.137.29 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3 LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 332 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-08-09T15:23:16+08:00 ] 124.239.137.25 /index.php/Admin/Shop/outthis.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 4 ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `states` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_backtalk` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_backmessage` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backmessage` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_backtalk` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005494s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005604s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\eb3a254593c55e1dcad454506313897c.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.278784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.278891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2017-08-09T15:23:25+08:00 ] 124.239.137.25 /index.php/Admin/User/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0227s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0023s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\4ec748e5ac0cf883d713bebd5f983eaf.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-08-09T15:23:39+08:00 ] 124.239.137.27 /index.php/Admin/Index/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0022s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0025s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\d59fa758d8dac5921fe247c41fe480b0.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-08-09T15:24:06+08:00 ] 124.239.137.27 /index.php/Admin/User/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0029s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0020s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\4ec748e5ac0cf883d713bebd5f983eaf.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-08-09T15:24:23+08:00 ] 124.239.137.27 /index.php/Admin/User/ready.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\76953b2fe37f9a159d1f2ee01dfc93ad.php 第 337 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-08-09T15:24:26+08:00 ] 124.239.137.27 /index.php/Admin/User/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0018s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\4ec748e5ac0cf883d713bebd5f983eaf.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-08-09T15:24:30+08:00 ] 124.239.137.27 /index.php/Admin/Index/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0023s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\d59fa758d8dac5921fe247c41fe480b0.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-08-09T15:24:34+08:00 ] 124.239.137.27 /index.php/Admin/Index/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0028s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\d59fa758d8dac5921fe247c41fe480b0.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-08-09T15:24:38+08:00 ] 124.239.137.27 /index.php/Admin/User/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0590s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\4ec748e5ac0cf883d713bebd5f983eaf.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-08-09T15:24:43+08:00 ] 124.239.137.27 /index.php/Admin/Index/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0024s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0026s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\d59fa758d8dac5921fe247c41fe480b0.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-08-09T15:24:52+08:00 ] 124.239.137.27 /index.php/Admin/User/tuidan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `states` = 1 AND `statu` = 1 LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0022s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 41 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`mobile` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `shopname` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `et_shopmessage` WHERE `state` IN ('1','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` = 3  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 6 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 7 AND `statu` = 2  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 39 AND `statu` = 2  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('3','4','5') AND `states` = 1 AND `shopid` = 42 AND `statu` = 2  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Public/left.html): failed to open stream: No such file or directory D:\wm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: shopname D:\wm\Application\Runtime\Cache\Admin\4ec748e5ac0cf883d713bebd5f983eaf.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+

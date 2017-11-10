@@ -1,0 +1,197 @@
+[ 2017-07-09T10:54:02+08:00 ] 110.249.130.170 /index.php/server/shop/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:addshop
+
+[ 2017-07-09T10:55:13+08:00 ] 110.249.130.170 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: mobile D:\wm\Application\Server\Controller\UserController.class.php 第 119 行.
+NOTIC: [8] Undefined index: shopname D:\wm\Application\Server\Controller\UserController.class.php 第 120 行.
+NOTIC: [8] Undefined index: detailed_address D:\wm\Application\Server\Controller\UserController.class.php 第 121 行.
+NOTIC: [8] Undefined index: coordinate D:\wm\Application\Server\Controller\UserController.class.php 第 122 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.1118s ]
+SQL: SELECT * FROM `et_shop` WHERE `shopid` = 4 LIMIT 1   [ RunTime:0.1110s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0029s ]
+ERR: 1048:Column 'shopname' cannot be null
+ [ SQL语句 ] : INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`mobile`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`,`addtime`) VALUES ('4',NULL,NULL,NULL,NULL,'uploads/917c6aaa6575bfab18bd1239cec48377.jpg','uploads/7a767de0195c15068da4afbad346c368.png','2017-07-09 10:55:12')
+ERR: 1048:Column 'shopname' cannot be null
+ [ SQL语句 ] : INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`mobile`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`,`addtime`) VALUES ('4',NULL,NULL,NULL,NULL,'uploads/917c6aaa6575bfab18bd1239cec48377.jpg','uploads/7a767de0195c15068da4afbad346c368.png','2017-07-09 10:55:12')
+
+[ 2017-07-09T11:13:10+08:00 ] 110.249.130.170 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 167 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: UPDATE `et_shopmessage` SET `content`='百年烤鱼店特色烤鱼',`shopname`='巫山烤鱼',`shophead`='uploads/9abcae1c1b7286ffaf5de5f2b8cbeb9d.jpg' WHERE `shopid` = 4 [ RunTime:0.0877s ]
+
+[ 2017-07-09T11:14:25+08:00 ] 110.249.130.170 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 167 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0295s ]
+SQL: UPDATE `et_shopmessage` SET `content`='外焦里嫩营养大骨',`shopname`='烤牛骨',`shophead`='uploads/a04670655a34e2288d2405a538ef61e6.jpg' WHERE `shopid` = 5 [ RunTime:0.0316s ]
+
+[ 2017-07-09T11:15:10+08:00 ] 110.249.130.170 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 167 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0029s ]
+SQL: UPDATE `et_shopmessage` SET `content`='筋道爽滑，汤更有营养',`shopname`='兰州拉面',`shophead`='uploads/4541fae15fb4aa5588c6ec1b2cc9e975.jpg' WHERE `shopid` = 6 [ RunTime:0.0066s ]
+
+[ 2017-07-09T11:15:34+08:00 ] 110.249.130.170 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 167 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: UPDATE `et_shopmessage` SET `content`='北京老字号，百年烤鸭店',`shopname`='北京烤鸭',`shophead`='uploads/1dba6defcc339015c9cedb7b1d3c11da.jpg' WHERE `shopid` = 7 [ RunTime:0.0075s ]
+
+[ 2017-07-09T11:21:50+08:00 ] 110.249.130.170 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:editzhutu
+
+[ 2017-07-09T11:24:29+08:00 ] 110.249.130.170 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0481s ]
+SQL: UPDATE `et_shopmessage` SET `shopphoto`='uploads/6b97d0d665f0c32675da4bef233cf1e2.png' WHERE `shopid` = 4 [ RunTime:0.0284s ]
+
+[ 2017-07-09T11:24:48+08:00 ] 110.249.130.170 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0025s ]
+SQL: UPDATE `et_shopmessage` SET `shopphoto`='uploads/e88a9703abfb1a289d9e7df7e57ed221.jpg' WHERE `shopid` = 5 [ RunTime:0.0082s ]
+
+[ 2017-07-09T11:25:07+08:00 ] 110.249.130.170 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: UPDATE `et_shopmessage` SET `shopphoto`='uploads/4a98c2eaacab7fe5cf5d3072fa171f3d.jpg' WHERE `shopid` = 6 [ RunTime:0.0973s ]
+
+[ 2017-07-09T11:25:18+08:00 ] 110.249.130.170 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: token D:\wm\Application\Server\Controller\UserController.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0019s ]
+SQL: UPDATE `et_shopmessage` SET `shopphoto`='uploads/2869ffb63d16d7bbb0b16c0da250901c.jpg' WHERE `shopid` = 7 [ RunTime:0.0261s ]
+
+[ 2017-07-09T14:45:32+08:00 ] 112.90.82.236 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-07-09T14:55:38+08:00 ] 14.17.3.64 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-07-09T14:57:20+08:00 ] 101.226.68.215 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-07-09T19:36:49+08:00 ] 183.57.53.177 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2017-07-09T19:44:02+08:00 ] 101.226.64.174 /index.php/server/user/editzhutu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+

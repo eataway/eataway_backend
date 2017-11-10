@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerUpdate.css"/>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>管理员管理 > <a href="/index.php/Admin/Role/managerList">管理员列表</a> > 修改</span></p>
+                <form action="" method="" name="" class="formUpdate">
+                    <volist name="msg" id="detail">
+                    <ul>
+                        <li><div>管理员ID</div><input type="text" value="{$detail.aid}" readonly class="aid"></li>
+                        <li><div>管理员权限</div>
+                            <select name="" id="manageLevel">
+                                <if condition="$grade eq 1">
+                                <option value="二级管理员">二级管理员</option>
+                                    <if condition="$detail.state eq 3">
+                                        <option value="三级管理员" selected>三级管理员</option>
+                                       <else/>
+                                        <option value="三级管理员">三级管理员</option>
+                                    </if>
+                                    <if condition="$detail.state eq 4">
+                                        <option value="四级管理员" selected class="managef">四级管理员</option>
+                                        <else/>
+                                        <option value="四级管理员" class="managef">四级管理员</option>
+                                    </if>
+
+                                    <elseif condition="$grade eq 2" />
+                                        <option value="三级管理员">三级管理员</option>
+                                        <if condition="$detail.state eq 4">
+                                            <option value="四级管理员" selected class="managef">四级管理员</option>
+                                            <else />
+                                            <option value="四级管理员" class="managef">四级管理员</option>
+                                        </if>
+                                    <else />
+                                        <option value="四级管理员" class="managef">四级管理员</option>
+                                </if>
+                            </select>
+                        </li>
+                        <li><div>返佣比例</div>
+                            <if condition="$detail.comper eq ''">
+                                <input type="text" placeholder="空" class="userper">
+                                <else/>
+                            <input type="text" placeholder="{$detail.comper}" class="userper">
+                            </if>
+                        </li>
+                        <li><div>账号</div><input type="text" placeholder="{$detail.username}" class="username"></li>
+                        <li><div>密码</div><input type="text" placeholder="{$detail.password}" class="password"></li>
+                        <li><div>联系电话</div><input type="text" placeholder="{$detail.mobile}" class="mobile"></li>
+                        <li class="location" hidden>
+                            <div>区域</div>
+                            <select name="state" id="selProvince">
+                                <if condition="$grade lt 2">
+                                        <volist name="states" id="msg">
+                                            <if condition="$state neq ''">
+                                                <if condition="$msg.areaname eq $state">
+                                                    <option value="{$msg.areaname}" selected>{$msg.areaname}</option>
+                                                    <else/>
+                                                    <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                                </if>
+                                                <else />
+                                                <option value="加载失败">加载失败</option>
+                                            </if>
+                                        </volist>
+                                    <else/>
+                                    <option value="{$state}">{$state}</option>
+                                </if>
+                            </select>
+                            <select name="city" id="selCity">
+                                <if condition="$grade lt 3">
+                                    <volist name="citys" id="msg">
+                                        <if condition="$city eq ''">
+                                            <option value="加载失败">加载失败</option>
+                                            <else />
+                                               <if condition="$msg.areaname eq $city">
+                                                   <option value="{$msg.areaname}" selected>{$msg.areaname}</option>
+                                                    <else/>
+                                                   <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                               </if>
+                                        </if>
+                                    </volist>
+                                    <else/>
+                                    <option value="{$city}">{$city}</option>
+                                </if>
+                            </select>
+                            <if condition="towns">
+                                <select name="town" id="selDistrict">
+                                    <volist name="towns" id="msg">
+                                        <if condition="$msg.areaname eq $town">
+                                            <option value="{$msg.areaname}" selected>{$msg.areaname}</option>
+                                            <else/>
+                                            <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                        </if>
+                                    </volist>
+                                </select>
+                                <else/>
+                                <select name="town" id="selDistrict2" hidden>
+                                    <option value="2">2</option>
+                                </select>
+                            </if>
+                        </li>
+                        <!--<li><div>状态</div>-->
+                            <!--<if condition="$detail.flag == 1">-->
+                                <!--<input type="radio" name="radio" value="已禁" class="radios">已禁&nbsp;&nbsp;-->
+                                <!--<input type="radio" name="radio" value="未禁" checked="" class="radios">未禁-->
+                                <!--<else/>-->
+                                <!--<input type="radio" name="radio" value="已禁" checked="" class="radios">已禁&nbsp;&nbsp;-->
+                                <!--<input type="radio" name="radio" value="未禁" class="radios">未禁-->
+                            <!--</if>-->
+                        <!--</li>-->
+                        <li><input type="button" value="确  定" class="submit"></li>
+                    </ul>
+                    </volist>
+                </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload=function () {
+            var city = $('#selCity option:selected').text();//alert(city);
+            if(!city){
+                var state = $("#selProvince option:selected").val();
+               // alert(state);
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/Role/citysChange',
+                    data:{state:state},
+                    success:function (data) {
+                        //console.log(data);
+                        if(data.status==1){
+                            var cities=data.citys;
+                            var html='';
+                            var len=cities.length;
+                            for(var i=0;i<len;i++){
+                                html+="<option value="+cities[i].areaname+">"+cities[i].areaname+"</option>";
+                            }
+                            $("#selCity").html(html);
+                            var obj=data.towns;
+                            var len1=obj.length;
+                            //alert(len1);
+                            //alert($('#manageLevel option:selected').val());
+                            if(len1>0){
+                                var html1='';
+                                for(var j=0;j<len1;j++){
+                                    html1+="<option value="+obj[j].areaname+">"+obj[j].areaname+"</option>";
+                                }
+                                $("#selDistrict").html(html1);
+                            }else if(len1==0){
+                                $("#selDistrict2").hide();
+                                $("#selDistrict").hide();
+                            }
+                        }
+                    },
+                    error:function () {
+                        alert('失败');
+                    }
+                })
+            }
+            var town = $('#selDistrict option:selected').text()
+            if(!town){
+                var state = $("#selCity option:selected").val();
+                console.log(state);
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/Role/townsChange',
+                    data:{city:state},
+                    success:function (data) {
+                        //console.log(data);
+                        if(data.status==1){
+                            var obj=data.towns;
+                            var html='';
+                            var len=obj.length;
+                            for(var i=0;i<len;i++){
+                                html+="<option value="+obj[i].areaname+">"+obj[i].areaname+"</option>";
+                            }
+                            $("#selDistrict").html(html);
+                        }else if(data.status==0){
+                            $("#selDistrict2").hide();
+                        }
+                    },
+                    error:function () {
+                        alert('失败');
+                    }
+                })
+            }
+
+        }
+        //三级联动
+        function  areaShow() {
+            var level=$("#manageLevel").val();
+            if(level=="超级管理员"){
+                $(".location").hide();
+            }else if(level=="二级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").hide();
+                $("#selDistrict").hide();
+                $("#selDistrict2").hide();
+            }else if(level=="三级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").show();
+                $("#selDistrict").hide();
+                $("#selDistrict2").hide();
+            }else if(level=="四级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                var pe =  $("#selProvince").text();
+                $("#selCity").show();
+                var di = $('#selDistrict option:selected').text();
+                if(di!= ''&&pe!='北京'&&pe!='天津'&&pe!='上海'&&pe!='重庆'){
+                    $("#selDistrict").show();
+                }
+                // $("#selDistrict").show();
+                var di2 = $('#selDistrict2 option:selected').text();
+                if(di2 != 2){
+                    $("#selDistrict2").show();
+                }
+            }
+        }
+        areaShow();
+        $("#manageLevel").change(function () {
+            areaShow();
+        });
+        $('.submit').on('click',function () {
+            var aid = $('.aid').val();
+            var  manageid =  $('#manageLevel option:selected').text();
+            var selProvince =  $('#selProvince option:selected').text();
+            var username = $('.username').val();
+            var password = $('.password').val();
+            var mobile = $('.mobile').val();
+            if($('#selCity').css('display') != 'none') {
+                var selCity = $('#selCity option:selected').text();
+            }
+            if($('#selDistrict').css('display') != 'none') {
+                var selDistrict = $('#selDistrict option:selected').text();
+            }
+            var radio = $('.radios:checked').val();
+            var userper = $('.userper').val();
+            if(userper<100) {
+                $.ajax({
+                    type: 'post',
+                    url: '/index.php/Admin/Role/saveManagerUpdate',
+                    data: {
+                        aid: aid,
+                        manageid: manageid,
+                        selProvince: selProvince,
+                        username: username,
+                        password: password,
+                        mobile: mobile,
+                        selCity: selCity,
+                        selDistrict: selDistrict,
+                        radio: radio,
+                        userper: userper
+                    },
+                    datatype: 'ajax',
+                    success: function (data) {
+                        // alert(data.status);
+                        if (data.status == 1) {
+                            alert('保存成功!');
+                            window.location.reload();
+                        } else if (data.status == 2) {
+                            alert('没有修改！');
+                        } else if (data.status) {
+                            alert('用户名已经存在');
+                        } else {
+                            alert('保存失败');
+                        }
+                    },
+                    error: function () {
+                        alert('保存失败！！！');
+                    }
+                });
+            }else{
+                alert('返佣比例必须小于100');
+            }
+        })
+        //区域选择三级联动
+        $("#selProvince").change(function () {
+            var state = $("#selProvince option:selected").val();
+            if(state != '北京'&&state!='天津'&&state!='上海'&&state!='重庆'){
+                $(".managef").show();
+            }else{
+                $(".managef").hide();
+            }
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/Role/citysChange',
+                data:{state:state},
+                success:function (data) {
+                    //console.log(data);
+                    if(data.status==1){
+                        var cities=data.citys;
+                        var html='';
+                        var len=cities.length;
+                        for(var i=0;i<len;i++){
+                            html+="<option value="+cities[i].areaname+">"+cities[i].areaname+"</option>";
+                        }
+                        $("#selCity").html(html);
+                        var obj=data.towns;
+                        var len1=obj.length;
+                        //alert(len1);
+                        //alert($('#manageLevel option:selected').val());
+                        if(len1>0){
+                            var html1='';
+                            for(var j=0;j<len1;j++){
+                                html1+="<option value="+obj[j].areaname+">"+obj[j].areaname+"</option>";
+                            }
+                            $("#selDistrict").html(html1);
+                            if($('#manageLevel option:selected').val()=='四级管理员'){
+                                $("#selDistrict").show();
+                               // alert("show");
+                            }
+                        }else if(len1==0){
+                            $("#selDistrict2").hide();
+                            $("#selDistrict").hide();
+                        }
+                    }
+                },
+                error:function () {
+                    alert('失败');
+                }
+            })
+        });
+        $("#selCity").change(function () {
+            var state = $("#selCity option:selected").val();
+            var mid = $('#manageLevel option:selected').text();
+            if(mid == '四级管理员') {
+                console.log(state);
+                $.ajax({
+                    type: 'post',
+                    url: '/index.php/Admin/Role/townsChange',
+                    data: {city: state},
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.status == 1) {
+                            var obj = data.towns;
+                            var html = '';
+                            var len = obj.length;
+                            for (var i = 0; i < len; i++) {
+                                html += "<option value=" + obj[i].areaname + ">" + obj[i].areaname + "</option>";
+                            }
+                            $("#selDistrict").html(html);
+                            if ($('#manageLevel option:selected') == '四级管理员') {
+                                if (len) {
+                                    $("#selDistrict").show();
+                                } else {
+                                    $("#selDistrict").hide();
+                                    $("#selDistrict2").hide();
+                                }
+                            }
+                        } else if (data.status == 0) {
+                            $("#selDistrict2").hide();
+                        }
+                    },
+                    error: function () {
+                        alert('失败');
+                    }
+                })
+            }else{
+                $("#selDistrict").hide();
+                $("#selDistrict2").hide();
+            }
+        });
+    </script>
+</body>
+</html>

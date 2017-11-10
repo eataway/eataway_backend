@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>全平台返佣</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/brokerage.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <div class="rightmain">
+            <p class="title">当前位置<span>全平台返佣</span></p>
+            <div class="search">
+                <if condition="$grade lt 2">
+                <select name="" id="selProvince">
+                    <option value="">----</option>
+                    <volist name="states" id="state">
+                        <option value="{$state.areaname}">{$state.areaname}</option>
+                    </volist>
+                </select>
+                </if>
+                <if condition="$grade lt 3">
+                <select name="" id="selCity">
+                    <option value="">----</option>
+                    <volist name="citys" id="city">
+                        <option value="{$city.areaname}">{$city.areaname}</option>
+                    </volist>
+                </select>
+                </if>
+                <if condition="$grade lt 4">
+                <select name="" id="selDistrict">
+                    <option value="">----</option>
+                    <volist name="towns" id="town">
+                        <option value="{$town.areaname}">{$town.areaname}</option>
+                    </volist>
+                </select>
+                <span class="btnYellow">查询</span>
+                </if>
+            </div>
+            <div class="searchList">
+                <table class="tbl" cellspacing="0">
+                    <tr>
+                        <td>返佣ID</td>
+                        <td>区域名称</td>
+                        <td>返佣百分比</td>
+                        <td>修改时间</td>
+                        <td>修改人身份</td>
+                        <td>操作</td>
+                    </tr>
+                    <if condition="!$msg">
+                        <tr>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td><a href="brokerageUpdate.html" class="btnGreen">修改</a></td>
+                        </tr>
+                        <else/>
+                            <volist name="msg" id="detail">
+                            <tr>
+                                <td class="fid">{$detail.fid}</td>
+                                <td>{$detail.areaname}</td>
+                                <td>{$detail.comper}%</td>
+                                <td>{$detail.updatetime}</td>
+                                <td>{$detail.adminname}</td>
+                                <td><a href="{:U('Ruller/brokerageUpdate')}?fid={$detail.fid}" class="btnGreen">修改</a></td>
+                            </tr>
+                            </volist>
+                    </if>
+                </table>
+                <!-- 分页 -->
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var userid = $('.fid').text();
+        if(userid === ''){
+            var num = ( window.location.href.split('/p/')[1].split('.html'))[0]-1;
+            // alert(window.location.href.split('/p/')[0]+'/'+num+'.html');
+            window.location.replace(window.location.href.split('/p/')[0]+'/'+num+'.html');
+        }
+    }
+</script>
+</body>
+</html>

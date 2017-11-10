@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/tcal.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeIntroBanner.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <script src="__PUBLIC__/admin/js/tcal.js"></script>
+    <style>
+        #addBox>span{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            z-index: 9;
+        }
+        #addBox img{
+            width: 100%;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 菜单管理 > 今日特卖</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$result.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$result.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="__CONTROLLER__/shopdetail?shopid={$result.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$result.shopid}">订单</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/storeDish?shopid={$result.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$result.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$result.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/zizhi?shopid={$result.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <!--<form action="__CONTROLLER__/indextui" method="post" enctype="multipart/form-data">-->
+            <form id="form1">
+                <div class="content_right_one">
+                    <span>今日特卖</span>
+                    <span class="fr"><input id="sub" type="button" value="确定"/></span>
+                </div>
+                <div class="content_right_two">
+                    <p>
+                        <span>特卖时间</span>
+                        <input type="hidden" class="shopid" name="shopid" value="{$result.shopid}">
+            <input type="hidden" class="cid" name="cid" value="{$goods.cid}">
+                        <input type="hidden" class="goodsid" name="goodsid" value="{$goodsid}"/>
+                        <input id="time" type="text" name="time" value="{$goods.sale_today}" placeholder="2017-10-01" />
+                    </p>
+                    <!-- <div>
+                        <span>添加图片</span>
+                        <div id="addBox">
+                            <input id="chooseImg" type="file" name="img" value=""/>
+                            <span>
+                                <if condition="$goods.ad_image eq null">
+                                    <img src="__PUBLIC__/admin/images/icon_add_01.png" />
+                                 <elseif condition="$goods.ad_image neq null"/>
+                                 <img src="/{$goods.ad_image}" />
+                                </if>
+                                
+                            <span>
+                        </div>
+                    </div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $("#sub").on("click",function () {
+        var goodsid = $('.goodsid').val();
+        var date = $('#time').val();
+         $.ajax({
+            type:"POST",
+            url:"__CONTROLLER__/today_sale",
+            data:{'goodsid':goodsid,'date':date},
+            success:function(data){
+                if(data.status == 1){
+                    alert('操作成功。');
+                    window.location.href = document.referrer;
+                }else if(data.status == 0){
+                    alert("操作失败。");
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

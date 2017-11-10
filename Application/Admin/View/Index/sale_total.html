@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <style>
+        .tableManage td a.alert{
+            width:80%;
+        }
+    </style>
+</head>
+<!--引入左侧内容-->
+<include file="Public:left" />
+<div class="right">
+    <div class="rightmain">
+        <p class="title">当前位置<span>今日特卖管理 </span></p>
+        <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>商品ID</td>
+                        <td>商品图片</td>
+                        <td>店铺名称</td>
+                        <td>地区</td>
+                        <td>特卖时间</td>
+                        <td>操作</td>
+                    </tr>
+            <if condition="!$list">
+                <tr>
+                    <td class="暂无">暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td><a>暂无</a></td>
+                </tr>
+                <else/>
+                <volist name="list" id="detail">
+                    <tr>
+                        <td class="goodsid">{$detail.goodsid}</td>
+                        <td><img src="{$detail.image}" alt="" width="40px" height="40px" style="padding-top: 15px;"></td>
+                        <td>{$detail.shopname}</td>
+                        <td>{$detail.canton}{$detail.city}{$detail.xian}</td>
+                        <td>{$detail.sale_today}</td>
+                        <td><a class="alert" href="{:U('goods_sale')}?shopid={$detail.shopid}&goodsid={$detail.goodsid}">更改特卖时间</a></td>
+                    </tr>
+                </volist>
+            </if>
+
+                </table>
+                <!-- 分页 -->
+                <div class="pages">
+                    {$pagelist}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // $('.alert').on('click',function () {
+        //         var shopid = $(this).parent().parent().children('.goodsid').text();
+        //         $.ajax({
+        //             type:'post',
+        //             url:'{:U('goods_sale')}',
+        //             data:{shopid:shopid},
+        //             success:function (data) {
+        //                 if(data.status == 1){
+        //                     alert('修改成功！');
+        //                     window.location.reload();
+        //                 }else{
+        //                     alert('修改失败！')
+        //                 }
+        //             },
+        //             error:function () {
+        //                 alert('修改失败！！');
+        //             }
+        //         })
+        // })
+    </script>
+</body>
+</html>

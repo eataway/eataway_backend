@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>查看发布内容</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/publishContentSee.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>用户管理 > 发布内容 > 查看</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <img style="height: 100px;" src="{$user.userhead}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                </form>
+            </div>
+            <div class="content_left_name">
+                {$user.username}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="/index.php/Admin/UserManage/EbiDetail?userid={$user.userid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/shoppingAddress?userid={$user.userid}">收货地址</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/userinfo?userid={$user.userid}">用户信息</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/order?userid={$user.userid}">订单</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/comment?userid={$user.userid}">评论</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="/index.php/Admin/UserManage/publishContent?userid={$user.userid}" style="border-bottom:none;">发布内容</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">           
+            <table cellspacing="0" cellpadding="0" class="tableManage"> 
+                <tr class="title_table">
+                    <td width="20%">帖子ID</td>
+                    <td width="25%">发布地址</td>
+                    <td width="10%;">类型</td>
+                    <td width="15%">时间</td>
+                    <td width="15%;">操作</td>
+                </tr>
+                <volist name="ftdetail" id="msg">
+                <tr>
+                    <td class="postid">{$msg.id}</td>
+                    <td>{$msg.city}</td>
+                    <td>{$msg.range}</td>
+                    <td>{$msg.date}</td>
+                    <td><a class="deleTe">删除</a><a class="green" href="/index.php/Admin/UserManage/publishContent?userid={$user.userid}">返回列表</a></td>
+                </tr>
+                </volist>
+                <tr>
+                    <td colspan="5">
+                        <div class="detail_con">详细内容：
+                            <span class="fr star">{$collect}</span>
+                            <span class="fr">{$cai}</span>
+                            <span class="fr zan">{$zan}</span>
+                        </div>
+                        <volist name="ftdetail" id="msg">
+                        <p class="detail_con_main">{$msg.content}</p>
+                        </volist>
+                        <ul class="comment_imgs cl">
+                            <volist name="ftimages" id="img">
+                            <li><span><img src="{$img.image}" alt=""/></span></li>
+                            </volist>
+                        </ul>
+                        <ul class="comment_replay">
+                            <volist name="userft" id="msg">
+                            <li>
+                                <span class="replay_name">{$msg.username}：</span>
+                                <span class="replay_content">{$msg.content}</span>
+                            </li>
+                            </volist>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <!-- 分页 -->
+            <div class="page"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.deleTe').on('click',function () {
+        if((confirm('确定删除?'))){
+            var postid = $(this).parent().parent().children('.postid').text();
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/UserManage/deletePublish',
+                data:{postid:postid},
+                datatype:'post',
+                success:function(data){
+                    if(data.status == 1){
+                        alert('删除成功！');
+                        var bef = window.location.href.split('index.php')[0];
+                        window.location.replace(bef+'/index.php/Admin/UserManage/publishContent?userid='+data.userid);
+                    }else{
+                        alert('删除失败！');
+                    }
+                },
+                error:function(){
+                    alert('删除失败！！！');
+                }
+            })
+        }
+    })
+</script>
+</body>
+</html>

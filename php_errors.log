@@ -1,0 +1,80 @@
+[09-Jul-2017 12:29:14 PRC] PHP Fatal error:  Call to a member function add() on null in D:\wm\Application\Home\Controller\UserController.class.php on line 133
+[09-Jul-2017 12:33:08 PRC] PHP Fatal error:  Call to a member function add() on null in D:\wm\Application\Home\Controller\UserController.class.php on line 133
+[09-Jul-2017 12:34:15 PRC] PHP Fatal error:  Call to a member function add() on null in D:\wm\Application\Home\Controller\UserController.class.php on line 133
+[09-Jul-2017 12:40:08 PRC] PHP Fatal error:  Call to a member function add() on null in D:\wm\Application\Home\Controller\UserController.class.php on line 133
+[09-Jul-2017 12:40:21 PRC] PHP Fatal error:  Call to a member function add() on null in D:\wm\Application\Home\Controller\UserController.class.php on line 133
+[09-Jul-2017 18:27:51 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:27:53 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:28:17 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:29:12 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:29:25 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:29:37 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[09-Jul-2017 18:30:13 PRC] PHP Fatal error:  Call to a member function commit() on null in D:\wm\Application\Home\Controller\EvaluateController.class.php on line 52
+[22-Jul-2017 09:53:38 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 281
+[22-Jul-2017 09:53:42 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 281
+[22-Jul-2017 09:53:50 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 281
+[22-Jul-2017 09:54:11 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 281
+[22-Jul-2017 09:54:32 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 281
+[22-Jul-2017 09:56:01 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 282
+[22-Jul-2017 10:00:50 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 280
+[22-Jul-2017 10:01:53 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 280
+[22-Jul-2017 10:05:14 PRC] PHP Fatal error:  Class 'JPush\Client' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 280
+[25-Jul-2017 18:38:30 PRC] PHP Fatal error:  Call to undefined function Home\Controller\alias() in D:\wm\Application\Home\Controller\OrderController.class.php on line 296
+[25-Jul-2017 18:39:02 PRC] PHP Fatal error:  Call to undefined function Home\Controller\alias() in D:\wm\Application\Home\Controller\OrderController.class.php on line 296
+[25-Jul-2017 18:46:58 PRC] PHP Fatal error:  Call to undefined function Home\Controller\alias() in D:\wm\Application\Home\Controller\OrderController.class.php on line 296
+[25-Jul-2017 18:58:06 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:09 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:10 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:10 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:10 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:10 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:10 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:11 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:11 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:11 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:11 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:11 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:12 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:12 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:12 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:12 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:12 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:13 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:18 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:25 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 18:58:25 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[25-Jul-2017 19:36:08 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:33:01 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:34:56 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:34:58 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:35:01 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:35:24 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 09:36:40 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\wm\Application\Home\Controller\OrderController.class.php on line 303
+[26-Jul-2017 10:44:21 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\wm\Application\Home\Controller\OrderController.class.php on line 330
+[26-Jul-2017 10:44:31 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\wm\Application\Home\Controller\OrderController.class.php on line 330
+[26-Jul-2017 10:45:09 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\wm\Application\Home\Controller\OrderController.class.php on line 330
+[26-Jul-2017 10:45:26 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\wm\Application\Home\Controller\OrderController.class.php on line 330
+[09-Aug-2017 11:30:07 PRC] PHP Fatal error:  Class 'Home\Controller\JPush' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 319
+[09-Aug-2017 11:30:15 PRC] PHP Fatal error:  Class 'Home\Controller\JPush' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 319
+[09-Aug-2017 11:30:22 PRC] PHP Fatal error:  Class 'Home\Controller\JPush' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 319
+[09-Aug-2017 11:30:24 PRC] PHP Fatal error:  Class 'Home\Controller\JPush' not found in D:\wm\Application\Home\Controller\OrderController.class.php on line 319
+[11-Sep-2017 14:33:04 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\wm\braintree\lib\Braintree\Http.php on line 156
+[18-Sep-2017 16:32:57 PRC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in D:\wm\Application\Home\Controller\OrderController.class.php on line 236
+[28-Sep-2017 23:15:56 PRC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in D:\wm\Application\Home\Controller\ShopsController.class.php on line 3

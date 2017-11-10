@@ -1,0 +1,163 @@
+[ 2017-10-30T20:50:17+10:30 ] 192.168.2.104 /tp/index.php/server/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0070s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' AND `password` = 'bbf8c7f9d9e373b69aeb953b5f87b730' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-30T20:50:21+10:30 ] 192.168.2.104 /tp/index.php/server/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0070s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' AND `password` = 'bc13ec4937f9a6a5a8bd5e02bbcc14c1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:22+10:30 ] 192.168.2.104 /tp/index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 45 AND `statu` = 2  [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:22+10:30 ] 192.168.2.104 /tp/index.php/server/order/yorderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `et_orders` WHERE ( (statu = 2 and state in (3,4,5)) or (statu in (1,3) and state in (1,2)) ) AND `shopid` = 45 AND `states` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:24+10:30 ] 192.168.2.104 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0080s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 361  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 362  [ RunTime:0.0030s ]
+
+[ 2017-10-30T20:50:25+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0080s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:25' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:25' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:31+10:30 ] 192.168.2.104 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0070s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 361  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 362  [ RunTime:0.0030s ]
+
+[ 2017-10-30T20:50:31+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0150s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:31' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:31' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0020s ]
+
+[ 2017-10-30T20:50:32+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0100s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:32' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:32' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:42+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0080s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:42' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:42' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0010s ]
+
+[ 2017-10-30T20:50:43+10:30 ] 192.168.2.104 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0070s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 361  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 362  [ RunTime:0.0020s ]
+
+[ 2017-10-30T20:50:43+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0070s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:43' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:43' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0000s ]
+
+[ 2017-10-30T20:50:49+10:30 ] 192.168.2.104 /tp/index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0080s ]
+SQL: SELECT `lmoney`,`content`,`gotime`,`long`,`maxprice`,`maxmoney`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:49' AND `shopid` = 45 AND `flag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-30 00:00:00' AND '2017-10-30 20:50:49' AND `state` IN ('3','4','5') AND `shopid` = 45  [ RunTime:0.0010s ]
+

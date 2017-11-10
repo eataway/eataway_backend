@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>审核</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <!--<link rel="stylesheet" href="__PUBLIC__/admin/css/zoomify.min.css">-->
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/audit.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <!--<script src="__PUBLIC__/admin/js/jquery.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/zoomify.min.js"></script>-->
+</head>
+<body>
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>骑手管理 > 审核</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <img style="height: 100px;" src="/{$image}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                </form>
+            </div>
+            <div class="content_left_name">
+
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a  href="{:U('rider_identify')}?id={$id}">审核</a>
+                </li>
+                <li>
+                    <a href="{:U('health_identify')}?id={$id}">健康证认证</a>
+                </li>
+                <li>
+                    <a  class="left_nav_current" href="{:U('rider_work')}?id={$id}">任务管理</a>
+                </li>
+                <!--<li>
+                     <a href="userinfo.html">用户信息</a>
+                 </li>
+                 <li>
+                     <a href="order.html">订单</a>
+                 </li>
+                 <li>
+                     <a href="comment.html">评论</a>
+                 </li>
+                 <li>
+                     <a href="publishContent.html" style="border-bottom:none;">发布内容</a>
+                 </li> -->
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <table cellspacing="0" cellpadding="0" class="tableManage">
+                <tr class="title_table">
+                    <td>任务id</td>
+                    <td>订单号</td>
+                    <td>配送时效</td>
+                    <td>送单状态</td>
+                    <td>接单时间</td>
+                    <!--<td width="150px;">操作</td>-->
+                </tr>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$lid + $i}</td>
+                        <td>{$vo.orderid}</td>
+                        <td>{$vo.aging}</td>
+                        <td>{$vo.rw_status}</td>
+                        <td>{$vo.order_time}</td>
+                        <!--<td><a href="" class="passed" >删除</a>-->
+                            <!--&lt;!&ndash;<a href="" class="refuse">拒绝</a>&ndash;&gt;-->
+                        <!--</td>-->
+                    </tr>
+                </volist>
+            </table>
+            <!--<div class="info">-->
+                <!--<div class="info_title">-->
+                    <!--<img src="__PUBLIC__/admin/images/icon_16.png" alt="">-->
+                    <!--资质认证图片-->
+                <!--</div>-->
+                <!--<div class="info_content">-->
+                    <!--<ul>-->
+                        <!--<li><img src="/{$list.id_facade}" alt="" class="zoomify" ><p>身份证正面照</p></li>-->
+                        <!--<li><img src="/{$list.id_obverse}" alt="" class="zoomify" ><p>身份证背面照</p></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!-- 分页 -->
+            <div class="page">{$pagelist}</div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+</html>

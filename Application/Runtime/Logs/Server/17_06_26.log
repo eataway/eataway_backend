@@ -1,0 +1,353 @@
+[ 2017-06-26T14:50:38+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:User
+
+[ 2017-06-26T14:51:08+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'et.et_shop' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `et_shop`
+ERR: 1146:Table 'et.et_shop' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `et_shop`
+
+[ 2017-06-26T14:51:42+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '21341' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`) VALUES ('21341','1231','1') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 22 行.
+
+[ 2017-06-26T14:52:05+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '21341' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-26T14:53:03+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0060s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '21341s' LIMIT 1   [ RunTime:0.0030s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`) VALUES ('21341s','1231s','1') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 24 行.
+
+[ 2017-06-26T14:53:34+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0060s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '21341s2' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`) VALUES ('21341s2','1231s2','1') [ RunTime:0.0000s ]
+
+[ 2017-06-26T15:53:19+08:00 ] 127.0.0.1 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: phone D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 14 行.
+
+[ 2017-06-26T15:53:42+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` WHERE `shopid` = 1 LIMIT 1   [ RunTime:0.0110s ]
+
+[ 2017-06-26T16:08:28+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:09:31+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:09:46+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:11:44+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:12:38+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:13:50+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-26T16:14:33+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:19:04+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T16:19:20+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-26T16:19:50+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 97 行.
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-26T16:20:54+08:00 ] 127.0.0.1 /index.php/server/user/editphoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 98 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-26T16:40:16+08:00 ] 127.0.0.1 /index.php/server/order/addorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Order
+
+[ 2017-06-26T17:32:12+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: coordinate D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 117 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: SELECT `shopphoto` FROM `et_shopmessage` WHERE `shopid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-26T17:32:42+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: coordinate D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 117 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 1 LIMIT 1   [ RunTime:0.0290s ]
+
+[ 2017-06-26T17:34:03+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: coordinate D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 117 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0030s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 131 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 132 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-06-26T17:34:52+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: coordinate D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 117 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T17:35:59+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 116 行.
+NOTIC: [8] Undefined index: coordinate D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 117 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-26T17:47:57+08:00 ] 127.0.0.1 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`coordinate`,`shophead`,`shopphoto`) VALUES ('1','asdf','2341324,123131','uploads/fe3d88d5825f5b8b21d1081d4152e07b.png','uploads/97f561ed63e678623c8a7b13d0359448.png') [ RunTime:0.0870s ]
+

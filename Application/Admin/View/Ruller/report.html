@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>举报管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/report.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>举报管理</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>举报ID</td>
+                        <td>用户名</td>
+                        <td width="25%;">反馈内容</td>
+                        <td>手机号</td>
+                        <td>举报时间</td>                    
+                        <td>操作</td>
+                    </tr>
+                    <foreach name='list' key='k' item='v'>
+                    <tr>
+                        <td class='id'>{$v.reportusertid}</td>
+                        <td>{$v.username}</td>
+                        <td><div>{$v.name}</div></td>
+                        <td>{$v.mobile}</td>
+                        <td>{$v.addtime}</td>
+                        <td><a style='width: 100px;' class='del'>删除</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".del").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           var bid = bid *1;
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/deelt')}",
+            data:{bid:bid},
+            dataType:"json",
+            success:function(data){
+                if(data.status == 1){
+                    alert('删除成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

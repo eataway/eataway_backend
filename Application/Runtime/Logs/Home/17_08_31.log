@@ -1,0 +1,1612 @@
+[ 2017-08-31T12:06:25+08:00 ] 123.182.240.6 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-31T12:06:25+08:00 ] 123.182.240.6 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:06:30+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 165  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 45 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:06:36+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 165  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0036s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 45 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:21:23+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0029s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T12:22:24+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0017s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1vAXGSfmlIdIXqzyguVmfYc' LIMIT 1   [ RunTime:0.0439s ]
+
+[ 2017-08-31T12:22:28+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:22:34+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 44  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 44 AND `cid` = 166  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0036s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 44 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 44 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:22:38+08:00 ] 110.249.130.170 /index.php/home/user/get_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shipping_address` [ RunTime:0.0739s ]
+SQL: SELECT `addid`,`userid`,`real_name`,`gender`,`mobile`,`location_address`,`coordinate`,`detailed_address`,`flag` FROM `et_shipping_address` WHERE `userid` = 23 ORDER BY addid desc  [ RunTime:0.0309s ]
+
+[ 2017-08-31T12:23:55+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0032s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:24:36+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0023s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:28+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 165  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0023s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 45 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:29+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0025s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:34+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 7  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0513s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 7 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 7 LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2017-08-31T12:25:35+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:38+08:00 ] 110.249.130.170 /index.php/home/user/get_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shipping_address` [ RunTime:0.0034s ]
+SQL: SELECT `addid`,`userid`,`real_name`,`gender`,`mobile`,`location_address`,`coordinate`,`detailed_address`,`flag` FROM `et_shipping_address` WHERE `userid` = 23 ORDER BY addid desc  [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:39+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0024s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:25:39+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0024s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T12:25:46+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T12:25:49+08:00 ] 110.249.130.170 /index.php/home/order/orderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` = 1  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_orders` WHERE `uid` = 23 AND `statu` = 2 LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2017-08-31T12:25:52+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0029s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T12:27:15+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0031s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0004s ]
+
+[ 2017-08-31T13:35:12+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0356s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1vAXGSfmlIdIXqzyguVmfYc' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T13:35:14+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0035s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:36:56+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0029s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:36:56+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0018s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:37:29+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0023s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:37:50+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 165  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0020s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 45 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:38:46+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0034s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-31T14:39:21+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0034s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T14:39:23+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0035s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-31T14:40:04+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0018s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:40:06+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:40:25+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0485s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:40:26+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0028s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:45:49+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0028s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:45:49+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0282s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:47:11+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0382s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0035s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0004s ]
+
+[ 2017-08-31T14:47:50+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1qI2q2WJgI0tHNC10HNhZbs' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:47:51+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0018s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:47:51+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0019s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:48:35+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1qI2q2WJgI0tHNC10HNhZbs' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-31T14:48:36+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:48:47+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-31T14:49:22+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1qI2q2WJgI0tHNC10HNhZbs' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:49:22+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:49:22+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0021s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:49:48+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-08-31T14:54:18+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0024s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:54:18+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0018s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:54:24+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:54:25+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0016s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T14:54:25+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0041s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-31T14:54:26+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:54:35+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:54:36+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0029s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T14:54:36+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0018s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:12:33+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0319s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:23:11+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0017s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:23:32+08:00 ] 110.249.130.170 /index.php/home/user/third_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0032s ]
+SQL: SELECT `uid`,`username` FROM `et_user` WHERE `wechat_openid` = 'ozrUb1vAXGSfmlIdIXqzyguVmfYc' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:23:33+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0017s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:23:37+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 42  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 160  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 161  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 162  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 42 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 42 LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0020s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_backevaluate` [ RunTime:0.0015s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 42 AND `uid` = 47 AND `eid` = 46 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 42 AND `uid` = 47 AND `eid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 42 AND `uid` = 47 AND `eid` = 48 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:25:56+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0019s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:37:26+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0036s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:37:26+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0383s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0015s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:37:33+08:00 ] 183.57.53.196 /index.php/home/user/get_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-08-31T15:37:35+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:38:00+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0610s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-31T15:38:00+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0023s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:38:07+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 165  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0019s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 45 LIMIT 0,20   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:38:08+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:38:21+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:38:24+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0006s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:38:43+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0019s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:38:44+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0038s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-31T15:38:51+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0004s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:38:52+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0004s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:55:15+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0061s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:55:15+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0276s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:55:20+08:00 ] 110.249.130.170 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0037s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 6 LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2017-08-31T15:55:21+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0023s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:57:46+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0015s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:57:46+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0017s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T15:59:54+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0422s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:59:54+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0458s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0027s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:00:54+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0022s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:00:54+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0019s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:02:27+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.1059s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0017s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:02:27+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.1482s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:04:01+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:04:01+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0480s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:05:08+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:05:08+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0015s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:05:45+08:00 ] 110.249.130.170 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0242s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 23 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:05:45+08:00 ] 110.249.130.170 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0027s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:31:26+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0393s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0031s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 30 行.
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:31:39+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:31:41+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0005s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:31:43+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0004s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:31:46+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0005s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:31:52+08:00 ] 120.20.25.174 /index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 44  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 44 AND `cid` = 166  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0025s ]
+SQL: SELECT `shopname`,`shopphoto`,`mobile`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 44 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\wm\Application\Home\Controller\ShopController.class.php 第 255 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: limit D:\wm\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 44 LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:32:24+08:00 ] 120.20.25.174 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0006s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:56:44+08:00 ] 49.178.24.74 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0026s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:56:44+08:00 ] 49.178.24.74 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0703s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:57:18+08:00 ] 49.178.24.74 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 15,15   [ RunTime:0.0003s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0004s ]
+
+[ 2017-08-31T17:05:25+08:00 ] 49.178.24.74 /index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0267s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 47 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T17:05:25+08:00 ] 49.178.24.74 /index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0814s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0306s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 7 ORDER BY num desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 6 ORDER BY num desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0004s ]
+

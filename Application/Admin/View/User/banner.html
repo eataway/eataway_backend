@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>合作管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/tcal.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeIntroBanner.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <script src="__PUBLIC__/admin/js/tcal.js"></script>
+    <style>
+        #addBox>span{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            z-index: 9;
+        }
+        #addBox img{
+            width: 100%;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>合作管理 > 轮播管理 > 修改轮播信息</span>
+        </p>
+        <div class="content_right fl">
+            <!--<form action="__CONTROLLER__/indextui" method="post" enctype="multipart/form-data">-->
+            <form id="form1">
+                <div class="content_right_one">
+                    <span>修改轮播</span>
+                    <span class="fr"><input id="sub" type="button" value="确定"/></span>
+                </div>
+                <div class="content_right_two">
+                    <p>
+                        <span>填写url跳转地址</span>
+                        <input type="hidden" name="lid" value="{$result.lid}"/>
+                        <input class="url" type="text" name="url" value="{$result.url}"/>
+                    </p>
+                    <div>
+                        <span>添加图片</span>
+                        <div id="addBox">
+                            <input id="chooseImg" type="file" name="banner" value=""/>
+                            <span>
+                                <if condition="$result.banner eq null">
+                                    <img src="__PUBLIC__/admin/images/icon_add_01.png" />
+                                 <elseif condition="$result.banner neq null"/>
+                                 <img src="/{$result.banner}" />
+                                </if>
+                                
+                            <span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    //建立一個可存取到該file的url
+    function getObjectURL(file) {
+            var url = null;
+            if(window.createObjectURL != undefined) { // basic
+                    url = window.createObjectURL(file);
+            } else if(window.URL != undefined) { // mozilla(firefox)
+                    url = window.URL.createObjectURL(file);
+            } else if(window.webkitURL != undefined) { // webkit or chrome
+                    url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+    }
+    $("#chooseImg").change(function(){
+        var objUrl = getObjectURL(this.files[0]);
+        if(objUrl) {
+            $("#addBox img").attr("src", objUrl);
+        }
+    })
+    //提交图片文件和文字
+    $("#sub").click(function(){
+ var files = $('#chooseImg').val();
+if(files ===''){
+    alert("图片不能为空。");
+}else{
+    var form = new FormData(document.getElementById("form1"));
+    $.ajax({
+                cache: true,
+                type: "POST",
+                url:"__CONTROLLER__/editbanner",
+                data:form,
+                dataType:"json",
+                processData:false,
+                contentType:false,
+                success: function(data) {
+                    if(data.status == 1){
+                        alert("修改成功。");
+                        window.location.href="__CONTROLLER__/banners";
+                    }else if(data.status == 0){
+                        alert("修改失败。");
+                    }
+                },
+                error:function(){
+                    alert("error");
+                }
+            });
+}
+        
+    });
+</script>
+</body>
+</html>

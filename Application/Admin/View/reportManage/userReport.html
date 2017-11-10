@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>举报管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/report.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <style>
+        .tableManage td a.del{
+            display: block;
+            float: left;
+            text-align: center;
+            color: #fff;
+            border-radius: 6px;
+            height: 2em;
+            line-height: 2em;
+            margin-left: 9%;
+            width: 80%;
+            background: #06C1AE;
+        }
+    </style>
+</head>
+<body>
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>举报管理 > 用户举报店铺管理</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>ID</td>
+                        <td>对象所属</td>
+                        <td width="25%;">举报原因</td>
+                        <td>举报时间</td>                    
+                        <td>操作</td>
+                    </tr>
+                    <volist name="msg" id="vo">
+                        <tr>
+                            <td class="ruid">{$vo.reportuserid}</td>
+                            <td>{$vo.username}</td>
+                            <td><div>{$vo.name}</div></td>
+                            <td>{$vo.addtime}</td>
+                            <td><a href="#" class="del">删除</a></td>
+                        </tr>
+                    </volist>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$page}
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onload = function () {
+        var userid = $('.ruid').text();
+        if(userid === ''){
+            var num = ( window.location.href.split('/p/')[1].split('.html'))[0]-1;
+            // alert(window.location.href.split('/p/')[0]+'/'+num+'.html');
+            window.location.replace(window.location.href.split('/p/')[0]+'/'+num+'.html');
+        }
+    }
+   $('.del').on('click',function () {
+       var ruid = $(this).parent().parent().children('.ruid').text();//alert(ruid);
+       $.ajax({
+           type:'post',
+           url:"{:U('ReportManage/deleteReport')}",
+           data:{ruid:ruid},
+           success:function (data) {
+               if(data.status == 1){
+                   alert('删除成功！')
+                   window.location.reload();
+               }else if(data.status == 2){
+                   alert('删除失败！')
+               }else{
+                   alert('删除失败！！')
+               }
+           },
+           error:function () {
+               alert('删除失败！！！');
+           }
+       })
+   })
+</script>
+</html>

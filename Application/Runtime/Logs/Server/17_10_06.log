@@ -1,0 +1,348 @@
+[ 2017-10-06T07:54:42+08:00 ] 125.168.152.245 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0958s ]
+SQL: UPDATE `et_shopmessage` SET `state`='1' WHERE `shopid` = 51 [ RunTime:1.8439s ]
+
+[ 2017-10-06T07:54:43+08:00 ] 125.168.152.245 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0021s ]
+SQL: UPDATE `et_shopmessage` SET `state`='2' WHERE `shopid` = 51 [ RunTime:0.4340s ]
+
+[ 2017-10-06T07:54:46+08:00 ] 125.168.152.245 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0027s ]
+SQL: UPDATE `et_shopmessage` SET `state`='1' WHERE `shopid` = 51 [ RunTime:0.0056s ]
+
+[ 2017-10-06T08:12:53+08:00 ] 120.20.89.242 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0032s ]
+SQL: UPDATE `et_shopmessage` SET `state`='1' WHERE `shopid` = 52 [ RunTime:0.0095s ]
+
+[ 2017-10-06T11:32:54+08:00 ] 183.57.53.197 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-10-06T13:03:22+08:00 ] 165.228.227.222 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.4609s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 57 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 13:03:21' AND `shopid` = 57 AND `flag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 13:03:21' AND `state` IN ('3','4','5') AND `shopid` = 57  [ RunTime:0.0018s ]
+
+[ 2017-10-06T13:03:30+08:00 ] 165.228.227.222 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0024s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 57  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 273  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 274  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 275  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 276  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 277  [ RunTime:0.0011s ]
+
+[ 2017-10-06T13:03:32+08:00 ] 165.228.227.222 /index.php/server/evaluate/pingjialist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 57 LIMIT 0,8   [ RunTime:0.0003s ]
+
+[ 2017-10-06T13:03:39+08:00 ] 165.228.227.222 /index.php/server/order/mingxi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `shopid` = 57 AND `flag` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0005s ]
+
+[ 2017-10-06T13:03:46+08:00 ] 165.228.227.222 /index.php/server/evaluate/pingjialist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 57 LIMIT 0,8   [ RunTime:0.0004s ]
+
+[ 2017-10-06T13:03:46+08:00 ] 165.228.227.222 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0032s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 57 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 13:03:46' AND `shopid` = 57 AND `flag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 13:03:46' AND `state` IN ('3','4','5') AND `shopid` = 57  [ RunTime:0.0011s ]
+
+[ 2017-10-06T13:03:46+08:00 ] 165.228.227.222 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0019s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 57  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 273  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 274  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 275  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 276  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 277  [ RunTime:0.0011s ]
+
+[ 2017-10-06T14:50:46+08:00 ] 129.127.113.20 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 50 AND `statu` = 2  [ RunTime:0.0011s ]
+
+[ 2017-10-06T14:50:47+08:00 ] 129.127.113.20 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0036s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 50 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 14:50:47' AND `shopid` = 50 AND `flag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 14:50:47' AND `state` IN ('3','4','5') AND `shopid` = 50  [ RunTime:0.0010s ]
+
+[ 2017-10-06T14:50:49+08:00 ] 129.127.113.20 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 50 AND `statu` = 2  [ RunTime:0.0013s ]
+
+[ 2017-10-06T20:37:40+08:00 ] 125.168.152.245 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0025s ]
+SQL: UPDATE `et_shopmessage` SET `state`='2' WHERE `shopid` = 51 [ RunTime:0.0067s ]
+
+[ 2017-10-06T21:29:10+08:00 ] 14.203.14.154 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002888s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-10-06T21:29:10+08:00 ] 14.203.14.154 /index.php/server/evaluate/pingjialist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2017-10-06T21:37:35+08:00 ] 120.20.89.242 /index.php/server/user/editstate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.2029s ]
+SQL: UPDATE `et_shopmessage` SET `state`='2' WHERE `shopid` = 52 [ RunTime:0.0089s ]
+
+[ 2017-10-06T22:13:10+08:00 ] 183.197.99.49 /index.php/server/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0026s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '17180136582' AND `password` = '32b2243ec88e532ba45c006478f35a7e' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-06T22:13:11+08:00 ] 183.197.99.49 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 13 AND `statu` = 2  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1234561505961870'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0025s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1234561505962849'  [ RunTime:0.0013s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 151 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505270711'  [ RunTime:0.0016s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '15230861505962917'  [ RunTime:0.0017s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 151 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 152 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-06T22:13:11+08:00 ] 183.197.99.49 /index.php/server/order/yorderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_orders` WHERE ( (statu = 2 and state in (3,4,5)) or (statu in (1,3) and state in (1,2)) ) AND `shopid` = 13 AND `states` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505271941'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0017s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505271859'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505271622'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505270583'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505270276'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505270047'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 151 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505269845'  [ RunTime:0.0011s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505183785'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 146 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-06T22:13:14+08:00 ] 183.197.99.49 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0019s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:14' AND `shopid` = 13 AND `flag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:14' AND `state` IN ('3','4','5') AND `shopid` = 13  [ RunTime:0.0011s ]
+
+[ 2017-10-06T22:13:22+08:00 ] 183.197.99.49 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0035s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:22' AND `shopid` = 13 AND `flag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:22' AND `state` IN ('3','4','5') AND `shopid` = 13  [ RunTime:0.0014s ]
+
+[ 2017-10-06T22:13:31+08:00 ] 183.197.99.49 /index.php/server/shop/editlmoney
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 非法操作:editlmoney
+
+[ 2017-10-06T22:13:42+08:00 ] 183.197.99.49 /index.php/server/user/shopmesa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0032s ]
+SQL: SELECT `content`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney`,`shophead`,`shopphoto`,`shopname`,`state`,`coordinate`,`detailed_address`,`mobile` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_mingxi` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_mingxi` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:42' AND `shopid` = 13 AND `flag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_orders` WHERE `addtime` BETWEEN '2017-10-06 00:00:00' AND '2017-10-06 22:13:42' AND `state` IN ('3','4','5') AND `shopid` = 13  [ RunTime:0.0010s ]
+

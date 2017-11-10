@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>合作管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerVerify.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>E币轮播管理</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>轮播id</td>
+                        <td>跳转地址</td>
+                        <td>轮播图片</td>
+                        <td>修改时间</td>                   
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.lid}</td>
+                    <if condition="$v.url eq null">
+                        <td>暂无跳转地址</td>
+                    <else/>
+                    <td>{$v.url}</td>
+                    </if>
+                        
+                    <td><img style="width: 80px;" src="/{$v.banner}"/></td>
+                        <td>{$v.addtime}</td>
+                        <td><a style="width: 100px;" href="__CONTROLLER__/banner?lid={$v.lid}">修改</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".pass").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           var time = $('.time').val();
+           var bid = bid *1;
+           $.ajax({
+            type:"POST",
+            url:"{:U('Index/passjiesuan')}",
+            data:{bid:bid,time:time},
+            success:function(data){
+                //console.log(time);
+                if(data.status == 1){
+                    alert('结算成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

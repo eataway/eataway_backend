@@ -1,0 +1,560 @@
+[ 2017-07-07T09:51:04+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0060s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18218971213' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`) VALUES ('18218971213','666666','1') [ RunTime:0.0720s ]
+
+[ 2017-07-07T09:52:45+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18218971213' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-07T09:52:55+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18218971215' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18218971215','666666','1','2017-07-07 09:52:55') [ RunTime:0.0620s ]
+
+[ 2017-07-07T09:53:15+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18218371215' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18218371215','666666','1','2017-07-07 09:53:15') [ RunTime:0.0690s ]
+
+[ 2017-07-07T09:53:21+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15318371215' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('15318371215','666666','1','2017-07-07 09:53:21') [ RunTime:0.1070s ]
+
+[ 2017-07-07T09:53:33+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18618323423' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18618323423','666666','1','2017-07-07 09:53:33') [ RunTime:0.0570s ]
+
+[ 2017-07-07T09:53:43+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18618090897' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18618090897','666666','1','2017-07-07 09:53:43') [ RunTime:0.0940s ]
+
+[ 2017-07-07T09:53:53+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18612390897' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18612390897','666666','1','2017-07-07 09:53:53') [ RunTime:0.0720s ]
+
+[ 2017-07-07T09:54:03+08:00 ] 192.168.0.111 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '18612323897' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('18612323897','666666','1','2017-07-07 09:54:03') [ RunTime:0.2370s ]
+
+[ 2017-07-07T09:58:00+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0070s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`) VALUES ('4','巫山烤鱼','12312,1231213','石家庄万达广场（裕华店）','uploads/610504fd25b7f0684316a323b5644782.png','uploads/51d1395a07587584b5f08515cc8abb33.png') [ RunTime:0.0420s ]
+
+[ 2017-07-07T09:59:57+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`) VALUES ('5','烤牛骨','12314123，1321341','石家庄长安区国瑞城','uploads/c08e158ae92281c17fad32162857e7f5.png','uploads/c3f476b52bcefdfe7c5339919a192e62.png') [ RunTime:0.0990s ]
+
+[ 2017-07-07T10:00:18+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`) VALUES ('6','兰州拉面','12314123，1321341','石家庄长安区世纪方舟','uploads/fe648316271c946818234a3c07fdb2fb.png','uploads/70919919a98846b8ca375e5afc0f9822.png') [ RunTime:0.1230s ]
+
+[ 2017-07-07T10:00:35+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT `phone` FROM `et_shop` WHERE `shopid` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`) VALUES ('7','北京烤鸭','12314123，1321341','石家庄长安区财富大厦','uploads/881a3e48b5ba0026832ad35a0e0d2734.png','uploads/9eef7e951fd494a897368661e8016f00.png') [ RunTime:0.1140s ]
+
+[ 2017-07-07T10:03:26+08:00 ] 192.168.0.111 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: files D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: UPDATE `et_shopmessage` SET `content`='百年烤鱼店特色烤鱼',`shopname`=NULL,`shophead`=NULL WHERE `shopid` = 4 [ RunTime:0.1540s ]
+
+[ 2017-07-07T10:03:51+08:00 ] 192.168.0.111 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: files D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: UPDATE `et_shopmessage` SET `content`='外焦里嫩营养大骨',`shopname`=NULL,`shophead`=NULL WHERE `shopid` = 5 [ RunTime:0.0930s ]
+
+[ 2017-07-07T10:04:50+08:00 ] 192.168.0.111 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: files D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: UPDATE `et_shopmessage` SET `content`='筋道爽滑，汤更有营养',`shopname`=NULL,`shophead`=NULL WHERE `shopid` = 6 [ RunTime:0.0880s ]
+
+[ 2017-07-07T10:05:15+08:00 ] 192.168.0.111 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: shopname D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 159 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: files D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: UPDATE `et_shopmessage` SET `content`='北京老字号，百年烤鸭店',`shopname`=NULL,`shophead`=NULL WHERE `shopid` = 7 [ RunTime:0.0640s ]
+
+[ 2017-07-07T10:09:21+08:00 ] 192.168.0.111 /index.php/server/user/edittime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: UPDATE `et_shopmessage` SET `gotime`='9:00 - 21:00' WHERE `shopid` = 4 [ RunTime:0.0750s ]
+
+[ 2017-07-07T10:09:36+08:00 ] 192.168.0.111 /index.php/server/user/edittime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: UPDATE `et_shopmessage` SET `gotime`='9:00 - 21:00' WHERE `shopid` = 5 [ RunTime:0.0520s ]
+
+[ 2017-07-07T10:09:39+08:00 ] 192.168.0.111 /index.php/server/user/edittime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: UPDATE `et_shopmessage` SET `gotime`='9:00 - 21:00' WHERE `shopid` = 6 [ RunTime:0.0550s ]
+
+[ 2017-07-07T10:09:42+08:00 ] 192.168.0.111 /index.php/server/user/edittime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: UPDATE `et_shopmessage` SET `gotime`='9:00 - 21:00' WHERE `shopid` = 7 [ RunTime:0.0830s ]
+
+[ 2017-07-07T10:25:50+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_shop` WHERE `shopid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`mobile`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`,`addtime`) VALUES ('8','北京烤鸭','18210941216','12312,1231213','石家庄万达广场（裕华店）',NULL,NULL,'2017-07-07 10:25:50') [ RunTime:0.0660s ]
+
+[ 2017-07-07T10:26:48+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_shop` WHERE `shopid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-07T10:27:32+08:00 ] 192.168.0.111 /index.php/server/user/addshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_shop` WHERE `shopid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopmessage` (`shopid`,`shopname`,`mobile`,`coordinate`,`detailed_address`,`shophead`,`shopphoto`,`addtime`) VALUES ('8','北京烤鸭','18210941216','12312,1231213','石家庄万达广场（裕华店）','uploads/24b7f8712bcb3aea7d0fea301da4c86e.jpg','uploads/6089ecbc9828c6010d26de6c468edfe1.jpg','2017-07-07 10:27:31') [ RunTime:0.1020s ]
+
+[ 2017-07-07T10:30:32+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('烤全鸭','4','2017-07-07 10:30:32') [ RunTime:0.0660s ]
+
+[ 2017-07-07T10:30:58+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('鸭头','4','2017-07-07 10:30:58') [ RunTime:0.0740s ]
+
+[ 2017-07-07T10:31:04+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('鸭腿','4','2017-07-07 10:31:03') [ RunTime:0.0820s ]
+
+[ 2017-07-07T10:31:58+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('碳烤牛骨','5','2017-07-07 10:31:58') [ RunTime:0.1130s ]
+
+[ 2017-07-07T10:32:04+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0060s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('孜然牛骨','5','2017-07-07 10:32:03') [ RunTime:0.1060s ]
+
+[ 2017-07-07T10:32:10+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('酱牛骨','5','2017-07-07 10:32:10') [ RunTime:0.0760s ]
+
+[ 2017-07-07T10:32:33+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('大粗','6','2017-07-07 10:32:33') [ RunTime:0.1150s ]
+
+[ 2017-07-07T10:32:44+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0080s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('宽面','6','2017-07-07 10:32:43') [ RunTime:0.1000s ]
+
+[ 2017-07-07T10:32:50+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('中宽','6','2017-07-07 10:32:50') [ RunTime:0.1020s ]
+
+[ 2017-07-07T10:32:58+08:00 ] 192.168.0.111 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('细面','6','2017-07-07 10:32:58') [ RunTime:0.1110s ]
+
+[ 2017-07-07T10:37:22+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: goodsprice D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 119 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+ERR: 1048:Column 'goodsprice' cannot be null
+ [ SQL语句 ] : INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('8','4','烤全鱼',NULL,'烤全鱼','uploads/01098d1a95aeba31b383ff7903d13ea0.jpg','2017-07-07 10:37:22')
+ERR: 1048:Column 'goodsprice' cannot be null
+ [ SQL语句 ] : INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('8','4','烤全鱼',NULL,'烤全鱼','uploads/01098d1a95aeba31b383ff7903d13ea0.jpg','2017-07-07 10:37:22')
+
+[ 2017-07-07T10:37:55+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('8','4','烤全鱼','88','烤全鱼','uploads/e66202a835c1558de685bb9cf7abc95e.jpg','2017-07-07 10:37:55') [ RunTime:0.0930s ]
+
+[ 2017-07-07T10:38:27+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('9','4','草鱼','99','草鱼','uploads/338f0cd8e9bc837dea4bf59d05b8e2e9.png','2017-07-07 10:38:27') [ RunTime:0.0740s ]
+
+[ 2017-07-07T10:38:52+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('10','4','鲤鱼','100','鲤鱼','uploads/b653d306a347e7d51c1cf675478469f6.jpg','2017-07-07 10:38:52') [ RunTime:0.0870s ]
+
+[ 2017-07-07T10:39:47+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('11','5','牛骨','200','牛骨','uploads/6cda48c2b96ae7dfa9168a02b8092076.jpg','2017-07-07 10:39:47') [ RunTime:0.0660s ]
+
+[ 2017-07-07T10:40:14+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('12','5','孜然牛骨','200','孜然牛骨','uploads/eafb24b28f402ab5b8d6c543dd0c018b.jpg','2017-07-07 10:40:13') [ RunTime:0.0740s ]
+
+[ 2017-07-07T10:40:52+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('13','5','酱牛骨','200','酱牛骨','uploads/e795105287146ab48cd2d33170d1eb56.jpg','2017-07-07 10:40:52') [ RunTime:0.0840s ]
+
+[ 2017-07-07T10:41:22+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('14','6','粗面','10','粗面','uploads/ad72d9f47273d340944215a713201c87.jpeg','2017-07-07 10:41:22') [ RunTime:0.0980s ]
+
+[ 2017-07-07T10:41:47+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('15','6','中宽','10','中宽','uploads/a5849c4c1be7a48feca0743afb7dda53.jpg','2017-07-07 10:41:47') [ RunTime:0.0680s ]
+
+[ 2017-07-07T10:42:05+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('15','6','细面','10','细面','uploads/3f61c9ab3c4b79af5b343b92fa436d0f.jpeg','2017-07-07 10:42:04') [ RunTime:0.1120s ]
+
+[ 2017-07-07T10:42:51+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('18','7','烤全鸭','90','烤全鸭','uploads/6d97bda1f333acfde2a27f961e1396e7.jpg','2017-07-07 10:42:51') [ RunTime:0.0830s ]
+
+[ 2017-07-07T10:43:19+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('19','7','鸭头','40','鸭头','uploads/6a0cfe9a1cf8147a5530816ba86293f9.jpg','2017-07-07 10:43:19') [ RunTime:0.0800s ]
+
+[ 2017-07-07T10:43:42+08:00 ] 192.168.0.111 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('20','7','鸭腿','30','鸭腿','uploads/8d3e1233bdd30f720492f76f25468f79.jpg','2017-07-07 10:43:42') [ RunTime:0.0870s ]
+
+[ 2017-07-07T14:46:49+08:00 ] 192.168.0.111 /index.php/server/order/orderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:orderlist
+
+[ 2017-07-07T14:47:04+08:00 ] 192.168.0.111 /index.php/server/order/orderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:orderlist
+

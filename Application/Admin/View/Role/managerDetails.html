@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerUpdate.css"/>
+    <style>
+        .submit{
+            width:40%;
+            cursor:pointer;
+        }
+        .jump{
+            float:right;
+            width: 41%;
+            height: 2.5em;
+            margin: 3% auto;
+            background: #06C1AE;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>管理员管理 > <a href="/index.php/Admin/Role/managerList">管理员列表</a> > 修改</span></p>
+                <form action="" method="" name="" class="formUpdate">
+                    <ul>
+                        <volist name="msg" id="detail">
+                            <li><input type="hidden" value="{$detail.aid}" class="aid"></li>
+                            <li><div>管理员权限</div>
+                                    <if condition="$grade eq '1'">
+                                             <input type="text" placeholder="一级管理员" class="userper" readonly>
+                                        <elseif condition="$grade eq '2'"/>
+                                             <input type="text" placeholder="二级管理员" class="userper" readonly>
+                                        <elseif condition="$grade eq '3'"/>
+                                              <input type="text" placeholder="三级管理员" class="userper" readonly>
+                                        <else/>
+                                             <input type="text" placeholder="四级管理员" class="userper" readonly>
+                                    </if>
+                            </li>
+                            <li><div>返佣比例</div>
+                                <input type="text" placeholder="{$detail.comper}" class="userper" readonly>
+                            </li>
+                            <li><div>账号</div><input type="text" placeholder="{$detail.username}" class="username"></li>
+                            <li><div>密码</div><input type="text" placeholder="********" class="password"></li>
+                            <li><div>联系电话</div><input type="text" placeholder="{$detail.mobile}" class="mobile"></li>
+                            <notempty name="country">
+                                <li><div>范围：</div><input type="text" placeholder="{$country}" class="country" readonly></li>
+                            </notempty>
+                            <notempty name="state">
+                                <li><div>省：</div><input type="text" placeholder="{$state}" class="state" readonly></li>
+                            </notempty>
+                            <notempty name="city">
+                                 <li><div>市：</div><input type="text" placeholder="{$city}" class="city" readonly></li>
+                            </notempty>
+                            <notempty name="town">
+                                <li><div>县：</div><input type="text" placeholder="{$town}" class="town" readonly></li>
+                            </notempty>
+                            <!--<li><div>状态</div>-->
+                                <!--<if condition="$detail.flag == 1">&nbsp;-->
+                                    <!--<input type="radio" name="radio" value="未禁" checked="" class="radios">未禁-->
+                                    <!--<else/>-->
+                                    <!--<input type="radio" name="radio" value="已禁" checked="" class="radios">已禁&nbsp;&nbsp;-->
+                                <!--</if>-->
+                            <!--</li>-->
+                            <li><input type="button" value="保存" class="submit"><a href="__CONTROLLER__/liushui?aid={$detail.aid}" class="jump">查看资金流动</a></li>
+                        </volist>
+                    </ul>
+                </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        $('.submit').on('click',function () {
+            var aid = $('.aid').val();
+            var username = $('.username').val();
+            var password = $('.password').val();
+            var mobile = $('.mobile').val();
+            if(!username&&!password&&!mobile){
+                alert('没有修改！');
+            }else{
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/Role/managerdetailSave',
+                    data:{username:username,password:password,mobile:mobile,aid:aid}
+                })
+            }
+
+        })
+</script>
+</body>
+
+</html>

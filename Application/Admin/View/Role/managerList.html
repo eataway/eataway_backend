@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerList.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <style>
+        .search select{
+            border: 1px solid #ccc;
+            width:130px;
+            height: 2.2em;
+            line-height: 2.2em;
+            border-radius: 5px;
+            text-indent: 1em;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span class="nowP">管理员管理 > 管理员列表</span>
+                    <a href="/index.php/Admin/Role/managerAdd" class="manager_add">添加管理员</a>
+                </p>
+                <div class="search">
+                    <form action="">
+                        <!--省-->
+                        <select name="" id="selProvince">
+                            <if condition="$cantonsnum gt 1">
+                                <option value="--------">--------</option>
+                            </if>
+                            <volist name="cantons" id="a">
+                                <if condition="$a.flag eq 1">
+                                        <if condition="$a.areaname eq $sxcanton">
+                                                 <option value="{$a.areaname}" selected>{$a.areaname}</option>
+                                            <else/>
+                                                <option value="{$a.areaname}">{$a.areaname}</option>
+                                        </if>
+                                    <else/>
+                                        <if condition="$a.areaname eq $sxcanton">
+                                                 <option value="{$a.areaname}" style="color:red" selected>{$a.areaname}</option>
+                                            <else/>
+                                                 <option value="{$a.areaname}" style="color:red">{$a.areaname}</option>
+                                        </if>
+                                </if>
+                            </volist>
+                        </select>
+                        <!--市-->
+                        <select name="" id="selCity">
+                            <if condition="$citysnum gt 1">
+                                    <option value="--------">--------</option>
+                                <elseif condition="$cantonsnum gt 1"/>
+                                    <option value="--------">--------</option>
+                            </if>
+                            <volist name="citys" id="a">
+                                <if condition="$a.flag eq 1">
+                                    <if condition="$a.areaname eq $sxcity">
+                                        <option value="{$a.areaname}" selected>{$a.areaname}</option>
+                                        <else/>
+                                        <option value="{$a.areaname}">{$a.areaname}</option>
+                                    </if>
+                                    <else/>
+                                    <if condition="$a.areaname eq $sxcity">
+                                        <option value="{$a.areaname}" style="color:red" selected>{$a.areaname}</option>
+                                        <else/>
+                                        <option value="{$a.areaname}" style="color:red">{$a.areaname}</option>
+                                    </if>
+                                </if>
+                            </volist>
+                        </select>
+                        <select name="" id="selDistrict">
+                            <if condition="$townsnum gt 1">
+                                <option value="--------">--------</option>
+                            </if>
+                            <volist name="towns" id="a">
+                                <if condition="$a.flag eq 1">
+                                    <if condition="$a.areaname eq $sxtown">
+                                        <option value="{$a.areaname}" selected>{$a.areaname}</option>
+                                        <else/>
+                                        <option value="{$a.areaname}">{$a.areaname}</option>
+                                    </if>
+                                    <else/>
+                                    <if condition="$a.areaname eq $sxtown">
+                                        <option value="{$a.areaname}" style="color:red" selected>{$a.areaname}</option>
+                                        <else/>
+                                        <option value="{$a.areaname}" style="color:red">{$a.areaname}</option>
+                                    </if>
+                                </if>
+                            </volist>
+                        </select>
+                        <input type="button" class="sx" value="筛选"/>
+                        <input type="button" id="userMethod" name="" value="使用方法">
+                    </form>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>管理员ID</td>
+                        <td>账号</td>
+                        <td>联系电话</td>
+                        <td>区域</td>
+                        <!--<td>状态</td>-->
+                        <td>返佣比例</td>
+                        <td>操作</td>
+                    </tr>
+                    <empty name="managermsg">
+                        <tr>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <td>暂无</td>
+                            <!--<td>暂无</td>-->
+                            <td>暂无</td>
+                            <td><a>修改</a><a href="">删除</a></td>
+                        </tr>
+                        <else />
+                            <volist name="managermsg" id="detail">
+                                <tr>
+                                    <td class="aid">{$detail.aid}</td>
+                                    <td>{$detail.username}</td>
+                                    <td>{$detail.mobile}</td>
+                                    <td>{$detail.area}</td>
+                                    <!--<td>{$detail.status}</td>-->
+                                    <if condition="$detail.comper eq ''">
+                                        <td>空</td>
+                                        <else/>
+                                        <td>{$detail.comper}%</td>
+                                    </if>
+                                <td><a href="__CONTROLLER__/liushui?aaa=00&aid={$detail.aid}" class="pass">资金流水</a><a class="update">修改</a><a class="deleTe">删除</a></td>
+                                </tr>
+                            </volist>
+                    </empty>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.sx').on('click',function () {
+                var state = $('#selProvince option:selected').text();
+                var city = $('#selCity option:selected').text();
+                var town = $('#selDistrict option:selected').text();
+               if(state == '--------' && city == '--------' && town == '--------'){
+                   window.location.replace(window.location.href.split('index.php/')[0]+'index.php/Admin/Role/managerList.html')
+               }else{
+                   window.location.replace(window.location.href.split('Role/')[0]+'Role/managerList/?state='+state+'&city='+city+'&town='+town);
+               }
+        })
+        window.onload = function () {
+            // 判断分页
+            var a = window.location.href.split('/p/')[1];
+            if(a){
+                var userid = $('.aid').text();
+                if(userid === ''){
+                    if(confirm('该页面没有数据，是否返回上一页？')) {
+                        var num = ( window.location.href.split('/p/')[1].split('.html'))[0] - 1;
+                        // alert(window.location.href.split('/p/')[0]+'/'+num+'.html');
+                        window.location.replace(window.location.href.split('/p/')[0] + '/' + num + '.html');
+                    }else{
+
+                    }
+                }
+            }
+        }
+        $('.update').on('click',function () {
+           window.location.replace(window.location.href.split('managerList')[0]+'managerUpdate?aid='+$(this).parent().parent().children('.aid').text())
+        })
+        $('.deleTe').on('click',function () {
+            if((confirm('确定删除?'))){
+                var aid = $(this).parent().parent().children('.aid').text();
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/Role/deleteManager',
+                    data:{aid:aid},
+                    datatype:'ajax',
+                    success:function(data){
+                        if(data.status == 1){
+                            alert('删除成功！');
+                            window.location.reload();
+                        }else if(data.status == 2){
+                            alert('删除失败！！');
+                        }else{
+                            alert('删除失败！');
+                        }
+                    },
+                    error:function(){
+                        alert('删除失败！！！');
+                    }
+                })
+            }
+        })
+        $('#userMethod').on('click',function () {
+            alert('使用方法：超级管理员管理所有的行政单位，\n ' +
+                '二级管理员管理该省下的所有行政单位，\n' +
+                '三级管理员管理该市下的所有行政单位。\n' +
+                '' +
+                '\n'+
+                '北京市 + -------- + -------- = 北京市 \n'
+                +'-------- + 石家庄 + -------- = 石家庄 \n'
+                +'-------- + -------- + 裕华区 = 裕华区'
+            );
+        });
+        //区域选择三级联动
+        $("#selProvince").change(function () {
+            var state = $("#selProvince option:selected").val();
+            if(state == '--------'){
+                window.location.replace(window.location.href.split('managerList')[0]+'managerList');
+            }else {
+                $.ajax({
+                    type: 'post',
+                    url: '/index.php/Admin/Role/mchangeCity',
+                    data: {state: state},
+                    success: function (data) {
+                        if (data.status == 1) {
+                            var cities = data.citys;
+                            var iftown = data.iftown;
+                            var html = '<option value="--------">' + '--------' + '</option>';
+
+                            var len = cities.length;
+                            for (var i = 0; i < len; i++) {
+                                if(cities[i]['flag'] == 1){
+                                    html += "<option value=" + cities[i].areaname + ">" + cities[i].areaname + "</option>";
+                                }else{
+                                    html += "<option style='color:red' value=" + cities[i].areaname + ">" + cities[i].areaname + "</option>";
+                                }
+
+                            }
+                            $("#selCity").html(html);
+                            var obj = data.towns;
+                            var len1 = obj.length;
+                            var html1 = '<option value="--------">' + '--------' + '</option>>';
+                            for (var i = 0; i < len1; i++) {
+                                if(obj[i].flag == 1){
+                                    html1 += "<option value=" + obj[i].areaname + ">" + obj[i].areaname + "</option>";
+                                }else{
+                                    html1 += "<option style='color:red' value=" + obj[i].areaname + ">" + obj[i].areaname + "</option>";
+                                }
+
+                            }
+                            $("#selDistrict").html(html1);
+                        }else if(data.status == 0){
+                            alert('联动失败！');
+                        }
+                    },
+                    error: function () {
+                        alert('失败');
+                    }
+                })
+            }
+        });
+        $("#selCity").change(function () {
+            var state = $("#selCity option:selected").val();
+            console.log(state);
+            if(state == '--------'){
+
+            }else {
+                $.ajax({
+                    type: 'post',
+                    url: '/index.php/Admin/Role/mchangeTown',
+                    data: {city: state},
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.status == 1) {
+                            var obj = data.towns;
+                            var html = '';
+                            var len = obj.length;
+                            var html = '<option value="--------">' + '--------' + '</option>';
+                            for (var i = 0; i < len; i++) {
+                                if(obj[i].flag == 1){
+                                    html += "<option value=" + obj[i].areaname + ">" + obj[i].areaname + "</option>";
+                                }else{
+                                    html += "<option style='color:red' value=" + obj[i].areaname + ">" + obj[i].areaname + "</option>";
+                                }
+                            }
+                            $("#selDistrict").html(html);
+                        } else if (data.status == 0) {
+                            alert('该城市下没有区县');
+                        }
+                    },
+                    error: function () {
+                        alert('失败!');
+                    }
+                })
+            }
+        });
+    </script>
+</body>

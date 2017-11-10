@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>审核</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <!--<link rel="stylesheet" href="__PUBLIC__/admin/css/zoomify.min.css">-->
+    <link rel="stylesheet" href="__PUBLIC__/admin/touchTouch/touchTouch.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/audit.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <!--<script src="__PUBLIC__/admin/js/jquery.min.js"></script>-->
+    <!--<script src="__PUBLIC__/admin/js/zoomify.min.js"></script>-->
+</head>
+<body>
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>骑手管理 > 审核</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <img style="height: 100px;" src="/{$list.images}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                </form>
+            </div>
+            <div class="content_left_name">
+
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a  href="{:U('rider_identify')}?id={$list.id}">审核</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="{:U('health_identify')}?id={$list.id}">健康证认证</a>
+                </li>
+                <li>
+                    <a href="{:U('rider_work')}?id={$list.id}">任务管理</a>
+                </li>
+                <!--<li>
+                     <a href="userinfo.html">用户信息</a>
+                 </li>
+                 <li>
+                     <a href="order.html">订单</a>
+                 </li>
+                 <li>
+                     <a href="comment.html">评论</a>
+                 </li>
+                 <li>
+                     <a href="publishContent.html" style="border-bottom:none;">发布内容</a>
+                 </li> -->
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <table cellspacing="0" cellpadding="0" class="tableManage">
+                <tr class="title_table">
+                    <td>骑手id</td>
+                    <td>手机号</td>
+                    <td>昵称</td>
+                    <td>工作城市</td>
+                    <td width="150px;">操作</td>
+                </tr>
+                <tr>
+                    <td>{$list.id}</td>
+                    <td>{$list.phone}</td>
+                    <td>{$list.nickname}</td>
+                    <td>{$list.address}</td>
+                    <td><a href="" class="passed" >通过</a><a href="" class="refuse">拒绝</a></td>
+                </tr>
+            </table>
+            <div class="info">
+                <div class="info_title">
+                    <img src="__PUBLIC__/admin/images/icon_16.png" alt="">
+                    健康证认证图片
+                </div>
+                <div class="info_content">
+                    <ul class="cl" id="imgLists">
+                        <li><a href="/{$list.health}"><img src="/{$list.health}" alt="" ></a><p>健康证照片</p></li>
+                        <!--<li><a href="/{$list.id_obverse}"><img src="/{$list.id_obverse}" alt="" ></a><p>身份证背面照</p></li>-->
+                    </ul>
+                </div>
+            </div>
+            <!--&lt;!&ndash; 分页 &ndash;&gt;-->
+            <!--<div class="page"></div>-->
+        </div>
+    </div>
+</body>
+<script src="__PUBLIC__/admin/touchTouch/touchTouch.jquery.js"></script>
+<script>
+    $('#imgLists a').touchTouch();
+//    $(function() {
+//        $('.zoomify').zoomify();
+//    });
+    //通过
+    $(".passed").click(function(){
+        if(confirm("您确定通过审核?")) {
+            var tr = $(this).parents().parents();
+            var id = $.trim(tr.children("td").eq(0).text());
+            passed(id);
+        }
+    })
+
+    function passed(id){
+        var url="{:U('admin/rider/health_passed')}";
+        $.post(url,{"id":id},function (data){
+           switch(data){
+               case "1":
+                   alert('审核成功');
+                   break;
+               case "2":
+                   alert('重复审核');
+                   break;
+               case "3":
+                   alert('信息不全');
+                   break;
+               case "0":
+                   alert('审核失败');
+                   break;
+           }
+        })
+    }
+
+    //拒绝
+    $(".refuse").click(function() {
+        if(confirm("您确定拒绝?")) {
+            var tr = $(this).parents().parents();
+            var id = $.trim(tr.children("td").eq(0).text());
+            refuse(id);
+        }
+    });
+    function refuse(id){
+        var url="{:U('admin/rider/health_rejected')}";
+        $.post(url,{"id":id},function (data){
+            switch(data){
+                case "1":
+                    alert('拒绝成功');
+                    break;
+                case "2":
+                    alert('未认证,拒绝无效');
+                    break;
+                case "3":
+                    alert('信息不全,无法拒绝');
+                    break;
+                case "0":
+                    alert('拒绝失败');
+                    break;
+            }
+        })
+    }
+</script>
+</html>

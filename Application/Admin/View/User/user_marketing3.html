@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>骑手管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/senderManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <div class="rightmain">
+            <p class="title">当前位置<span>合作管理 > 营销合作</span></p>
+            <div style="background:none;float:right;padding:0;">
+                <select name="" id="" class="search_join">
+                    <option value="">全部</option>
+                    <option value="1">广告位报名</option>
+                    <option value="2">促销广告报名</option>
+                </select>
+                <input type="button" value="搜索" class="btn_search">
+            </div>
+            <div class="tabList">
+                <span>全部</span>
+                <span>已认证</span>
+                <span>待认证</span>
+                <span class="currentTab">认证失败</span>
+            </div>
+            <table cellspacing="0" cellpadding="0" class="tableManage">
+                <tr class="title_table">
+                    <td>ID</td>
+                    <td>报名店铺</td>
+                    <td>联系方式</td>
+                    <td>报名类型</td>
+                    <!--<td>操作</td>-->
+                </tr>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$lid + $i}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.style}</td>
+                        <!--<td><a class="alt" href="" class="all">同意</a><a href="" class="del">拒绝</a></td>-->
+                    </tr>
+                </volist>
+            </table>
+            <!-- 分页 -->
+            <div class="page">
+                {$pagelist}
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+//    //获取url中的参数
+//        (function ($) {
+//            $.getUrlParam = function (name) {
+//                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+//                var r = window.location.search.substr(1).match(reg);
+//                if (r != null) return unescape(r[2]); return null;
+//            }
+//        })(jQuery);
+
+//    function get(URL, PARAMS) {
+//        var temp = document.createElement("form");
+//        temp.action = URL;
+//        temp.method = "get";
+//        temp.style.display = "none";
+//        for (var x in PARAMS) {
+//            var opt = document.createElement("textarea");
+//            opt.name = x;
+//            opt.value = PARAMS[x];
+//            temp.appendChild(opt);
+//        }
+//        document.body.appendChild(temp);
+//        temp.submit();
+//        return temp;
+//    }
+    //点击
+$(".tabList").on("click","span", function () {
+    /*$(this).addClass("currentTab");
+     $(this).siblings("span").removeClass("currentTab");*/
+    var val = $(this).text();
+    switch(val){
+        case "已认证":
+            window.location.href = "{:U('admin/user/user_marketing1')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:1});
+            break;
+        case "待认证":
+            window.location.href = "{:U('admin/user/user_marketing2')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:2});
+            break;
+        case "认证失败":
+            window.location.href = "{:U('admin/user/user_marketing3')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:3});
+            break;
+        default:
+            window.location.href = "{:U('admin/user/user_marketing')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url);
+            break;
+    }
+});
+
+$('.btn_search').click(function(){
+    var val = $('.search_join').val();
+    if(val != "" && val != null) {
+        window.location.href = "{:U('admin/user/user_marketing3')}?style="+ val;
+    }else{
+        window.location.href = "{:U('admin/user/user_marketing3')}";
+    }
+})
+
+    //单个删除
+//    function delet(){
+//        $(".del").click(function(){
+//            if(confirm("您确定要删除吗?")){
+//                var tr=$(this).parent().parent();
+//                var id = $.trim(tr.children("td").eq(1).text());
+//                console.log(id);
+//                del(id);
+//                tr.remove();
+//            }
+//        })
+//    }
+//    delet();
+//    /*
+//     单个删除
+//     */
+//    function del(id) {
+//        var url="{:U('admin/user/user_delete')}";
+//        $.post(url,{"id":id},function (data){
+//            if(data=='1'){
+//                return true;
+//            }else {
+//                return false;
+//            }
+//        })
+//    }
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>代理结算</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerVerify.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>代理结算</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>管理员id</td>
+                        <td>管理员账号</td>
+                        <td>返佣百分比</td>
+                        <td>联系方式</td>
+                        <td>级别</td>
+                        <td>地域</td>
+                        <td>应结算金额</td>
+                        <td>注册时间</td>                   
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.aid}</td>
+                        <td>{$v.username}</td>
+                        <td>{$v.comper}</td>
+                        <td>{$v.mobile}</td>
+                        <td>{$v.class}</td>
+                        <td>{$v.area}</td>
+                        <td class="money">{$v.money}</td>
+                        <td>{$v.addtime}</td>
+                        <td><a style="width: 100px;" class="pass">通过</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".pass").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           var money = $(this).parents('tr').find('.money').text();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Root/passjiesuan')}",
+            data:{bid:bid,money:money},
+            success:function(data){
+                if(data.status == 1){
+                    alert('结算成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }else if(data.status == 2){
+                    alert("余额不足。");
+                }else if(data.status == 3){
+                    alert("管理员现有信息查询失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

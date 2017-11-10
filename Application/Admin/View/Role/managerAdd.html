@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerAdd.css"/>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>管理员管理 > <a href="/index.php/Admin/Role/managerList">管理员列表</a> > 添加管理员</span></p>
+                <form class="formUpdate" id="managermsg">
+                    <ul>        
+                        <li><div>管理员权限</div>
+                            <select name="managerkind" id="manageLevel">
+                                <if condition="$grade eq 1">
+                                    <option value="二级管理员" selected>二级管理员</option>
+                                    <option value="三级管理员">三级管理员</option>
+                                    <option value="四级管理员">四级管理员</option>
+                                    <elseif condition="$grade eq 2" />
+                                        <option value="三级管理员" selected>三级管理员</option>
+                                        <option value="四级管理员">四级管理员</option>
+                                    <elseif condition="$grade eq 3"/>
+                                        <option value="四级管理员" selected>四级管理员</option>
+                                </if>
+                            </select>
+                        </li>
+                        <li><div>返佣比例</div><input type="text" placeholder="例如：11.11：百分之11.11" name="userper" class="userper"></li>
+                        <li><div>账号</div><input type="text" placeholder="请输入账号" name="username" class="username"></li>
+                        <li><div>密码</div><input type="text" placeholder="请输入密码" name="password" class="pwd"></li>
+                        <li><div>确认密码</div><input type="text" placeholder="请输入确认密码" name="passwordAgain" class="pwdAgain"></li>
+                        <li><div>联系电话</div><input type="text" placeholder="请输入联系电话" name="mobile" class="mobile"></li>
+                        <li class="location">
+                            <div>区域</div>
+                                <select name="state" id="selProvince">
+                                    <volist name="states" id="msg">
+                                        <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                    </volist>
+                                </select>
+                            <select name="city" id="selCity">
+                                <volist name="citys" id="msg">
+                                    <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                </volist>
+                            </select>
+                            <select name="town" id="selDistrict">
+                                    <volist name="towns" id="msg">
+                                         <option value="{$msg.areaname}">{$msg.areaname}</option>
+                                    </volist>
+                            </select>
+                        </li>
+                        <!--<li><div>状态</div><input type="radio" name="radio" value="已禁" class="radios">已禁&nbsp;&nbsp;<input type="radio" name="radio" value="未禁" checked class="radios">未禁</li>-->
+                        <li><input type="button" value="确  定" class="submit"></li>
+                    </ul>
+                </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var hors = $("#manageLevel option:selected").text();
+            if(hors == "四级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").show();
+                $("#selDistrict").show();
+            }else if(hors=="三级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").show();
+                $("#selDistrict").hide();
+            }else{
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").hide();
+                $("#selDistrict").hide();
+            }
+        };
+        //三级联动
+        $("#manageLevel").change(function () {
+            var level=$(this).val();
+
+            if(level=="超级管理员"){
+                $(".location").hide();
+            }else if(level=="二级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").hide();
+                $("#selDistrict").hide();
+                $("#selDistrict2").hide();
+            }else if(level=="三级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").show();
+                $("#selDistrict").hide();
+                $("#selDistrict2").hide();
+            }else if(level=="四级管理员"){
+                $(".location").show();
+                $("#selProvince").show();
+                $("#selCity").show();
+                var di = $('#selDistrict option:selected').text();
+                if(di!= ''){
+                    $("#selDistrict").show();
+                }
+               // $("#selDistrict").show();
+                var di2 = $('#selDistrict2 option:selected').text();
+                if(di2 != 2){
+                    $("#selDistrict2").show();
+                }
+
+            }
+        });
+        $("#selProvince").change(function () {
+            var state = $("#selProvince option:selected").val();
+            if(state != '北京'&&state!='天津'&&state!='上海'&&state!='重庆'){
+                $(".managef").show();
+            }else{
+                $(".managef").hide();
+            }
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/Role/citysChange',
+                data:{state:state},
+                success:function (data) {
+                    //console.log(data);
+                    if(data.status==1){
+                        var cities=data.citys;
+                        var html='';
+                        var len=cities.length;
+                        for(var i=0;i<len;i++){
+                            html+="<option value="+cities[i].areaname+">"+cities[i].areaname+"</option>";
+                        }
+                        $("#selCity").html(html);
+                        var obj=data.towns;
+                        var len1=obj.length;
+                        if(len1>0){
+                            var html1='';
+                            for(var i=0;i<len1;i++){
+                                html1+="<option value="+obj[i].areaname+">"+obj[i].areaname+"</option>";
+                            }
+                            $("#selDistrict").html(html1);
+                            if($('#manageLevel option:selected').val() == '四级管理员'){
+                                $("#selDistrict").show();
+                            }
+                        }else if(len1==0){
+                            $("#selDistrict2").hide();
+                        }
+                    }
+                },
+                error:function () {
+                    alert('失败');
+                }
+            })
+        });
+        $("#selCity").change(function () {
+            var state = $("#selCity option:selected").val();
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/Role/townsChange',
+                data:{city:state},
+                success:function (data) {
+                    //console.log(data);
+                    if(data.status==1){
+                        var obj=data.towns;
+                        var html='';
+                        var len=obj.length;
+                        for(var i=0;i<len;i++){
+                            html+="<option value="+obj[i].areaname+">"+obj[i].areaname+"</option>";
+                        }
+                        $("#selDistrict").html(html);
+                        if($('#manageLevel option:selected').val() == '四级管理员'){
+                            $("#selDistrict").show();
+                        }
+                    }else if(data.status==0){
+                        $("#selDistrict").hide();
+                    }
+                },
+                error:function () {
+                    alert('失败');
+                }
+            })
+        });
+        $(".submit").on('click',function () {
+            var form = new FormData(document.getElementById("managermsg"));
+            var per = $('.userper').val();
+            var pwd = $('.pwd').val();
+            var pwdAgain = $('.pwdAgain').val();
+            var username = $('.username').val();
+            var mobile = $('.mobile').val();
+            if (!per) {
+                alert('返佣比例不能为空');
+            }else if(per>=100){
+                alert('返佣比例大于100，请重新填写');
+            } else {
+               var re = /^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$/;
+               var s = TestRgexp(re,per);
+                if(!s){
+                    alert('比例格式不对，例如百分之11.11，请输入：11.11');
+                }else{
+                if (!username) {
+                    alert('用户名不能为空！');
+                } else {
+                    if (!mobile) {
+                        alert('联系电话不能为空！');
+                    } else {
+                        if (!pwd) {
+                            alert('密码不能为空！');
+                        } else {
+                            if (!pwdAgain) {
+                                alert('确认密码不能为空！');
+                            } else {
+                                if (pwd == pwdAgain) {
+                                    $.ajax({
+                                        type: 'post',
+                                        url: '/index.php/Admin/Role/addManager',
+                                        data: form,
+                                        dataType: "json",
+                                        processData: false,
+                                        contentType: false,
+                                        success: function (data) {
+                                          //  alert(data.status);
+                                            if (data.status == 1) {
+                                                alert('添加成功！');
+                                                window.location.reload();
+                                            } else if (data.status == 2) {
+                                                alert('添加失败！！');
+                                            } else if(data.status == 3){
+                                                alert('账号名已被注册！');
+                                            }else if(data.status == 4){
+                                                alert('该区域已经有管理员，请选择其他区域！');
+                                            }else{
+                                                alert('添加失败！');
+                                            }
+                                        },
+                                        error: function () {
+                                            alert('该用户名已经被使用！');
+                                        }
+                                    })
+                                } else {
+                                    alert("两次密码输入不一致！")
+                                }
+                            }
+                        }
+                     }
+                    }
+                }
+            }
+        });
+        function TestRgexp(re, s){ // 参数说明 re 为正则表达式 s 为要判断的字符
+            return re.test(s)
+        }
+    </script>
+</body>
+</html>

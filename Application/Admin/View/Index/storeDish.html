@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeDish.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 菜单</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$shop.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$shop.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="__CONTROLLER__/shopdetail?shopid={$shop.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$shop.shopid}">订单</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/storeDish?shopid={$shop.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$shop.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$shop.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/zizhi?shopid={$shop.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <span>{$shop.canton}{$shop.city}{$shop.xian}{$shop.address}</span>
+                <img style='margin-left:19px; margin-bottom:0px;' src='__PUBLIC__/admin/images/12.png'/>
+                <span>{$shop.mobile}</span>
+                <span class="fr">
+<!--                    <a href="storeIntroBanner.html">推荐到轮播</a>
+                    <a href="storeIntroAd.html">推荐到广告位</a>-->
+                </span>
+            </div>
+            <ul class="content_right_two cl">
+                <li>
+                    <p>{$count}</p>
+                    <span>菜单数</span>
+                </li>
+                <li>
+                    <p>{$zong}</p>
+                    <span>菜品数</span>
+                </li>
+            </ul>
+            <div class="content_right_three">
+                <table cellspacing="0">
+                    <tr class="tb_title">
+                        <td>ID</td>
+                        <td>菜单名称</td>
+                        <td>菜品数量</td>
+                        <td>销量</td>
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.cid}</td>
+                        <td>{$v.cname}</td>
+                        <td>{$v.goodsnum}</td>
+                        <td>{$v.xiaoliang}</td>
+                        <td>
+                            <a class="view" href="__CONTROLLER__/goodslist?shopid={$shop.shopid}&cid={$v.cid}">查看</a>
+                            <a class="del">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                </table>
+                <div class="page">
+                    <tr>
+                                {$show}
+                            </tr>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //点击删除按钮，出现提示
+    $(".del").on("click",function(){
+        var a = confirm("确认要删除吗？");
+           if(a == true){
+            var cid = $(this).parents('tr').find('.id').text();
+        var cid = cid *1;
+             $.ajax({
+            type:"POST",
+            url:"{:U('Index/deletecategory')}",
+            data:{cid:cid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('删除成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }else if(data.status == 2){
+                    alert("该分类下还有商品，请先删除商品。");
+                }
+            }
+        });
+        }
+    });
+    
+</script>
+</body>
+</html>

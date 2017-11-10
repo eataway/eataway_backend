@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单分布地图</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+	<style>
+		#mapBox:after{
+			content: "";
+			display: block;
+			clear:both;
+		}
+		.right{
+			margin-left: 25%;
+			padding-top:10%;
+		}
+	</style>
+</head>
+<body>
+<include file="Public:left" />
+<div class="right">
+<!-- 代码部分begin -->
+	<div id="mapBox">
+		<div id="main" style="height:400px;width:500px;float: left"></div>
+		<div id="pie" style="width:400px;height: 400px;float:left;margin-left: 20px;"></div>
+	</div>
+	<script src="__PUBLIC__/admin/js/echarts.min.js"></script>
+	<script src="__PUBLIC__/admin/js/echarts.js"></script>
+	<script>
+		// 基于准备好的dom，初始化echarts实例,饼图
+		var myChart1 = echarts.init(document.getElementById('pie'));
+		// 路径配置
+		require.config({
+			paths: {
+				echarts: 'http://echarts.baidu.com/build/dist'
+			}
+		});
+		// 使用
+		require(['echarts','echarts/chart/map'],function (ch) {
+			// 基于准备好的dom，初始化echarts图表
+			var myChart = ch.init(document.getElementById('main'));
+			option = {
+				tooltip : {
+					trigger: 'item',
+					formatter: '{b}'
+				},
+				series : [{
+					name: '中国',
+					type: 'map',
+					mapType: 'china',
+					selectedMode : 'multiple',
+					itemStyle:{
+						normal:{label:{show:true}},
+						emphasis:{label:{show:true}}
+					},
+					data:[
+						/*{name:'河北',selected:true}*/
+					]
+				}]
+			};
+			// 为echarts对象加载数据
+			myChart.setOption(option);
+			//点击选择不同的省份
+			var ecConfig = require('echarts/config');
+			myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+				var selPro = param.target;//点击选择的省份
+				//发送ajax得到该省下的各市的具体的数据
+					$.ajax({
+						type:'post',
+						url:'/index.php/Admin/Platform/getCityOrder',
+						data:{canton:selPro},
+						datatype:'json',
+						success:function (data) {
+							if(data.status == 0){
+							    // 失败
+								alert('请检查您的省级单位的名称');
+							}else if(data.status == 1){
+							    // 成功
+								var cities = data.citys;
+                                // 指定图表的配置项和数据
+                                option1 = {
+                                    title : {
+                                        text: selPro+'总销量为：'+data.order_num,
+                                       // subtext: '具体销量统计:'+data.order_num,
+                                        x:'center'
+                                    },
+                                    tooltip : {
+                                        trigger: 'item',
+                                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                                    },
+                                    /*legend: {
+                                        orient: 'vertical',
+                                        left: 'left',
+                                        data: ['石家庄','保定','秦皇岛','邯郸','沧州']
+                                    },*/
+                                    series : [
+                                        {
+                                            name: '销量',
+                                            type: 'pie',
+                                            radius : '55%',
+                                            center: ['50%', '60%'],
+//                                            data:[
+//                                                {value:65, name:'石家庄'},
+//                                                {value:310, name:'保定'},
+//                                                {value:234, name:'秦皇岛'},
+//                                                {value:135, name:'邯郸'},
+//                                                {value:548, name:'沧州'}
+//                                            ],
+											data:data.citys,
+                                            itemStyle: {
+                                                emphasis: {
+                                                    shadowBlur: 10,
+                                                    shadowOffsetX: 0,
+                                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                }
+                                            }
+                                        }
+                                    ]
+                                };
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart1.setOption(option1);
+							}else{
+							    alert('其他失败');
+							}
+                        },
+						error:function () {
+							alert('查询失败');
+                        }
+					})
+
+//				// 指定图表的配置项和数据
+//				option1 = {
+//					title : {
+//						text: selPro+'总销量为',
+//						subtext: '具体销量统计',
+//						x:'center'
+//					},
+//					tooltip : {
+//						trigger: 'item',
+//						formatter: "{a} <br/>{b} : {c} ({d}%)"
+//					},
+//					/*legend: {
+//						orient: 'vertical',
+//						left: 'left',
+//						data: ['石家庄','保定','秦皇岛','邯郸','沧州']
+//					},*/
+//					series : [
+//						{
+//							name: '销量',
+//							type: 'pie',
+//							radius : '55%',
+//							center: ['50%', '60%'],
+//							data:[
+//								{value:335, name:'石家庄'},
+//								{value:310, name:'保定'},
+//								{value:234, name:'秦皇岛'},
+//								{value:135, name:'邯郸'},
+//								{value:548, name:'沧州'}
+//							],
+//							itemStyle: {
+//								emphasis: {
+//									shadowBlur: 10,
+//									shadowOffsetX: 0,
+//									shadowColor: 'rgba(0, 0, 0, 0.5)'
+//								}
+//							}
+//						}
+//					]
+//				};
+//				// 使用刚指定的配置项和数据显示图表。
+//				myChart1.setOption(option1);
+			});
+		});
+	</script>
+	<!-- 代码部分end -->
+</div>
+</body>
+</html>

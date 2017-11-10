@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+</head>
+<!--引入左侧内容-->
+<include file="Public:left" />
+<div class="right">
+    <div class="rightmain">
+        <p class="title">当前位置<span>用户管理</span></p>
+        <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>用户ID</td>
+                        <td>头像</td>
+                        <td>用户名</td>
+                        <td>手机号</td>
+                        <td>用户禁言</td>                        
+                        <td>操作</td>
+                    </tr>
+            <if condition="!$usermsgs">
+                <tr>
+                    <td class="暂无">暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td class="gag"><a>暂无</a></td>
+                    <td><a >修改</a><a>删除</a></td>
+                </tr>
+                <else/>
+                <volist name="usermsgs" id="user">
+                    <tr>
+                        <td class="userid">{$user.userid}</td>
+                        <td><img src="{$user.userhead}" alt="" width="40px" height="40px" style="padding-top: 15px;"></td>
+                        <td>{$user.username}</td>
+                        <td>{$user.mobile}</td>
+                        <if condition="$user.poststatus eq 1">
+                            <td class="gag"><a>未禁</a></td>
+                            <else />
+                            <td class="gag active"><a>已禁</a></td>
+                        </if>
+
+                        <td><a class="edit">修改</a><a class="deleTe">删除</a></td>
+                    </tr>
+                </volist>
+            </if>
+
+                </table>
+                <!-- 分页 -->
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var userid = $('.userid').text();
+            if(userid === ''){
+                var num = ( window.location.href.split('/p/')[1].split('.html'))[0]-1;
+               // alert(window.location.href.split('/p/')[0]+'/'+num+'.html');
+                window.location.replace(window.location.href.split('/p/')[0]+'/'+num+'.html');
+            }
+        }
+//        $('.left .one_level p').click(function () {
+//            $('.left .one_level p').attr('class','');
+//            $(this).attr('class','currentMenu');
+//        })
+        $('.gag').on("click",function () {
+           var status =  $(this).find("a").text();
+           var userid = $(this).parent().children('.userid').text();
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/UserManage/changepostStatus',
+                data:{status:status,userid:userid},
+                dataType:'json',
+                success:function(data){
+                    if(data.status == 1){
+                        alert('修改成功！');
+                    }else if(data.status == 2 ){
+                        alert('修改失败！')
+                    }else{
+                        alert('修改失败！！');
+                    }
+                    window.location.reload();
+                },
+                error:function(){
+                    alert('修改失败！！！');
+                }
+            })
+        })
+        $('.deleTe').on('click',function () {
+            if((confirm('确定删除?'))){
+                var userid = $(this).parent().parent().children('.userid').text();
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/UserManage/deleteUser',
+                    data:{userid:userid},
+                    datatype:'post',
+                    success:function(data){
+                        if(data.status == 1){
+                            alert('删除成功！');
+                            window.location.reload();
+                        }else if(data.status == 2 ){
+                            alert('删除失败！');
+                        }else{
+                            alert('删除失败！！');
+                        }
+                    },
+                    error:function(){
+                        alert('删除失败！！！');
+                    }
+                })
+            }
+        })
+        $('.edit').on('click',function () {
+            var yuming = window.location.href.split('index.php')[0];
+            var userid = $(this).parent().parent().children('.userid').text();
+            window.location.replace(yuming+'index.php/Admin/UserManage/ebiDetail?userid='+userid);
+        })
+    </script>
+</body>
+</html>

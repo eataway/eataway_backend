@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>提现审核</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerVerify.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>提现管理 > 用户提现</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>提现id</td>
+                        <td>用户名称</td>
+                        <td>账户名</td>
+                        <td>账号</td>
+                        <td>提现金额（¥）</td>                   
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.tid}</td>
+                        <td>{$v.username}</td>
+                        <td>{$v.uname}</td>
+                        <td>{$v.ucard}</td>
+                        <td>{$v.emoney}</td>
+                        <td><a class="pass">通过</a><a  class="delete">拒绝</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".pass").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/passgetmoney')}",
+            data:{bid:bid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('通过提现成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+        $(".delete").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/jujuetixian')}",
+            data:{bid:bid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('拒绝成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

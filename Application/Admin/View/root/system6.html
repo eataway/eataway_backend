@@ -1,0 +1,620 @@
+ <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>澳洲外卖</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/css.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/right.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/jquery-1.9.1.js"></script>
+    <style>
+        .right_one{
+            width:98%;
+            margin:0px auto;
+            border-bottom: 1px solid #ccc;
+            border-top:1px solid #ccc;
+        }
+        .cl:after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+        ul{
+            list-style: none;
+        }
+        .right_one li{
+            width:50%;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            margin: 1em 0 1.5em;
+        }
+        .right_one li div{
+            font-size: 4em;
+        }
+        .right_one li p{
+            font-size: 1em;
+            margin-top:0.5em;
+        }
+        .right_one li p img{
+            width: 1.2em;
+            height: 1.2em;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        .right_two{
+            width:98%;
+            margin:0 auto;
+        }
+        .right_two div{
+            padding-left: 35px;
+            margin-top: 22px;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: -9px;
+            border-left:8px solid #ccc;
+        }
+        .top_btn{
+            padding:16px 10px;
+            text-align: right;
+        }
+        .top_btn a{
+            background: #3F51B5;
+            padding:6px 40px;
+            border-radius: 5px;
+            font-size: 15px;
+            color:#fff;
+            text-decoration: none;
+        }
+        .operate{
+            text-align: center;
+        }
+        .btn_disabled{
+            padding: 5px 25px;
+            background: #E51C23;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 5PX;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .btn_disabled_all{
+            padding: 9px 40px;
+            background: #E51C23;
+            color: #fff;
+            border-radius: 5PX;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+       .btn_abled{
+           padding: 5px 25px;
+           background: #259B24;
+           color: #fff;
+           outline: none;
+           border: none;
+           border-radius: 5PX;
+           margin-right: 20px;
+           cursor: pointer;
+       }
+        .btn_edit{
+            width:25px;
+            height:25px;
+            vertical-align: middle;
+            margin-top: -4px;
+            cursor: pointer;
+        }
+        .page{
+            width:100%;
+            background: #E8E8E8;
+        }
+        .page ul{
+            padding-left:40px;
+        }
+        .page li{
+            float: left;
+            padding:20px 20px;
+        }
+        .page li:last-child{
+            float: right;
+        }
+        /*遮罩层*/
+        .shadow,
+        .shadow_box {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .shadow {
+            z-index: 50;
+            background: #000;
+            opacity: 0.6;
+        }
+        .shadow_content {
+            box-sizing: border-box;
+            position: absolute;
+            z-index: 52;
+            top: 50%;
+            left: 50%;
+            margin-top: -160px;
+            margin-left: -135px;
+            width: 350px;
+            height: 270px;
+            border-radius: 5px;
+            background: #fff;
+            padding: 40px 30px;
+            font-size: 16px;
+        }
+        #edit1{
+            display: none;
+        }
+        .shadow_content > p {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #edit1 ul{
+            width: 100%;
+        }
+        #edit1 input[type="text"]{
+            width: 100%;
+            height: 3em;
+        }
+        .form_btn{
+            padding: 10px 48px;
+            background: #3F51B5;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 5PX;
+            margin-right: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        span.form_btn{
+            float: left;
+        }
+        input.form_btn{
+            margin-right: 0px;
+            float: right;
+        }
+        #edit1 li:last-child{
+            margin-top: 40px;
+        }
+        
+        .page a,span{
+            float:left;
+        }
+        .page span.rows{
+            margin-top: 7px;
+        }
+        .btn_disabled_all{
+            position:absolute;
+            top:13px;
+            right:0px;
+        }
+        .page{
+            box-sizing: border-box;
+        }
+        .page1{
+            position:relative;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+    <div class="right">
+        <div class="right1">
+            <div class="dao">
+                <ul>
+                    <li>系统</li>
+                    <li>></li>
+                    <li>优惠码</li>
+                </ul>
+            </div>
+            <div class="dao1">
+                <div class="dao2">
+                    <div class="pian">
+                        <img src="__PUBLIC__/admin/img/icon_01.png" alt="">
+                    </div>
+                    <div class="pian1">
+                            <p>
+                                {$session}
+                            </p>
+                            <p>
+                                ﹀
+                            </p>
+                        </div>
+                </div>
+                <div class="dao3">
+                    <p>
+                        切换账号
+                    </p>
+                    <p>
+                        退出
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="right_one">
+            <ul class="cl">
+                <li>
+                    <div>{$count}</div>
+                    <p>优惠码</p>
+                </li>
+                <li>
+                    <div>{$shangxian}</div>
+                    <p>优惠码个人使用上限 <img class="youhui_edit" src="__PUBLIC__/admin/img/icon_modify.png" alt=""/></p>
+                </li>
+            </ul>
+        </div>
+        <div class="right_two">
+            <div>优惠码</div>
+        </div>
+        <div class="right3">
+            <div class="biao">
+                <div class="top">
+                    <div class="top_btn">
+                        <a href="__CONTROLLER__/addyouhui.html">新增优惠码</a>
+                    </div>
+                </div>
+                <div class="cen">
+                    <table>
+                        <tr class="ee">
+                            <td>
+                                <div class="cen2">
+                                    ID
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    优惠码
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    添加日期
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    优惠
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    使用次数
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    优惠类型
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    状态
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen2">
+                                    操作
+                                </div>
+                            </td>
+                        </tr>
+                        <foreach name="result" key="k" item="v">
+                            <if condition="$k%2 == 0">
+                        <tr class="ee1">
+                            <td>
+                                <div class="cen2 id">
+                                    {$v.yid}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                   {$v.codema}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    {$v.addtime}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.state eq 1">
+                                        {$v.money}% off
+                                        <elseif condition ="$v.state eq 2"/>
+                                        ${$v.money}
+                                    </if>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    {$v.num}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.state eq 1">
+                                        百分比
+                                        <elseif condition ="$v.state eq 2"/>
+                                       折扣金额
+                                    </if>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.flag eq 1">
+                                        启用状态
+                                        <elseif condition ="$v.flag eq 2"/>
+                                       停用状态
+                                    </if>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="operate">
+                                    <if condition ="$v.flag eq 2">
+                                        <input type="button" value="启用"  class="btn_abled tingyong">
+                                    <img class="btn_edit edits" src="__PUBLIC__/admin/img/icon_modify_white.png" alt=""/>
+                                        <elseif condition ="$v.flag eq 1"/>
+                                       <input type="button" value="停用" class="btn_disabled qiyong">
+                                    <img class="btn_edit edits" src="__PUBLIC__/admin/img/icon_modify_white.png" alt=""/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                            <else/>
+                        <tr class="ee">
+                            <td>
+                                <div class="cen2 id">
+                                    {$v.yid}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                   {$v.codema}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    {$v.addtime}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.state eq 1">
+                                        {$v.money}% off
+                                        <elseif condition ="$v.state eq 2"/>
+                                        ${$v.money}
+                                    </if>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    {$v.num}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.state eq 1">
+                                        百分比
+                                        <elseif condition ="$v.state eq 2"/>
+                                       折扣金额
+                                    </if>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cen5">
+                                    <if condition ="$v.flag eq 1">
+                                        启用状态
+                                        <elseif condition ="$v.flag eq 2"/>
+                                       停用状态
+                                    </if>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="operate">
+                                    <if condition ="$v.flag eq 2">
+                                        <input type="button" value="启用"  class="btn_abled tingyong">
+                                    <img class="btn_edit edits" src="__PUBLIC__/admin/img/icon_modify_white.png" alt=""/>
+                                        <elseif condition ="$v.flag eq 1"/>
+                                       <input type="button" value="停用" class="btn_disabled qiyong">
+                                    <img class="btn_edit edits" src="__PUBLIC__/admin/img/icon_modify_white.png" alt=""/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                         </if>
+                        </foreach>
+                    </table>
+                    <div class="page1">
+                    {$show}<span class="btn_disabled_all alltingyong">全部停用</span>
+                </div>
+                </div>
+<!--                <div class="page">
+                    <ul class="cl">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li><span>下一页</span></li>
+                        <li>共<span>13</span>条数据</li>
+                        <li>第<span>1</span>页/共<span>2</span>页</li>
+                        <li><span class="btn_disabled_all">全部停用</span></li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- 弹框 -->
+    <div class="shadow_box">
+        <div class="shadow"></div>
+        <div id="edit1" class="shadow_content">
+            <p>修改平台优惠码个人使用上限</p>
+            <form>
+                <ul>
+                    <li><input type="text" class="shangxian" placeholder="输入0时代表个人可使用无限次"/></li>
+                    <li class="cl"><span class="cancel form_btn">取消</span><input class="form_btn baocun" type="submit" value="保存"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(".youhui_edit").on("click",function(){
+        $(".shadow_box").show();
+        $(".shadow").show();
+        $("#edit1").show();
+        $("#edit1 input[type='text']").val("");
+    });
+    $(".cancel").on("click",function(){
+        $(".shadow_box").hide();
+        $(".shadow").hide();
+        $(".shadow_content").hide();
+    })
+</script>
+<script>
+    $(".right").height($(window).height());
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l1").click(function(){
+            $("#pen").slideToggle("slow");
+            $(".span").toggle(500);
+            $("#l1").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l2").click(function(){
+            $("#pen1").slideToggle("slow");
+            $(".span1").toggle(500);
+            $("#l2").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l3").click(function(){
+            $("#pen2").slideToggle("slow");
+            $(".span2").toggle(500);
+            $("#l3").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l4").click(function(){
+            $("#pen3").slideToggle("slow");
+            $(".span3").toggle(500);
+            $("#l4").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".dao2").click(function(){
+            $(".dao3").slideToggle("slow");
+        })
+    });
+</script>
+<script>
+    $(".ee").css({ background: "#4D4D4D" });
+    $(".ee1").css({ background: "#9C9C9C" });
+    $(".ee2").css({ background: "#242424" });
+</script>
+<script>
+    $(function(){
+        $(".qiyong").click(function(){
+            var yid = $(this).parents('tr').find('.id').text();
+            $.ajax({
+                type:"POST",
+                url:"{:U('Root/jinyong')}",
+                data:{yid:yid},
+                dataType:"json",
+                success:function(data){
+                    if(data.status == 1){
+                        alert("停用成功。");
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert("失败。");
+                    }
+                }
+            })
+        })
+        $(".tingyong").click(function(){
+            var yid = $(this).parents('tr').find('.id').text();
+            $.ajax({
+                type:"POST",
+                url:"{:U('Root/qiyong')}",
+                data:{yid:yid},
+                dataType:"json",
+                success:function(data){
+                    if(data.status == 1){
+                        alert("启用成功。");
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert("失败。");
+                    }
+                }
+            })
+        })
+        $(".alltingyong").click(function(){
+            $.ajax({
+                type:"POST",
+                url:"{:U('Root/alltingyong')}",
+                data:{},
+                dataType:"json",
+                success:function(data){
+                    if(data.status == 1){
+                        alert("全部停用成功。");
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert("已经全部停用。");
+                    }else if(data.status == 3){
+                        alert("失败。");
+                    }
+                }
+            })
+        })
+        $(".baocun").click(function(){
+            var shangxian = $(".shangxian").val();
+            if(shangxian == 0){
+                alert("不能为空。");
+            }else{
+                $.ajax({
+                type:"POST",
+                url:"{:U('Root/editshangxian')}",
+                data:{shangxian:shangxian},
+                dataType:"json",
+                success:function(data){
+                    if(data.status == 1){
+                        alert("修改成功。");
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert("失败。");
+                    }
+                }
+            })
+            }
+            
+        })
+         $(".edits").click(function(){
+             var yid = $(this).parents('tr').find('.id').text();
+           window.location.href="__CONTROLLER__/edityouhui?yid="+yid;
+        })
+    })
+
+
+</script>
+</html>

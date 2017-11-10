@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeInforUpdate.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 店铺信息</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$result.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$result.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/shopdetail?shopid={$result.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$result.shopid}">订单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeDish?shopid={$result.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$result.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$result.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/zizhi?shopid={$result.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <span>{$result.canton}{$result.city}{$result.xian}{$result.address}</span>
+                <img style='margin-left:19px; margin-bottom:0px;' src='__PUBLIC__/admin/images/12.png'/>
+                <span>{$result.mobile}</span>
+                <span class="fr">
+                    <if condition="$result.tuijian eq 2">
+                    <a href="__CONTROLLER__/banner?shopid={$result.shopid}">推荐到轮播</a>
+                    <elseif condition="$result.tuijian eq 1"/>
+                    <a class="lun">撤回轮播</a>
+                    </if>
+                    <if condition="$result.ad_status eq 0">
+                    <a href="__CONTROLLER__/guanggao?shopid={$result.shopid}">推荐到广告位</a>
+                    <elseif condition="$result.ad_status eq 1"/>
+                    <a class="guang">撤回广告位</a>
+                    </if>
+                </span>
+                <input type="hidden" name="shopid" value="{$result.shopid}"/>
+            </div>
+            <ul class="content_right_two cl">
+                <li>
+                    <p>{$orders}</p>
+                    <span>已完成订单数</span>
+                </li>
+                <li>
+                    <p>￥<span>{$weixin}</span></p>
+                    <span>微信成交额</span>
+                </li>
+                <li>
+                    <p>￥<span>{$bao}</span></p>
+                    <span>支付宝成交额</span>
+                </li>
+                <li>
+                    <p>￥<span>{$yin}</span></p>
+                    <span>银联成交额</span>
+                </li>
+                <li>
+                    <p>￥<span>{$zong}</span></p>
+                    <span>总成交额</span>
+                </li>
+            </ul>
+            <div class="content_right_three">
+                <span>店铺主图</span>
+            </div>
+            <div class="content_right_four">
+                <ul class="cl">
+                    <foreach name="shopimg" key="k" item="v">
+                    <li>
+                        <span><img src="/{$v.img}" alt="图片错误"/></span>
+                    </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 删除提示 遮罩层-->
+    <div id="tip" hidden>
+        <div class="del_tip_shade"></div>
+        <div class="tip_box">
+            <div class="tip_content">
+                <p>删除订单</p>
+                <div>确定要删除此订单？</div>
+                <ul>
+                    <li class="cancel"><span>取消</span></li>
+                    <li class="ok"><span>确定</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+    //撤回轮播
+    $(".lun").on("click",function(){
+        var shopid = $("input[type = 'hidden']").val();
+        $.ajax({
+            type:"POST",
+            url:"{:U('Index/chelun')}",
+            data:{shopid:shopid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('撤回成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("撤回失败。");
+                }
+            }
+        });
+    });
+    //撤回广告
+    $(".guang").on("click",function(){
+        var shopid = $("input[type = 'hidden']").val();
+        $.ajax({
+            type:"POST",
+            url:"{:U('Index/cheguang')}",
+            data:{shopid:shopid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('撤回成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("撤回失败。");
+                }
+            }
+        });
+    });
+    //点击提示框的取消
+    $(".cancel").on("click", function () {
+        $("#tip").hide();
+    });
+    //点击提示框的确定
+    $(".ok").on("click", function () {
+        $("#tip").hide();
+    });
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <style>
+        .tableManage td a.dele {
+            display: block;
+            float: left;
+            text-align: center;
+            color: #fff;
+            border-radius: 6px;
+            height: 2em;
+            line-height: 2em;
+            margin-left:9%;
+            width:80%;
+        }
+    </style>
+</head>
+<!--引入左侧内容-->
+<include file="Public:left" />
+<div class="right">
+    <div class="rightmain">
+        <p class="title">当前位置<span>平台管理 > 广告位控制-店铺 </span></p>
+        <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>店铺ID</td>
+                        <td>首页轮播图</td>
+                        <td>地区</td>
+                        <td>轮播结束时间</td>
+                        <td>操作</td>
+                    </tr>
+            <if condition="!$msg">
+                <tr>
+                    <td class="暂无">暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td><a>暂无</a></td>
+                </tr>
+                <else/>
+                <volist name="msg" id="detail">
+                    <tr>
+                        <td class="shopid">{$detail.shopid}</td>
+                        <td><img src="{$detail.image}" alt="" width="40px" height="40px" style="padding-top: 15px;"></td>
+                        <td>{$detail.canton}{$detail.city}{$detail.xian}</td>
+                        <td>{$detail.ad_dietime}</td>
+                        <td><a class="dele">取消轮播</a></td>
+                    </tr>
+                </volist>
+            </if>
+
+                </table>
+                <!-- 分页 -->
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.dele').on('click',function () {
+                var shopid = $(this).parent().parent().children('.shopid').text();//alert(shopid);
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/Platform/delelteAdRecommend',
+                    data:{shopid:shopid},
+                    success:function (data) {
+                        if(data.status == 1){
+                            alert('修改成功！');
+                            window.location.reload();
+                        }else{
+                            alert('修改失败！')
+                        }
+                    },
+                    error:function () {
+                        alert('修改失败！！');
+                    }
+                })
+        })
+    </script>
+</body>
+</html>

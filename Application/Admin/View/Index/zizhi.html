@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeIdentify.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 资质认证</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$shop.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$result.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="__CONTROLLER__/shopdetail?shopid={$shop.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$shop.shopid}">订单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeDish?shopid={$shop.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$shop.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$shop.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/zizhi?shopid={$shop.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <table cellspacing="0">
+                    <tr class="tb_title">
+                        <td>法人身份证号</td>
+                        <td>负责人姓名</td>
+                        <td>营业执照名称</td>
+                        <td>营业执照注册号</td>
+                        <td>营业执照有效期</td>
+                        <td>营业执照类型</td>
+                    </tr>
+                    <tr>
+                        <td>{$shopdata.idcard}</td>
+                        <td>{$shopdata.namecard}</td>
+                        <td>{$shopdata.bsnsname}</td>
+                        <td>{$shopdata.bsnsnumber}</td>
+                    <if condition="$shopdata.bsnslongtime eq 1">
+                        <td>长期有效</td>
+                        <elseif condition="$shopdata.bsnslongtime eq 2"/>
+                        <td>{$shopdata.bsnstime}</td>
+                    </if>
+                    <if condition="$shopdata.category eq 1">
+                            <td>个人</td>
+                     <elseif condition="$shopdata.category eq 2"/>
+                     <td>企业</td>
+                    </if>
+                    </tr>
+                </table>
+            </div>
+            <div class="content_right_two">
+                <p><span>资质认证图片</span></p>
+                <ul>
+                    <li>
+                        <span><img src="/{$shopdata.shouchicard}" alt="暂无图片"/></span>
+                        <p>手持身份照片</p>
+                    </li>
+                    <li>
+                        <span><img src="/{$shopdata.imgcard}" alt="暂无图片"/></span>
+                        <p>身份证正面照片</p>
+                    </li>
+                    <li>
+                        <span><img src="/{$shopdata.imgcardh}" alt="暂无图片"/></span>
+                        <p>身份证背面照片</p>
+                    </li>
+                    <li>
+                        <span><img src="/{$shopdata.bsnscard}" alt="暂无图片"/></span>
+                        <p>营业执照照片</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

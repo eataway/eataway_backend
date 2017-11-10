@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <style>
+        .tableManage td a{
+            width:75%;
+        }
+    </style>
+</head>
+<!--引入左侧内容-->
+<include file="Public:left" />
+<div class="right">
+    <div class="rightmain">
+        <p class="title">当前位置<span>平台管理 > 商铺分类管理 > 二级分类管理</span><span><a href="{:U('Platform/StoreKind')}">返回一级分类</a></span><span><a href="/index.php/Admin/Platform/add_storeKind?storekindid={$fathermsg}">添加分类</a></span></p>
+        <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>店铺分类ID</td>
+                        <td>二级分类名称</td>
+                        <td>修改时间</td>
+                        <td>操作</td>
+                    </tr>
+            <if condition="!$msg">
+                <tr>
+                    <td class="暂无">暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td><a>暂无</a></td>
+                </tr>
+                <else/>
+                <volist name="msg" id="detail">
+                    <tr>
+                        <td class="storekindid">{$detail.id}</td>
+                        <td>{$detail.name}</td>
+                        <td>{$detail.date}</td>
+                        <td><a class="edit">修改</a></td>
+                    </tr>
+                </volist>
+            </if>
+
+                </table>
+                <!-- 分页 -->
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.edit').on('click',function () {
+            var skid = $(this).parent().parent().children('.storekindid').text();
+//            window.location.replace(window.location.href.split('storeKind_kind')[0]+'kindUpdate?shopkindid='+skid);
+            window.location.href="{:U('Platform/storeKind_Update')}?storekindid="+skid;
+        })
+    </script>
+</body>
+</html>

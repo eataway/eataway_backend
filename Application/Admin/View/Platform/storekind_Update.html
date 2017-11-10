@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerUpdate.css"/>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <volist name="msg" id="detail">
+                <if condition="$detail.fatherid eq 0">
+                    <p class="title">当前位置<span>平台管理 > <a href="{:U('Platform/storeKind')}">一级分类</a> > 修改</span></p>
+                    <else/>
+                        <p class="title">当前位置<span>平台管理 > <a href="{:U('Platform/storeKind_second')}?storekindid={$storekindid}">二级分类</a> > 修改</span></p>
+                </if>
+                </volist>
+                <form action="" method="" name="" class="formUpdate" id="kindmsg">
+                    <volist name="msg" id="detail">
+                    <ul>
+                        <li><div>商铺分类ID</div><input type="text" value="{$detail.id}" readonly class="shopkindid" name="storekindid"></li>
+                        <li><div>分类名称</div>
+                            <input type="text" placeholder="{$detail.name}" class="kindname" name="kindname">
+                        </li>
+                        <if condition="$detail.father_id eq 0">
+                            <!--<li class="pic"><div>分类图片</div>-->
+                                <!--<img id="showImg" src="{$detail.image}" alt="">-->
+                                <!--<div id="Imgshadow">点击切换图片</div>-->
+                                <!--<input type="file" name="image" id="changeImg">-->
+                            <!--</li>-->
+                            <li><div>所属分类：</div><input type="text" placeholder="一级分类" class="password" readonly></li>
+                            <else/>
+                            <li><div>所属分类：</div><input type="text" placeholder="二级分类" class="password" readonly></li>
+                            <if condition="$fathername neq ''">
+                            <li><div>所属父类名称：</div><input type="text" placeholder="{$fathername}" class="password" readonly></li>
+                            </if>
+                        </if>
+                        <li><input type="button" value="确  定" class="submit"></li>
+                    </ul>
+                    </volist>
+                </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+//        function getObjectURL(file) {
+//            var url = null;
+//            if(window.createObjectURL != undefined) { // basic
+//                url = window.createObjectURL(file);
+//            } else if(window.URL != undefined) { // mozilla(firefox)
+//                url = window.URL.createObjectURL(file);
+//            } else if(window.webkitURL != undefined) { // webkit or chrome
+//                url = window.webkitURL.createObjectURL(file);
+//            }
+//            return url;
+//        }
+//        $("#changeImg").change(function() {
+//            $("#showImg").show();
+//            var objUrl = getObjectURL(this.files[0]);
+//            if(objUrl) {
+//                $("#showImg").attr("src", objUrl);
+//                var picurl = $("#showImg")[0];
+//            }
+//        });
+        $('.submit').on('click',function () {
+           var skid = $('.shopkindid').val();
+           var form = new FormData(document.getElementById('kindmsg'));
+           $.ajax({
+               type:'post',
+               url:"{:U('Platform/save_storeKind')}",
+               data:form,
+               dataType:"json",
+               processData:false,
+               contentType:false,
+               success:function(data){
+                   if(data.status == 1){
+                       alert('修改成功！');
+                       window.self.location=document.referrer;
+//                       window.location.reload();
+                   }else if(data.status == 2){
+                       alert('修改失败！');
+                   }else if(data.status == 3){
+                       alert('没有修改！！');
+                   }else{
+                       alert('修改失败！！');
+                   }
+
+               },
+               error:function(data) {
+                   // body...
+                   alert("修改失败！");
+               }
+           })
+        })
+    </script>
+</body>
+</html>

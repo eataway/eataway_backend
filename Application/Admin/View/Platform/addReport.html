@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerUpdate.css"/>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <volist name="msg" id="detail">
+                <if condition="$detail.belong eq 0">
+                    <p class="title">当前位置<span>平台管理 > <a href="/index.php/Admin/Platform/firstReport">用户举报分类管理</a> > 添加一级分类</span></p>
+                    <else/>
+                        <p class="title">当前位置<span>平台管理 > 用户举报类型管理 ><a href="/index.php/Admin/Platform/secondReport?reportid={$fatherid}">{$fathername}</a></span></p>
+                </if>
+                </volist>
+                <form action="" method="" name="" class="formUpdate" id="reportmsg">
+                    <volist name="msg" id="detail">
+                    <ul>
+                        <li><div>分类名称</div>
+                            <input type="text" placeholder="请填写一级分类" class="kindname" name="name">
+                        </li>
+                        <if condition="$detail.name eq ''">
+                            <li><div>所属分类：</div><input type="text" placeholder="一级分类" class="password" readonly></li>
+                            <else/>
+                            <li><div>所属分类：</div><input type="text" placeholder="二级分类" class="password" readonly></li>
+                        </if>
+                            <if condition="$detail.name neq ''">
+                            <li><div>所属父类名称：</div>
+                                <input type="text" placeholder="{$detail.name}" class="password" readonly>
+                                <input type="hidden" value="{$detail.reportid}" class="belong" name="belong">
+                            </li>
+                            </if>
+                        <li><input type="button" value="确  定" class="submit"></li>
+                    </ul>
+                    </volist>
+                </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.submit').on('click',function () {
+           var name =  $('.kindname').val();
+           var belong = $('.belong').val();
+//           alert(name);alert(belong);
+           if(name) {
+               $.ajax({
+                   type: 'post',
+                   url: '/index.php/Admin/Platform/addReport',
+                   data: {name:name,belong:belong},
+                   success: function (data) {
+                      // alert(data.status);
+                       if (data.status == 1) {
+                           alert('添加成功！');
+                           window.location.reload();
+                       } else if (data.status == 2) {
+                           alert('添加失败！');
+                       } else {
+                           alert('添加失败！！');
+                       }
+
+                   },
+                   error: function (data) {
+                       // body...
+                       alert("修改失败！！！");
+                   }
+               })
+           }else{
+               alert('分类名称不能为空！');
+           }
+        })
+    </script>
+</body>
+</html>

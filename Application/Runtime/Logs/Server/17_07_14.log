@@ -1,0 +1,123 @@
+[ 2017-07-14T10:28:42+08:00 ] 110.249.130.170 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003342s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0628s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' LIMIT 1   [ RunTime:0.0492s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('15230868185','123','1','2017-07-14 10:28:42') [ RunTime:0.0560s ]
+
+[ 2017-07-14T10:32:39+08:00 ] 110.249.130.170 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0028s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-07-14T10:34:29+08:00 ] 110.249.130.170 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0037s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-07-14T10:38:05+08:00 ] 110.249.130.170 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0036s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-07-14T10:40:33+08:00 ] 110.249.130.170 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_shop` [ RunTime:0.0045s ]
+SQL: SELECT `shopid` FROM `et_shop` WHERE `phone` = '15230868185' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `et_shop` (`phone`,`password`,`flag`,`addtime`) VALUES ('15230868185','123','1','2017-07-14 10:40:33') [ RunTime:0.0313s ]
+
+[ 2017-07-14T11:07:28+08:00 ] 110.249.130.170 /index.php/server/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0031s ]
+ERR: 1054:Unknown column 'shopid' in 'field list'
+ [ SQL语句 ] : SELECT `shopid` FROM `et_user` WHERE `password` = '' LIMIT 1  
+ERR: 1054:Unknown column 'shopid' in 'field list'
+ [ SQL语句 ] : SELECT `shopid` FROM `et_user` WHERE `password` = '' LIMIT 1  
+
+[ 2017-07-14T13:28:54+08:00 ] 113.108.21.80 /index.php/server/user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2017-07-14T17:57:12+08:00 ] 113.108.12.154 /index.php/server/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-07-14T17:57:12+08:00 ] 101.226.33.221 /index.php/server/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-07-14T17:57:15+08:00 ] 183.3.239.157 /index.php/server/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Index
+
+[ 2017-07-14T17:57:21+08:00 ] 101.226.33.208 /index.php/server
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wm\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Index
+

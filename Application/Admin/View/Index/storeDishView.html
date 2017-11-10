@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeDish.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 菜单</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$shop.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$shop.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="__CONTROLLER__/shopdetail?shopid={$shop.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$shop.shopid}">订单</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/storeDish?shopid={$shop.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$shop.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$shop.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/zizhi?shopid={$shop.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <span>{$shop.canton}{$shop.city}{$shop.xian}{$shop.address}</span>
+                <img style='margin-left:19px; margin-bottom:0px;' src='__PUBLIC__/admin/images/12.png'/>
+                <span>{$shop.mobile}</span>
+                
+                <span class="fr">
+<!--                    <a href="storeIntroBanner.html">推荐到轮播</a>
+                    <a href="storeIntroAd.html">推荐到广告位</a>-->
+                </span>
+            </div>
+            <ul class="content_right_two cl">
+                <li>
+                    <p>{$count}</p>
+                    <span>菜单数</span>
+                </li>
+                <li>
+                    <p>{$zong}</p>
+                    <span>菜品数</span>
+                </li>
+            </ul>
+            <div class="content_right_three">
+                <table cellspacing="0">
+                    <tr class="tb_title">
+                        <td>ID</td>
+                        <td>菜品名称</td>
+                        <td>销量</td>
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.goodsid}</td>
+                        <td>{$v.goodsname}</td>
+                        <td>{$v.xiaoliang}</td>
+                        <td>
+                    <if condition="$v.tuijian eq 2">
+                            <a class="intro_banner" href="__CONTROLLER__/addgoodslun?shopid={$shop.shopid}&goodsid={$v.goodsid}">推荐到轮播</a>
+                            <elseif condition="$v.tuijian eq 1"/>
+                            <a class="intro_banner lun">撤回轮播</a>
+                    </if>
+                    <if condition="$v.ad_status eq 0">
+                            <a class="intro_ad" href="__CONTROLLER__/addgoodsguang?shopid={$shop.shopid}&goodsid={$v.goodsid}">推荐到广告位</a>
+                            <elseif condition="$v.ad_status eq 1"/>
+                            <a class="intro_ad guang">撤回广告位</a>
+                    </if>
+                    <if condition="$v.kind eq 0">
+                            <a class="intro_banner yuan" href="#">员工推荐</a>
+                            <elseif condition="$v.kind eq 1"/>
+                            <a class="intro_banner tui">撤回员工推荐</a>
+                    </if>
+                            <a class="intro_ad sale" href="__CONTROLLER__/goods_sale?shopid={$shop.shopid}&goodsid={$v.goodsid}">今日特卖</a>
+                            <a class="del">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                </table>
+                <div class="page">
+                    <tr>
+                                {$show}
+                            </tr>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 删除提示 遮罩层-->
+    <div id="tip" hidden>
+        <div class="del_tip_shade"></div>
+        <div class="tip_box">
+            <div class="tip_content">
+                <p>删除订单</p>
+                <div>确定要删除此订单？</div>
+                <ul>
+                    <li class="cancel"><span>取消</span></li>
+                    <li class="ok"><span>确定</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+     $(".yuan").on("click",function () {
+        var goodsid = $(this).parents('tr').find('.id').text();
+        var goodsid = goodsid *1;
+         $.ajax({
+            type:"POST",
+            url:"__CONTROLLER__/add_tui",
+            data:{'goodsid':goodsid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('操作成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("操作失败。");
+                }
+            }
+        })
+    });
+
+     $(".tui").on("click",function () {
+        var goodsid = $(this).parents('tr').find('.id').text();
+        var goodsid = goodsid *1;
+         $.ajax({
+            type:"POST",
+            url:"__CONTROLLER__/del_tui",
+            data:{'goodsid':goodsid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('操作成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("操作失败。");
+                }
+            }
+        })
+    })
+
+    //点击提示框的确定
+    $(".del").on("click", function () {
+        var a = confirm("确认要删除吗？");
+           if(a == true){
+            var goodsid = $(this).parents('tr').find('.id').text();
+            var goodsid = goodsid *1;
+             $.ajax({
+            type:"POST",
+            url:"{:U('Index/deletegoods')}",
+            data:{goodsid:goodsid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('删除成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        }
+        
+       
+    });
+     //撤回轮播
+    $(".lun").on("click",function(){
+        var goodsid = $(this).parents('tr').find('.id').text();
+        var goodsid = goodsid *1;
+        $.ajax({
+            type:"POST",
+            url:"{:U('Index/goodschelun')}",
+            data:{goodsid:goodsid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('撤回成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("撤回失败。");
+                }
+            }
+        });
+    });
+    //撤回广告
+    $(".guang").on("click",function(){
+        var goodsid = $(this).parents('tr').find('.id').text();
+        var goodsid = goodsid *1;
+        $.ajax({
+            type:"POST",
+            url:"{:U('Index/goodscheguang')}",
+            data:{goodsid:goodsid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('撤回成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("撤回失败。");
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

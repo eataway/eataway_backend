@@ -1,0 +1,1 @@
+$(".left").height($(window).height());

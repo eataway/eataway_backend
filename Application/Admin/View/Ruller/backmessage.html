@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>意见反馈管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/suggestion.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>意见反馈管理</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>ID</td>
+                        <td>用户名</td>
+                        <td width="25%;">反馈内容</td>
+                        <td>联系方式</td>
+                        <td>反馈时间</td>                    
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class='id'>{$v.bid}</td>
+                        <td>{$v.username}</td>
+                        <td><div>{$v.content}...</div></td>
+                        <td>{$v.mobile}</td>
+                        <td>{$v.addtime}</td>
+                        <td><a href="__CONTROLLER__/showcontent?bid={$v.bid}">查看</a><a class='del'>删除</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+     <script>
+        $(".del").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/deletebackm')}",
+            data:{bid:bid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('删除成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>澳洲外卖</title>
+<link rel="stylesheet" href="__PUBLIC__/admin/css/authenticated.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/css.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/right.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-1.9.1.js"></script>
+<style type="text/css">
+    .addNew{        
+        width: 280px;
+        float: left;
+        padding: 0px 0px 0px 10px;
+        margin: 13px 0px 0px 20px;
+        color: #fff;
+        text-align: right;
+    }
+    .top1{
+        width:140px;
+        border-radius: 10px;
+    }
+    .cen2{     
+        margin: 14px 8px 14px 8px;
+        color: #fff;
+    }
+    .ee div,.ee1 div{
+        color: #fff;
+    }
+    .left{
+        position: absolute;
+    }
+    .right{
+        float: right;
+        position: absolute;
+        right: 0;        
+        overflow-y: hidden;
+    }
+    .refresh{
+        background: none;
+    }
+    .Ordersearch{
+        float: left;
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        background: #2BAF2B;
+        text-align: center;
+        border-radius: 5px;
+        margin: 10px 0px 0px 20px;
+        cursor: pointer;
+        color:#fff;
+    }
+    .right{
+        overflow-y: auto;
+    }
+</style>
+</head>
+<include file="Public:left" />
+        <div class="right">
+            <div class="right1">
+                <div class="dao">
+                    <ul>
+                        <li>首页</li>
+                        <li>></li>
+                        <li>订单统计</li>
+                    </ul>
+                </div>
+                <div class="dao1">
+                    <div class="dao2">
+                        <div class="pian">
+                            <img src="__PUBLIC__/admin/img/icon_01.png" alt="">
+                        </div>
+                        <div class="pian1">
+                            <p>
+                                {$session}
+                            </p>
+                            <p>
+                                ﹀
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dao3">
+                        <p>
+                            切换账号
+                        </p>
+                        <p>
+                            退出
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right4">
+                <ul>
+                    <li>
+                    <div class="r2">
+                        <a href="{:U('Index/index')}">
+                            <p>{$renzheng}</p>
+                            <p>新认证商家</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="r2">
+                        <a href="{:U('Index/jiaoyi')}">
+                            <p>{$jiaoyi}</p>
+                            <p>商家交易额</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="r2">
+                        <a href="{:U('Index/tuidan')}">
+                            <p>{$tuidan}</p>
+                            <p>未处理退单申请</p>
+                        </a>
+                    </div>
+                </li>
+                     <li>
+                        <div class="r1">
+                            <p>{$allorders}</p>
+                            <p>订单统计</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right3">
+                <div class="biao">
+                    <div class="top">
+                        <select name="states" id="states" class="top1">
+                            <option value="1"<if condition="$getstates eq 1">selected</if>>未接单</option>
+                            <option value="2"<if condition="$getstates eq 2">selected</if>>已接单</option>
+                            <option value="3"<if condition="$getstates eq 3">selected</if>>已完成</option>
+                        </select>
+                        <select name="times" id="times" class="top1">
+                            <option value="1"<if condition="$gettimes eq 1">selected</if>>5分钟内</option>
+                            <option value="2"<if condition="$gettimes eq 2">selected</if>>15分钟内</option>
+                            <option value="3"<if condition="$gettimes eq 3">selected</if>>1小时内</option>
+                            <option value="4"<if condition="$gettimes eq 4">selected</if>>1天内</option>
+                            <option value="5"<if condition="$gettimes eq 5">selected</if>>全部</option>
+                        </select>
+                        <div class="Ordersearch">筛选</div>
+                        <div class="addNew">订单数：&nbsp;&nbsp;
+                        <span>{$count}</span></div>
+<!--                        <div class="top2">
+                            <input type="button">
+                            <input type="text" placeholder="Search">
+                        </div>-->
+                    </div>
+                    <div class="cen">
+                        <table>
+                            <tr class="ee">                                
+                                <td>
+                                    <div class="cen2">
+                                        订单号
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        商户名称
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        商铺电话
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        商铺地址
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        订单价格
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        订单日期
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen2">
+                                        操作
+                                    </div>
+                                </td>
+                            </tr>
+                            <foreach name="result" key="k" item="v">
+                            <if condition="$k%2 == 0">
+                            <tr class="ee1">                                
+                                <td>
+                                    <div class="ben3">
+                                        {$v.orderid}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                        {$v.shopname}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.mobile}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.detailed_address}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       ${$v.allprice}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.addtime}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen4">
+                                    <a href="particulars.html" class="refresh">
+                                        <!-- <input type="button" value="" class="refresh"> -->
+                                        <img src="__PUBLIC__/admin/img/icon_eye.png" alt="">
+                                    </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <else/>
+                            <tr class="ee">                                
+                                <td>
+                                    <div class="ben3">
+                                        {$v.orderid}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                        {$v.shopname}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.mobile}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.detailed_address}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       ${$v.allprice}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen5">
+                                       {$v.addtime}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cen4">
+                                    <a href="particulars.html" class="refresh">
+                                        <!-- <input type="button" value="" class="refresh"> -->
+                                        <img src="__PUBLIC__/admin/img/icon_eye.png" alt="">
+                                    </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </if>
+                        </foreach>
+                        </table>
+                         <tr>
+                                {$show}
+                            </tr>
+                    </div>
+<!--                    <div class="ter">
+                        <div class="ter2">
+                            <table>
+                               
+                            </table>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+//  $(".left").height($(window).height());
+</script>
+<script>
+    $(".right").height($(window).height());
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l1").click(function(){
+            $("#pen").slideToggle("slow");
+             $(".span").toggle(500);
+               $("#l1").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l2").click(function(){
+            $("#pen1").slideToggle("slow");
+             $(".span1").toggle(500);
+               $("#l2").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l3").click(function(){
+            $("#pen2").slideToggle("slow");
+             $(".span2").toggle(500);
+               $("#l3").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#l4").click(function(){
+            $("#pen3").slideToggle("slow");
+             $(".span3").toggle(500);
+               $("#l4").toggleClass("l1");
+        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".dao2").click(function(){
+            $(".dao3").slideToggle("slow");
+        })
+    });
+</script>
+<script>
+    $(".ee").css({ background: "#4D4D4D" });
+    $(".ee1").css({ background: "#9C9C9C" });
+     $(".ee2").css({ background: "#242424" });
+     $(".ter").css({ background: "#4D4D4D" });
+</script>
+<script>
+    $(function(){
+        $('.Ordersearch').click(function(){
+            var states = $("#states").val();
+            var times = $("#times").val();
+            window.location.href="__CONTROLLER__/ordermingxi?states="+states+"&times="+times;
+        })
+    })
+    
+    
+</script>
+</html>

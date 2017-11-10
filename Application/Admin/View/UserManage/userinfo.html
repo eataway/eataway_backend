@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userinfo.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>用户管理 > 用户信息</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <volist name="details" id="userdetail">
+                    <img style="height: 100px;" src="{$userdetail.userhead}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                    </volist>
+                </form>
+            </div>
+            <volist name="details" id="user">
+            <div class="content_left_name">
+                <a href="/index.php/Admin/UserManage/userManage">{$user.username}</a>
+            </div>
+            </volist>
+            <volist name="details" id="userdetail">
+            <ul class="content_left_nav">
+                <li class="emoney">
+                    <a href="/index.php/Admin/UserManage/ebiDetail?userid={$userdetail.userid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/shoppingAddress?userid={$userdetail.userid}">收货地址</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="#">用户信息</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/order?userid={$userdetail.userid}">订单</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/comment?userid={$userdetail.userid}">评论</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/publishContent?userid={$userdetail.userid}" style="border-bottom:none;">发布内容</a>
+                </li>
+            </ul>
+            </volist>
+        </div>
+        <div class="content_right fl">
+            <table cellspacing="0" cellpadding="0" class="tableManage"> 
+                <tr class="title_table">
+                    <td>堂食百分比(%)</td>
+                    <td>外卖百分比(%)</td>
+                    <td>聚易购百分比(%)</td>
+                    <td>总成交额(¥)</td>
+                </tr>
+                <tr>
+                    <td>{$bfb.bts}</td>
+                    <td>{$bfb.bwm}</td>
+                    <td>{$bfb.bjyg}</td>
+                    <td>{$bfb.all}</td>
+                </tr>
+                
+            </table>
+            <!-- 分页 -->
+            <div class="page"></div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+</body>
+</html>

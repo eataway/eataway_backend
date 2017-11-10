@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+</head>
+<!--引入左侧内容-->
+<include file="Public:left" />
+<div class="right">
+    <div class="rightmain">
+        <p class="title">当前位置<span>平台管理 > 用户举报类型管理 > <a href="/index.php/Admin/Platform/firstReport">一级分类管理 > </a><a href="#">{$fathername}</a></span><span><a href="#" class="addSecond">添加二级分类</a></span></p>
+        <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>分类ID</td>
+                        <td>分类名称</td>
+                        <td>添加时间</td>
+                        <td>修改时间</td>
+                        <td>操作</td>
+                    </tr>
+            <if condition="!$msg">
+                <tr>
+                    <td class="暂无">暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td>暂无</td>
+                    <td><a>暂无</a><a >暂无</a></td>
+                </tr>
+                <else/>
+                <volist name="msg" id="detail">
+                    <tr>
+                        <td class="shopkindid">{$detail.reportid}</td>
+                        <td>{$detail.name}</td>
+                        <td>{$detail.addtime}</td>
+                        <td>{$detail.edittime}</td>
+                        <td><a class="edit">修改</a><a class="deleTe">删除</a></td>
+                    </tr>
+                </volist>
+            </if>
+
+                </table>
+        <input type="hidden" value="{$fatherid}" class="fatherid">
+                <!-- 分页 -->
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var userid = $('.shopkindid').text();
+            if(userid === ''){
+                var num = ( window.location.href.split('/p/')[1].split('.html'))[0]-1;
+                // alert(window.location.href.split('/p/')[0]+'/'+num+'.html');
+                window.location.replace(window.location.href.split('/p/')[0]+'/'+num+'.html');
+            }
+        }
+        $('.deleTe').on('click',function () {
+           var skid = $(this).parent().parent().children('.shopkindid').text();
+           //alert(skid);
+            if((confirm('确定删除?'))) {
+                $.ajax({
+                    type: 'post',
+                    url: "{:U('Platform/deleteReport')}",
+                    data: {reportid: skid},
+                    success: function (data) {
+                        if (data.status == 1) {
+                            alert('删除成功！');
+                            window.location.reload();
+                        } else if (data.status == 2) {
+                            alert('删除成功！');
+                        } else {
+                            alert('删除失败！！');
+                        }
+                    },
+                    error: function (data) {
+                        alert('删除失败！！！');
+                    }
+                })
+            }
+
+        });
+        $('.edit').on('click',function () {
+            var skid = $(this).parent().parent().children('.shopkindid').text();
+         //   alert(window.location.href.split('secondReport')[0]+'reportUpdate?reportid='+skid);
+            window.location.replace(window.location.href.split('secondReport')[0]+'reportUpdate?reportid='+skid);
+        })
+        $('.addsecond').on('click',function () {
+            var reportid = $('.fatherid').val();
+            window.location.replace(window.location.href.split('second')[0]+'addReport?reportid='+reportid);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerVerify.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>店铺管理 > 商铺结算</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>商铺id</td>
+                        <td>商铺名称</td>
+                        <td>商铺电话</td>
+                        <td>上次结算至今应结算金额</td>
+                        <td>注册时间</td>                   
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class="id">{$v.shopid}</td>
+                        <td>{$v.shopname}</td>
+                        <td>{$v.mobile}</td>
+                        <td>{$v.pricess}</td>
+                        <td>{$v.addtime}</td>
+                        <td><a style="width: 100px;" class="pass">通过</a></td>
+                        <input type="hidden" value="{$time}" class="time">
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$show}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".pass").on("click",function () {
+           var bid = $(this).parents('tr').find('.id').text();
+           var time = $('.time').val();
+           var bid = bid *1;
+           $.ajax({
+            type:"POST",
+            url:"{:U('Index/passjiesuan')}",
+            data:{bid:bid,time:time},
+            success:function(data){
+                //console.log(time);
+                if(data.status == 1){
+                    alert('结算成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        });
+    </script>
+</body>
+</html>

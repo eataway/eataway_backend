@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>骑手管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/senderManage.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <div class="rightmain">
+            <p class="title">当前位置<span>骑手管理</span></p>
+            <div class="tabList">
+                <span class="currentTab">全部</span>
+                <span>已认证</span>
+                <span>待认证</span>
+                <span>拒绝认证</span>
+                <span>未认证</span>
+            </div>
+            <table cellspacing="0" cellpadding="0" class="tableManage">
+                <tr class="title_table">
+                    <td>ID</td>
+                    <td>骑手ID</td>
+                    <td>头像</td>
+                    <td>昵称</td>
+                    <td>手机号</td>
+                    <td>工作城市</td>
+                    <td>余额</td>
+                    <td>资质认证状态</td>
+                    <td>健康证认证状态</td>
+                </tr>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$lid + $i}</td>
+                        <td>{$vo.id}</td>
+                        <td><img src="/{$vo.images}" alt="" width="40px"></td>
+                        <td>{$vo.nickname}</td>
+                        <td>{$vo.phone}</td>
+                        <td class="gag active">{$vo.address}</td>
+                        <td>{$vo.overage}</td>
+                        <td ><if condition="$vo.status eq 0">
+                            <span class="ft">未认证</span>
+                        <else />
+                            <if condition="$vo.status eq 1">
+                                <span class="st">已认证</span>
+                                <else />
+                                <if condition="$vo.status eq 2">
+                                    <span class="tt">拒绝认证</span>
+                                    <else/>
+                                    <if condition="$vo.status eq 3">
+                                        <span class="ot">待认证</span>
+                                    </if>
+                                </if>
+                            </if>
+                        </if></td>
+                        <td><if condition="$vo.health_status eq 0">
+                            <span class="ot">待认证</span>
+                            <else />
+                            <if condition="$vo.health_status eq 1">
+                                <span class="st">已认证</span>
+                                <else />
+                                <if condition="$vo.health_status eq 2">
+                                    <span class="ft">未认证</span>
+                                    <else/>
+                                    <if condition="$vo.health_status eq 3">
+                                        <span class="tt">拒绝认证</span>
+                                    </if>
+                                </if>
+                            </if>
+                        </if></span></td>
+                        <!--<td><a class="alt" href="{:U('admin/rider/rider_identify')}?id={$vo.id}">修改</a><a href="" class="del">删除</a></td>-->
+                    </tr>
+                </volist>
+            </table>
+            <!-- 分页 -->
+            <div class="page">
+                {$pagelist}
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+//    //获取url中的参数
+//        (function ($) {
+//            $.getUrlParam = function (name) {
+//                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+//                var r = window.location.search.substr(1).match(reg);
+//                if (r != null) return unescape(r[2]); return null;
+//            }
+//        })(jQuery);
+
+//    function get(URL, PARAMS) {
+//        var temp = document.createElement("form");
+//        temp.action = URL;
+//        temp.method = "get";
+//        temp.style.display = "none";
+//        for (var x in PARAMS) {
+//            var opt = document.createElement("textarea");
+//            opt.name = x;
+//            opt.value = PARAMS[x];
+//            temp.appendChild(opt);
+//        }
+//        document.body.appendChild(temp);
+//        temp.submit();
+//        return temp;
+//    }
+    //点击
+    $(".tabList").on("click","span", function () {
+        /*$(this).addClass("currentTab");
+        $(this).siblings("span").removeClass("currentTab");*/
+        var val = $(this).text();
+        switch(val){
+            case "已认证":
+                window.location.href = "{:U('admin/rider/rider_list1')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:1});
+                break;
+            case "待认证":
+                window.location.href = "{:U('admin/rider/rider_list2')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:2});
+                break;
+            case "未认证":
+                window.location.href = "{:U('admin/rider/rider_list3')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:3});
+                break;
+            case "拒绝认证":
+                window.location.href = "{:U('admin/rider/rider_list4')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:3});
+                break;
+            default:
+                window.location.href = "{:U('admin/rider/rider_list')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url);
+                break;
+        }
+    });
+
+    //单个删除
+    function delet(){
+        $(".del").click(function(){
+            if(confirm("您确定要删除吗?")){
+                var tr=$(this).parent().parent();
+                var id = $.trim(tr.children("td").eq(1).text());
+                console.log(id);
+                del(id);
+                tr.remove();
+            }
+        })
+    }
+    delet();
+    /*
+     单个删除
+     */
+    function del(id) {
+        var url="{:U('admin/rider/rider_delete')}";
+        $.post(url,{"id":id},function (data){
+            if(data=='1'){
+                return true;
+            }else {
+                return false;
+            }
+        })
+    }
+</script>
+</html>

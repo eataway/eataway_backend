@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>意见反馈管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/rs.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>意见反馈管理 > 骑手意见反馈</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>ID</td>
+                        <td width="25%;">反馈内容</td>
+                        <td>反馈时间</td>                    
+                        <td>操作</td>
+                    </tr>
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td><div>{$vo.content}</div></td>
+                            <td>{$vo.date}</td>
+                            <td><a href="{:U('rider_suggestionSee')}?id={$vo.id}">查看</a><a href="" class="del">删除</a></td>
+                        </tr>
+                    </volist>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$pagelist}
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+//        var $$ = function(func){
+//            var oldOnload =window.onload;
+//            if(typeof window.onload != 'function'){
+//                window.onload = func;
+//            }else{
+//                window.onload = function(){
+//                    oldOnload();
+//                    func();
+//                }
+//            }
+//        };
+//
+//        $$(function() {
+//            window.location.reload();
+//        });
+    //单个删除
+    function delet(){
+        $(".del").click(function(){
+            if(confirm("您确定要删除吗?")){
+                var tr=$(this).parent().parent();
+                var id = $.trim(tr.children("td").eq(0).text());
+//                console.log(id);
+                del(id);
+                tr.remove();
+            }
+        })
+    }
+    delet();
+    /*
+     单个删除
+     */
+    function del(id) {
+        var url="{:U('admin/rider/suggestion_del')}";
+        $.post(url,{"id":id},function (data){
+            if(data =='1'){
+                return true;
+            }else {
+                return false;
+            }
+        })
+    }
+</script>
+</html>

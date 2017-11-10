@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>查看评论</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/commentSee.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>用户管理 > 评论 > 查看评论</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <img style="height: 100px;" src="{$user.userhead}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                </form>
+            </div>
+            <div class="content_left_name">
+                <if condition="$user.username eq ''">
+                    匿名
+                    <else/>
+                    {$user.username}
+                </if>
+
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="/index.php/Admin/UserManage/EbiDetail?userid={$user.userid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/shoppingAddress?userid={$user.userid}">收货地址</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/userinfo?userid={$user.userid}">用户信息</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/order?userid={$user.userid}">订单</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="/index.php/Admin/UserManage/comment?userid={$user.userid}">评论</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/publishContent?userid={$user.userid}" style="border-bottom:none;">发布内容</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <span>{$address.mapaddress}{$address.wriaddress}</span>
+                <span class="fr">
+                    <a href="/index.php/Admin/UserManage/comment?userid={$user.userid}">返回评论列表</a>
+                </span>
+            </div>
+            <div class="order cl">
+                <ul class="content_right_two cl">
+                    <li>
+                        <p>{$count}</p>
+                        <span>评论数</span>
+                    </li>
+                    
+                </ul>
+                
+             </div>
+            <table cellspacing="0" cellpadding="0" class="tableManage"> 
+                <tr class="title_table">
+                    <td>ID</td>
+                    <td>用户名称</td>
+                    <td>评论等级</td>
+                    <td>评论日期</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td class="eid">{$eidmsg.eid}</td>
+                    <td>{$user.username}</td>
+                    <td>
+                        <for start="1" end="$eidmsg.fenshu">
+                        <img src="__PUBLIC__/admin/images/star.png" alt="">
+                        </for>
+                    </td>
+                    <td>{$eidmsg.addtime}</td>
+                    <td><a class="deleTe">删除</a></td>
+                </tr>   
+                <tr>
+                    <td colspan="6">
+                        <div class="detail">评论详情：</div>
+                        <p class="detail_con">{$eidmsg.content}</p>
+                        <volist name="images" id="img">
+                        <img src="{$img.pic}" alt="" class="img_comm" style="width: 150px;height:150px;">
+                        </volist>
+                    </td>
+                </tr>             
+            </table>
+            <!-- 分页 -->
+            <div class="page"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.deleTe').on('click',function () {
+        if((confirm('确定删除?'))){
+            var eid = $(this).parent().parent().children('.eid').text();
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/UserManage/deleteComment',
+                data:{eid:eid},
+                datatype:'post',
+                success:function(data){
+                    if(data.status == 1){
+                        alert('删除成功！');
+                       // alert(data.userid);
+                        window.location.replace('/index.php/Admin/UserManage/comment?userid='+data.userid);
+                    }else{
+                        alert('删除失败！');
+                    }
+                },
+                error:function(){
+                    alert('删除失败！！！');
+                }
+            })
+        }
+    })
+</script>
+</body>
+</html>

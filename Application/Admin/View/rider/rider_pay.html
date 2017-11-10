@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>提现审核</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/managerVerify.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <style>
+        .tabList{
+            margin-top: 2.5em;
+            margin-bottom: 2.5em;
+        }
+        .tabList span{
+            background: #06C1AE;
+            text-align: center;
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 25px;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        .tabList span.currentTab{
+            background: #c7c7c7;
+        }
+    </style>
+</head>
+<body>
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>管理员管理 > 骑手提现审核</span></p>
+                <div class="tabList">
+                    <span class="currentTab">全部</span>
+                    <span >已审核</span>
+                    <span>待审核</span>
+                </div>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>ID</td>
+                        <td>联系方式</td>
+                        <td>账户名</td>
+                        <td>账号</td>
+                        <td>提现金额（¥）</td>                   
+                        <td>审核状态</td>
+                    </tr>
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td>{$vo.phone}</td>
+                            <td>{$vo.name}</td>
+                            <td>{$vo.account}</td>
+                            <td>{$vo.money}</td>
+                            <td>{$vo.state}</td>
+                        </tr>
+                    </volist>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    {$pagelist}
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    $(".tabList").on("click","span", function () {
+        /*$(this).addClass("currentTab");
+         $(this).siblings("span").removeClass("currentTab");*/
+        var val = $(this).text();
+        switch(val){
+            case "已审核":
+                window.location.href = "{:U('admin/rider/rider_payAudited')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:1});
+                break;
+            case "待审核":
+                window.location.href = "{:U('admin/rider/rider_payVerify')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url,{state:2});
+                break;
+            default:
+                window.location.href = "{:U('admin/rider/rider_pay')}";
+//                var url = "{:U('admin/rider/rider_list')}";
+//                get(url);
+                break;
+        }
+    });
+//    function agree(){
+//        $(".agree").click(function(){
+//            if(confirm("您确定选择通过?")){
+//                var tr=$(this).parent().parent();
+//                var id = $.trim(tr.children("td").eq(0).text());
+////                console.log(id);
+//                agr(id);
+////                tr.remove();
+//            }
+//        })
+//    }
+//    agree();
+//
+//    function agr(id) {
+//        var url="{:U('admin/rider/rider_agree')}";
+//        $.post(url,{"id":id},function (data){
+//            if(data=='1'){
+//                return true;
+//            }else {
+//                return false;
+//            }
+//        })
+//    }
+</script>
+</html>

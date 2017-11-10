@@ -1,0 +1,2065 @@
+[ 2017-11-07T18:10:54+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0209s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 4  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 4 AND `cid` = 119  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 4 AND `cid` = 126  [ RunTime:0.0027s ]
+
+[ 2017-11-07T18:10:57+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0200s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='126' WHERE `cid` = 119 [ RunTime:0.0357s ]
+SQL: UPDATE `et_category` SET `up`='119',`end`='0' WHERE `cid` = 126 [ RunTime:0.0166s ]
+
+[ 2017-11-07T18:11:15+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0145s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 20  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 20 AND `cid` = 120  [ RunTime:0.0038s ]
+
+[ 2017-11-07T18:11:17+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0144s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 120 [ RunTime:0.0345s ]
+
+[ 2017-11-07T18:12:00+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0203s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 21  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 21 AND `cid` = 128  [ RunTime:0.0028s ]
+
+[ 2017-11-07T18:12:03+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0163s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 128 [ RunTime:0.0349s ]
+
+[ 2017-11-07T18:12:08+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 19  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 19 AND `cid` = 130  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:12:10+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0202s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 130 [ RunTime:0.0499s ]
+
+[ 2017-11-07T18:12:16+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0194s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 25  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 25 AND `cid` = 131  [ RunTime:0.0028s ]
+
+[ 2017-11-07T18:12:18+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0199s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 131 [ RunTime:0.0226s ]
+
+[ 2017-11-07T18:12:29+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0208s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 24  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 24 AND `cid` = 132  [ RunTime:0.0054s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 24 AND `cid` = 133  [ RunTime:0.0052s ]
+
+[ 2017-11-07T18:12:31+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0204s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='133' WHERE `cid` = 132 [ RunTime:0.0467s ]
+SQL: UPDATE `et_category` SET `up`='132',`end`='0' WHERE `cid` = 133 [ RunTime:0.0237s ]
+
+[ 2017-11-07T18:12:38+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0194s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 15  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 15 AND `cid` = 134  [ RunTime:0.0028s ]
+
+[ 2017-11-07T18:12:40+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0201s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 134 [ RunTime:0.0335s ]
+
+[ 2017-11-07T18:12:48+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0196s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 1528  [ RunTime:0.0010s ]
+
+[ 2017-11-07T18:12:52+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0187s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 28  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 28 AND `cid` = 135  [ RunTime:0.0033s ]
+
+[ 2017-11-07T18:12:54+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 135 [ RunTime:0.0243s ]
+
+[ 2017-11-07T18:12:57+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0194s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 29  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 29 AND `cid` = 136  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:13:01+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0195s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 29  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 29 AND `cid` = 136  [ RunTime:0.0028s ]
+
+[ 2017-11-07T18:13:03+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0201s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 136 [ RunTime:0.0332s ]
+
+[ 2017-11-07T18:13:18+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 30  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 30 AND `cid` = 137  [ RunTime:0.0025s ]
+
+[ 2017-11-07T18:13:20+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0204s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 137 [ RunTime:0.0556s ]
+
+[ 2017-11-07T18:13:23+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0198s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 31  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 31 AND `cid` = 138  [ RunTime:0.0025s ]
+
+[ 2017-11-07T18:13:25+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0196s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 138 [ RunTime:0.0257s ]
+
+[ 2017-11-07T18:13:29+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0120s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 32  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 32 AND `cid` = 139  [ RunTime:0.0035s ]
+
+[ 2017-11-07T18:13:32+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0198s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 139 [ RunTime:0.0482s ]
+
+[ 2017-11-07T18:13:44+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0202s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 140  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 141  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 305  [ RunTime:0.0027s ]
+
+[ 2017-11-07T18:13:46+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0107s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='141' WHERE `cid` = 140 [ RunTime:0.0573s ]
+SQL: UPDATE `et_category` SET `up`='140',`end`='305' WHERE `cid` = 141 [ RunTime:0.0085s ]
+SQL: UPDATE `et_category` SET `up`='141',`end`='0' WHERE `cid` = 305 [ RunTime:0.0244s ]
+
+[ 2017-11-07T18:13:51+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0195s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 34  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 34 AND `cid` = 146  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:13:53+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 146 [ RunTime:0.0502s ]
+
+[ 2017-11-07T18:13:59+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0200s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 37  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 37 AND `cid` = 147  [ RunTime:0.0023s ]
+
+[ 2017-11-07T18:14:01+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0206s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 147 [ RunTime:0.0310s ]
+
+[ 2017-11-07T18:14:06+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 39  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 39 AND `cid` = 149  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 39 AND `cid` = 150  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 39 AND `cid` = 151  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:14:08+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0206s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='150' WHERE `cid` = 149 [ RunTime:0.0454s ]
+SQL: UPDATE `et_category` SET `up`='149',`end`='151' WHERE `cid` = 150 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='150',`end`='0' WHERE `cid` = 151 [ RunTime:0.0242s ]
+
+[ 2017-11-07T18:14:14+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0191s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 40  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 40 AND `cid` = 153  [ RunTime:0.0035s ]
+
+[ 2017-11-07T18:14:15+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0201s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 153 [ RunTime:0.0297s ]
+
+[ 2017-11-07T18:14:20+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0200s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 41  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 41 AND `cid` = 155  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:14:22+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0220s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 155 [ RunTime:0.0805s ]
+
+[ 2017-11-07T18:14:26+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 42  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 160  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 161  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 42 AND `cid` = 162  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:14:28+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0209s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='161' WHERE `cid` = 160 [ RunTime:0.0547s ]
+SQL: UPDATE `et_category` SET `up`='160',`end`='162' WHERE `cid` = 161 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='161',`end`='0' WHERE `cid` = 162 [ RunTime:0.0239s ]
+
+[ 2017-11-07T18:14:33+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0205s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 44  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 44 AND `cid` = 166  [ RunTime:0.0028s ]
+
+[ 2017-11-07T18:14:35+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0198s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 166 [ RunTime:0.0533s ]
+
+[ 2017-11-07T18:14:39+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0196s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 47  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 47 AND `cid` = 168  [ RunTime:0.0026s ]
+
+[ 2017-11-07T18:14:41+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 168 [ RunTime:0.0454s ]
+
+[ 2017-11-07T18:14:50+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0196s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 49  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 49 AND `cid` = 171  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:14:52+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0188s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='0' WHERE `cid` = 171 [ RunTime:0.0226s ]
+
+[ 2017-11-07T18:14:56+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0203s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 50  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 174  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 175  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 176  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 177  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 178  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 179  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 180  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 181  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 182  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 183  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 184  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 185  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 186  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 50 AND `cid` = 187  [ RunTime:0.0012s ]
+
+[ 2017-11-07T18:14:59+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0194s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='175' WHERE `cid` = 174 [ RunTime:0.0449s ]
+SQL: UPDATE `et_category` SET `up`='174',`end`='176' WHERE `cid` = 175 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='175',`end`='177' WHERE `cid` = 176 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='176',`end`='178' WHERE `cid` = 177 [ RunTime:0.0171s ]
+SQL: UPDATE `et_category` SET `up`='177',`end`='179' WHERE `cid` = 178 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='178',`end`='180' WHERE `cid` = 179 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='179',`end`='181' WHERE `cid` = 180 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='180',`end`='182' WHERE `cid` = 181 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='181',`end`='183' WHERE `cid` = 182 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='182',`end`='184' WHERE `cid` = 183 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='183',`end`='185' WHERE `cid` = 184 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='184',`end`='186' WHERE `cid` = 185 [ RunTime:0.0085s ]
+SQL: UPDATE `et_category` SET `up`='185',`end`='187' WHERE `cid` = 186 [ RunTime:0.0247s ]
+SQL: UPDATE `et_category` SET `up`='186',`end`='0' WHERE `cid` = 187 [ RunTime:0.0164s ]
+
+[ 2017-11-07T18:15:10+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0197s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 52  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 188  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 239  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 240  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 249  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 250  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 252  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 253  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 254  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 255  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 52 AND `cid` = 278  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:15:12+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0060s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='239' WHERE `cid` = 188 [ RunTime:0.0282s ]
+SQL: UPDATE `et_category` SET `up`='188',`end`='240' WHERE `cid` = 239 [ RunTime:0.0160s ]
+SQL: UPDATE `et_category` SET `up`='239',`end`='249' WHERE `cid` = 240 [ RunTime:0.0087s ]
+SQL: UPDATE `et_category` SET `up`='240',`end`='250' WHERE `cid` = 249 [ RunTime:0.0243s ]
+SQL: UPDATE `et_category` SET `up`='249',`end`='252' WHERE `cid` = 250 [ RunTime:0.0087s ]
+SQL: UPDATE `et_category` SET `up`='250',`end`='253' WHERE `cid` = 252 [ RunTime:0.0160s ]
+SQL: UPDATE `et_category` SET `up`='252',`end`='254' WHERE `cid` = 253 [ RunTime:0.0086s ]
+SQL: UPDATE `et_category` SET `up`='253',`end`='255' WHERE `cid` = 254 [ RunTime:0.0163s ]
+SQL: UPDATE `et_category` SET `up`='254',`end`='278' WHERE `cid` = 255 [ RunTime:0.0174s ]
+SQL: UPDATE `et_category` SET `up`='255',`end`='0' WHERE `cid` = 278 [ RunTime:0.0234s ]
+
+[ 2017-11-07T18:15:24+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0201s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 51  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 189  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 190  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 191  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 192  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 193  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 194  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 195  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 196  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 197  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 198  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 199  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 200  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 201  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 202  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 203  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 204  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 205  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 51 AND `cid` = 206  [ RunTime:0.0011s ]
+
+[ 2017-11-07T18:15:26+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0203s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='190' WHERE `cid` = 189 [ RunTime:0.0590s ]
+SQL: UPDATE `et_category` SET `up`='189',`end`='191' WHERE `cid` = 190 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='190',`end`='192' WHERE `cid` = 191 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='191',`end`='193' WHERE `cid` = 192 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='192',`end`='194' WHERE `cid` = 193 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='193',`end`='195' WHERE `cid` = 194 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='194',`end`='196' WHERE `cid` = 195 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='195',`end`='197' WHERE `cid` = 196 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='196',`end`='198' WHERE `cid` = 197 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='197',`end`='199' WHERE `cid` = 198 [ RunTime:0.0083s ]
+SQL: UPDATE `et_category` SET `up`='198',`end`='200' WHERE `cid` = 199 [ RunTime:0.0241s ]
+SQL: UPDATE `et_category` SET `up`='199',`end`='201' WHERE `cid` = 200 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='200',`end`='202' WHERE `cid` = 201 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='201',`end`='203' WHERE `cid` = 202 [ RunTime:0.0253s ]
+SQL: UPDATE `et_category` SET `up`='202',`end`='204' WHERE `cid` = 203 [ RunTime:0.0237s ]
+SQL: UPDATE `et_category` SET `up`='203',`end`='205' WHERE `cid` = 204 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='204',`end`='206' WHERE `cid` = 205 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='205',`end`='0' WHERE `cid` = 206 [ RunTime:0.0751s ]
+
+[ 2017-11-07T18:15:32+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0163s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 53  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 207  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 208  [ RunTime:0.0043s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 209  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 210  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 211  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 212  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 213  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 214  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 215  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 216  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 217  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 218  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 219  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 220  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 221  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 222  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 223  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 224  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 225  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 226  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 227  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 228  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 229  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 230  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 231  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 232  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 233  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 234  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 235  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 236  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 237  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 53 AND `cid` = 272  [ RunTime:0.0012s ]
+
+[ 2017-11-07T18:15:35+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0111s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='208' WHERE `cid` = 207 [ RunTime:0.0589s ]
+SQL: UPDATE `et_category` SET `up`='207',`end`='209' WHERE `cid` = 208 [ RunTime:0.0489s ]
+SQL: UPDATE `et_category` SET `up`='208',`end`='210' WHERE `cid` = 209 [ RunTime:0.0495s ]
+SQL: UPDATE `et_category` SET `up`='209',`end`='211' WHERE `cid` = 210 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='210',`end`='212' WHERE `cid` = 211 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='211',`end`='213' WHERE `cid` = 212 [ RunTime:0.0253s ]
+SQL: UPDATE `et_category` SET `up`='212',`end`='214' WHERE `cid` = 213 [ RunTime:0.0237s ]
+SQL: UPDATE `et_category` SET `up`='213',`end`='215' WHERE `cid` = 214 [ RunTime:0.0253s ]
+SQL: UPDATE `et_category` SET `up`='214',`end`='216' WHERE `cid` = 215 [ RunTime:0.0237s ]
+SQL: UPDATE `et_category` SET `up`='215',`end`='217' WHERE `cid` = 216 [ RunTime:0.0254s ]
+SQL: UPDATE `et_category` SET `up`='216',`end`='218' WHERE `cid` = 217 [ RunTime:0.0237s ]
+SQL: UPDATE `et_category` SET `up`='217',`end`='219' WHERE `cid` = 218 [ RunTime:0.0165s ]
+SQL: UPDATE `et_category` SET `up`='218',`end`='220' WHERE `cid` = 219 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='219',`end`='221' WHERE `cid` = 220 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='220',`end`='222' WHERE `cid` = 221 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='221',`end`='223' WHERE `cid` = 222 [ RunTime:0.0252s ]
+SQL: UPDATE `et_category` SET `up`='222',`end`='224' WHERE `cid` = 223 [ RunTime:0.0237s ]
+SQL: UPDATE `et_category` SET `up`='223',`end`='225' WHERE `cid` = 224 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='224',`end`='226' WHERE `cid` = 225 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='225',`end`='227' WHERE `cid` = 226 [ RunTime:0.0250s ]
+SQL: UPDATE `et_category` SET `up`='226',`end`='228' WHERE `cid` = 227 [ RunTime:0.0238s ]
+SQL: UPDATE `et_category` SET `up`='227',`end`='229' WHERE `cid` = 228 [ RunTime:0.0251s ]
+SQL: UPDATE `et_category` SET `up`='228',`end`='230' WHERE `cid` = 229 [ RunTime:0.0656s ]
+SQL: UPDATE `et_category` SET `up`='229',`end`='231' WHERE `cid` = 230 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='230',`end`='232' WHERE `cid` = 231 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='231',`end`='233' WHERE `cid` = 232 [ RunTime:0.0247s ]
+SQL: UPDATE `et_category` SET `up`='232',`end`='234' WHERE `cid` = 233 [ RunTime:0.0238s ]
+SQL: UPDATE `et_category` SET `up`='233',`end`='235' WHERE `cid` = 234 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='234',`end`='236' WHERE `cid` = 235 [ RunTime:0.0744s ]
+SQL: UPDATE `et_category` SET `up`='235',`end`='237' WHERE `cid` = 236 [ RunTime:0.0249s ]
+SQL: UPDATE `et_category` SET `up`='236',`end`='272' WHERE `cid` = 237 [ RunTime:0.0238s ]
+SQL: UPDATE `et_category` SET `up`='237',`end`='0' WHERE `cid` = 272 [ RunTime:0.0085s ]
+
+[ 2017-11-07T18:15:41+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0202s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 56  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 256  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 257  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 258  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 259  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 260  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 261  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 262  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 263  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 264  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 265  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 266  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 267  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 268  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 269  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 270  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 271  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 56 AND `cid` = 351  [ RunTime:0.0011s ]
+
+[ 2017-11-07T18:15:43+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0216s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='257' WHERE `cid` = 256 [ RunTime:0.0347s ]
+SQL: UPDATE `et_category` SET `up`='256',`end`='258' WHERE `cid` = 257 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='257',`end`='259' WHERE `cid` = 258 [ RunTime:0.0251s ]
+SQL: UPDATE `et_category` SET `up`='258',`end`='260' WHERE `cid` = 259 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='259',`end`='261' WHERE `cid` = 260 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='260',`end`='262' WHERE `cid` = 261 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='261',`end`='263' WHERE `cid` = 262 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='262',`end`='264' WHERE `cid` = 263 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='263',`end`='265' WHERE `cid` = 264 [ RunTime:0.0249s ]
+SQL: UPDATE `et_category` SET `up`='264',`end`='266' WHERE `cid` = 265 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='265',`end`='267' WHERE `cid` = 266 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='266',`end`='268' WHERE `cid` = 267 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='267',`end`='269' WHERE `cid` = 268 [ RunTime:0.0171s ]
+SQL: UPDATE `et_category` SET `up`='268',`end`='270' WHERE `cid` = 269 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='269',`end`='271' WHERE `cid` = 270 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='270',`end`='351' WHERE `cid` = 271 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='271',`end`='0' WHERE `cid` = 351 [ RunTime:0.0171s ]
+
+[ 2017-11-07T18:15:49+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0200s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 57  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 273  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 274  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 275  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 276  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 57 AND `cid` = 350  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:15:51+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0105s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='274' WHERE `cid` = 273 [ RunTime:0.0334s ]
+SQL: UPDATE `et_category` SET `up`='273',`end`='275' WHERE `cid` = 274 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='274',`end`='276' WHERE `cid` = 275 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='275',`end`='350' WHERE `cid` = 276 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='276',`end`='0' WHERE `cid` = 350 [ RunTime:0.0250s ]
+
+[ 2017-11-07T18:16:00+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0214s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 58  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 280  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 281  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 282  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 283  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 284  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 285  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 286  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 287  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 288  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 58 AND `cid` = 289  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:16:03+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0195s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='281' WHERE `cid` = 280 [ RunTime:0.0571s ]
+SQL: UPDATE `et_category` SET `up`='280',`end`='282' WHERE `cid` = 281 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='281',`end`='283' WHERE `cid` = 282 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='282',`end`='284' WHERE `cid` = 283 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='283',`end`='285' WHERE `cid` = 284 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='284',`end`='286' WHERE `cid` = 285 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='285',`end`='287' WHERE `cid` = 286 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='286',`end`='288' WHERE `cid` = 287 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='287',`end`='289' WHERE `cid` = 288 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='288',`end`='0' WHERE `cid` = 289 [ RunTime:0.0170s ]
+
+[ 2017-11-07T18:16:21+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0201s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 54  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 291  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 292  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 293  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 294  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 295  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 296  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 297  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 298  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 300  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 301  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 302  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 303  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 54 AND `cid` = 304  [ RunTime:0.0011s ]
+
+[ 2017-11-07T18:16:24+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0195s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='292' WHERE `cid` = 291 [ RunTime:0.0570s ]
+SQL: UPDATE `et_category` SET `up`='291',`end`='293' WHERE `cid` = 292 [ RunTime:0.0583s ]
+SQL: UPDATE `et_category` SET `up`='292',`end`='294' WHERE `cid` = 293 [ RunTime:0.0550s ]
+SQL: UPDATE `et_category` SET `up`='293',`end`='295' WHERE `cid` = 294 [ RunTime:0.0327s ]
+SQL: UPDATE `et_category` SET `up`='294',`end`='296' WHERE `cid` = 295 [ RunTime:0.0189s ]
+SQL: UPDATE `et_category` SET `up`='295',`end`='297' WHERE `cid` = 296 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='296',`end`='298' WHERE `cid` = 297 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='297',`end`='300' WHERE `cid` = 298 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='298',`end`='301' WHERE `cid` = 300 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='300',`end`='302' WHERE `cid` = 301 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='301',`end`='303' WHERE `cid` = 302 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='302',`end`='304' WHERE `cid` = 303 [ RunTime:0.0239s ]
+SQL: UPDATE `et_category` SET `up`='303',`end`='0' WHERE `cid` = 304 [ RunTime:0.0168s ]
+
+[ 2017-11-07T18:16:53+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0124s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 61  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 306  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 307  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 308  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 309  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 310  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 311  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 312  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 313  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 314  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 315  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 316  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 317  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 318  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 319  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 320  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 321  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 322  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 323  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 324  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 325  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 326  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 327  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 328  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 371  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 61 AND `cid` = 372  [ RunTime:0.0012s ]
+
+[ 2017-11-07T18:16:55+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0128s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='307' WHERE `cid` = 306 [ RunTime:0.0657s ]
+SQL: UPDATE `et_category` SET `up`='306',`end`='308' WHERE `cid` = 307 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='307',`end`='309' WHERE `cid` = 308 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='308',`end`='310' WHERE `cid` = 309 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='309',`end`='311' WHERE `cid` = 310 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='310',`end`='312' WHERE `cid` = 311 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='311',`end`='313' WHERE `cid` = 312 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='312',`end`='314' WHERE `cid` = 313 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='313',`end`='315' WHERE `cid` = 314 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='314',`end`='316' WHERE `cid` = 315 [ RunTime:0.0241s ]
+SQL: UPDATE `et_category` SET `up`='315',`end`='317' WHERE `cid` = 316 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='316',`end`='318' WHERE `cid` = 317 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='317',`end`='319' WHERE `cid` = 318 [ RunTime:0.1003s ]
+SQL: UPDATE `et_category` SET `up`='318',`end`='320' WHERE `cid` = 319 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='319',`end`='321' WHERE `cid` = 320 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='320',`end`='322' WHERE `cid` = 321 [ RunTime:0.0660s ]
+SQL: UPDATE `et_category` SET `up`='321',`end`='323' WHERE `cid` = 322 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='322',`end`='324' WHERE `cid` = 323 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='323',`end`='325' WHERE `cid` = 324 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='324',`end`='326' WHERE `cid` = 325 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='325',`end`='327' WHERE `cid` = 326 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='326',`end`='328' WHERE `cid` = 327 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='327',`end`='371' WHERE `cid` = 328 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='328',`end`='372' WHERE `cid` = 371 [ RunTime:0.0160s ]
+SQL: UPDATE `et_category` SET `up`='371',`end`='0' WHERE `cid` = 372 [ RunTime:0.0170s ]
+
+[ 2017-11-07T18:17:02+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0199s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 62  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 330  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 331  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 332  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 333  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 334  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 335  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 336  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 62 AND `cid` = 337  [ RunTime:0.0022s ]
+
+[ 2017-11-07T18:17:04+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0133s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='331' WHERE `cid` = 330 [ RunTime:0.0339s ]
+SQL: UPDATE `et_category` SET `up`='330',`end`='332' WHERE `cid` = 331 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='331',`end`='333' WHERE `cid` = 332 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='332',`end`='334' WHERE `cid` = 333 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='333',`end`='335' WHERE `cid` = 334 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='334',`end`='336' WHERE `cid` = 335 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='335',`end`='337' WHERE `cid` = 336 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='336',`end`='0' WHERE `cid` = 337 [ RunTime:0.0171s ]
+
+[ 2017-11-07T18:17:13+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0140s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 59  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 338  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 339  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 340  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 341  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 342  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 343  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 344  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 345  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 346  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 347  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 348  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 59 AND `cid` = 349  [ RunTime:0.0017s ]
+
+[ 2017-11-07T18:17:15+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0217s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='339' WHERE `cid` = 338 [ RunTime:0.0673s ]
+SQL: UPDATE `et_category` SET `up`='338',`end`='340' WHERE `cid` = 339 [ RunTime:0.0156s ]
+SQL: UPDATE `et_category` SET `up`='339',`end`='341' WHERE `cid` = 340 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='340',`end`='342' WHERE `cid` = 341 [ RunTime:0.0155s ]
+SQL: UPDATE `et_category` SET `up`='341',`end`='343' WHERE `cid` = 342 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='342',`end`='344' WHERE `cid` = 343 [ RunTime:0.0153s ]
+SQL: UPDATE `et_category` SET `up`='343',`end`='345' WHERE `cid` = 344 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='344',`end`='346' WHERE `cid` = 345 [ RunTime:0.0156s ]
+SQL: UPDATE `et_category` SET `up`='345',`end`='347' WHERE `cid` = 346 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='346',`end`='348' WHERE `cid` = 347 [ RunTime:0.0156s ]
+SQL: UPDATE `et_category` SET `up`='347',`end`='349' WHERE `cid` = 348 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='348',`end`='0' WHERE `cid` = 349 [ RunTime:0.0156s ]
+
+[ 2017-11-07T18:17:34+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0196s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 63  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 352  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 353  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 354  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 355  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 356  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 357  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 358  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 359  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 63 AND `cid` = 360  [ RunTime:0.0058s ]
+
+[ 2017-11-07T18:17:36+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0135s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='353' WHERE `cid` = 352 [ RunTime:0.0306s ]
+SQL: UPDATE `et_category` SET `up`='352',`end`='354' WHERE `cid` = 353 [ RunTime:0.0157s ]
+SQL: UPDATE `et_category` SET `up`='353',`end`='355' WHERE `cid` = 354 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='354',`end`='356' WHERE `cid` = 355 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='355',`end`='357' WHERE `cid` = 356 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='356',`end`='358' WHERE `cid` = 357 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='357',`end`='359' WHERE `cid` = 358 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='358',`end`='360' WHERE `cid` = 359 [ RunTime:0.0157s ]
+SQL: UPDATE `et_category` SET `up`='359',`end`='0' WHERE `cid` = 360 [ RunTime:0.0169s ]
+
+[ 2017-11-07T18:19:09+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0200s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 364  [ RunTime:0.0054s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 366  [ RunTime:0.0052s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 367  [ RunTime:0.0051s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 368  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0051s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 370  [ RunTime:0.0046s ]
+
+[ 2017-11-07T18:19:14+10:30 ] 192.168.2.108 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0096s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0325s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0160s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0156s ]
+
+[ 2017-11-07T18:22:24+10:30 ] 192.168.2.108 /tp/index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 45 AND `statu` = 2  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1510023929'  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0087s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1510024127'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 264 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-07T18:22:24+10:30 ] 192.168.2.108 /tp/index.php/server/order/yorderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `et_orders` WHERE ( (statu = 2 and state in (3,4,5)) or (statu in (1,3) and state in (1,2)) ) AND `shopid` = 45 AND `states` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '0405689791507787341'  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0072s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '0405689791507782208'  [ RunTime:0.0008s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '152308681851505983098'  [ RunTime:0.0008s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 264 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505113452'  [ RunTime:0.0008s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505111584'  [ RunTime:0.0008s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504878692'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504849526'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504848767'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-07T18:23:09+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:23:10+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0011s ]
+
+[ 2017-11-07T18:23:13+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0011s ]
+
+[ 2017-11-07T18:23:23+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `et_category` SET `end`='0' WHERE `cid` = 369 [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 370 [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `end`='364' WHERE `cid` = 370 [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `up`='370' WHERE `cid` = 364 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='370' WHERE `cid` = 367 [ RunTime:0.0003s ]
+
+[ 2017-11-07T18:23:24+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0023s ]
+
+[ 2017-11-07T18:23:52+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `et_category` SET `end`='0' WHERE `cid` = 368 [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 369 [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `end`='370' WHERE `cid` = 369 [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `up`='369' WHERE `cid` = 370 [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `end`='369' WHERE `cid` = 367 [ RunTime:0.0004s ]
+
+[ 2017-11-07T18:23:53+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:23:57+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `et_category` SET `end`='0' WHERE `cid` = 364 [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='366' WHERE `cid` = 368 [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `end`='367' WHERE `cid` = 368 [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='368' WHERE `cid` = 367 [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `end`='368' WHERE `cid` = 366 [ RunTime:0.0004s ]
+
+[ 2017-11-07T18:23:59+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0025s ]
+
+[ 2017-11-07T18:24:05+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 370 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='370' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `up`='369' WHERE `cid` = 369 [ RunTime:0.0002s ]
+SQL: UPDATE `et_category` SET `end`='370' WHERE `cid` = 369 [ RunTime:0.0002s ]
+
+[ 2017-11-07T18:24:13+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `up`='369' WHERE `cid` = 364 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='364' WHERE `cid` = 369 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `up`='370' WHERE `cid` = 370 [ RunTime:0.0002s ]
+SQL: UPDATE `et_category` SET `end`='369' WHERE `cid` = 370 [ RunTime:0.0002s ]
+SQL: UPDATE `et_category` SET `up`='370' WHERE `cid` = 369 [ RunTime:0.0002s ]
+SQL: UPDATE `et_category` SET `end`='370' WHERE `cid` = 370 [ RunTime:0.0002s ]
+
+[ 2017-11-07T18:24:14+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0021s ]
+
+[ 2017-11-07T18:24:43+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0012s ]
+
+[ 2017-11-07T18:31:52+10:30 ] 192.168.2.108 /tp/index.php/server/shop/menugoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0030s ]
+
+[ 2017-11-07T18:31:53+10:30 ] 192.168.2.108 /tp/index.php/server/shop/menugoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0053s ]
+
+[ 2017-11-07T18:34:49+10:30 ] 192.168.2.108 /tp/index.php/server/shop/menugoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0055s ]
+
+[ 2017-11-07T19:09:29+10:30 ] 192.168.2.109 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0169s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 364  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 366  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 367  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 368  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 370  [ RunTime:0.0035s ]
+
+[ 2017-11-07T19:09:30+10:30 ] 192.168.2.109 /tp/index.php/server/shop/categorylists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0131s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 364  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 366  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 367  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 368  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 369  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 45 AND `cid` = 370  [ RunTime:0.0033s ]
+
+[ 2017-11-07T19:09:32+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0058s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0361s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0160s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0157s ]
+
+[ 2017-11-07T19:09:44+10:30 ] 192.168.2.108 /tp/index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','2') AND `shopid` = 45 AND `statu` = 2  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1510023929'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0060s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1510024127'  [ RunTime:0.0011s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 264 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-07T19:09:47+10:30 ] 192.168.2.108 /tp/index.php/server/order/yorderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `et_orders` WHERE ( (statu = 2 and state in (3,4,5)) or (statu in (1,3) and state in (1,2)) ) AND `shopid` = 45 AND `states` = 1 ORDER BY addtime desc LIMIT 0,8   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '0405689791507787341'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0052s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '0405689791507782208'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '152308681851505983098'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 264 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 527 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505113452'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1505111584'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504878692'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504849526'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '1504848767'  [ RunTime:0.0009s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 236 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-07T19:10:18+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0013s ]
+
+[ 2017-11-07T19:10:19+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0027s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0013s ]
+
+[ 2017-11-07T19:10:21+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0011s ]
+
+[ 2017-11-07T19:10:35+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `up`='366' WHERE `cid` = 368 [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `end`='368' WHERE `cid` = 366 [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='369' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 369 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='367' WHERE `cid` = 367 [ RunTime:0.0003s ]
+
+[ 2017-11-07T19:10:36+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0013s ]
+
+[ 2017-11-07T19:11:21+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0226s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0645s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0161s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0155s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0167s ]
+
+[ 2017-11-07T19:11:51+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `et_category` SET `up`='366' WHERE `cid` = 368 [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `end`='368' WHERE `cid` = 366 [ RunTime:0.0004s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='369' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `up`='367' WHERE `cid` = 369 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='367' WHERE `cid` = 367 [ RunTime:0.0003s ]
+
+[ 2017-11-07T19:11:52+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0012s ]
+
+[ 2017-11-07T19:11:55+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0067s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0497s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0157s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0171s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0159s ]
+
+[ 2017-11-07T19:11:55+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0013s ]
+
+[ 2017-11-07T19:11:58+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0011s ]
+
+[ 2017-11-07T19:12:04+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `et_category` SET `up`='-1' WHERE `cid` = 366 [ RunTime:0.0007s ]
+SQL: UPDATE `et_category` SET `up`='364' WHERE `cid` = 364 [ RunTime:0.0008s ]
+SQL: UPDATE `et_category` SET `end`='366' WHERE `cid` = 364 [ RunTime:0.0003s ]
+
+[ 2017-11-07T19:12:11+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0230s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0437s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0169s ]
+
+[ 2017-11-07T19:12:15+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 364 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `et_category` SET `up`='-1' WHERE `cid` = 366 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003819s ]
+
+[ 2017-11-07T19:12:24+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0029s ]
+
+[ 2017-11-07T19:12:24+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0212s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0570s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0155s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0155s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0166s ]
+
+[ 2017-11-07T19:12:26+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0083s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0893s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0173s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0155s ]
+
+[ 2017-11-07T19:12:27+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0210s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0179s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0154s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0167s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0240s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0166s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0251s ]
+
+[ 2017-11-07T19:12:28+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0011s ]
+
+[ 2017-11-07T19:12:28+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0057s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0251s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0158s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0172s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0171s ]
+
+[ 2017-11-07T19:13:19+10:30 ] 192.168.2.108 /tp/index.php/server/shop/movecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `et_category` SET `up`='364' WHERE `cid` = 367 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='367' WHERE `cid` = 364 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `up`='366' WHERE `cid` = 366 [ RunTime:0.0003s ]
+SQL: UPDATE `et_category` SET `end`='367' WHERE `cid` = 366 [ RunTime:0.0003s ]
+
+[ 2017-11-07T19:14:44+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0251s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0322s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0170s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0171s ]
+
+[ 2017-11-07T19:14:45+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0031s ]
+
+[ 2017-11-07T19:14:45+10:30 ] 192.168.2.109 /tp/index.php/server/User/editcategoryceshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0145s ]
+SQL: UPDATE `et_category` SET `up`='-1',`end`='366' WHERE `cid` = 364 [ RunTime:0.0223s ]
+SQL: UPDATE `et_category` SET `up`='364',`end`='367' WHERE `cid` = 366 [ RunTime:0.0157s ]
+SQL: UPDATE `et_category` SET `up`='366',`end`='368' WHERE `cid` = 367 [ RunTime:0.0169s ]
+SQL: UPDATE `et_category` SET `up`='367',`end`='369' WHERE `cid` = 368 [ RunTime:0.0159s ]
+SQL: UPDATE `et_category` SET `up`='368',`end`='370' WHERE `cid` = 369 [ RunTime:0.0168s ]
+SQL: UPDATE `et_category` SET `up`='369',`end`='0' WHERE `cid` = 370 [ RunTime:0.0153s ]
+
+[ 2017-11-07T19:14:48+10:30 ] 192.168.2.108 /tp/index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `shopid` = 45 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 45 AND `up` = -1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 366 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 367 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 368 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 369 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 370 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 364 AND `shopid` = 45  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 366 AND `shopid` = 45  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 367 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 368 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 369 AND `shopid` = 45  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 370 AND `shopid` = 45  [ RunTime:0.0015s ]
+

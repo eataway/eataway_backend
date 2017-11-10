@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发布内容</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/publishContent.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>用户管理 > 发布内容</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                <form action="" >
+                    <img style="height: 100px;" src="{$user.userhead}" alt=""/>
+                    <input type="hidden" value="{$user.userid}" class="userid">
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+                </form>
+            </div>
+            <div class="content_left_name">
+               {$user.username}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="/index.php/Admin/UserManage/EbiDetail?userid={$user.userid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/shoppingAddress?userid={$user.userid}">收货地址</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/userinfo?userid={$user.userid}">用户信息</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/order?userid={$user.userid}">订单</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/comment?userid={$user.userid}">评论</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="/index.php/Admin/UserManage/publishContent?userid={$user.userid}" style="border-bottom:none;">发布内容</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">           
+            <table cellspacing="0" cellpadding="0" class="tableManage"> 
+                <tr class="title_table">
+                    <td width="20%">帖子ID</td>
+                    <td width="25%">发布地址</td>
+                    <td width="10%">内容</td>
+                    <td width="10%;">类型</td>
+                    <td width="15%">时间</td>
+                    <td width="15%;">操作</td>
+                </tr>
+                <volist name="ftpost" id="msg">
+                <tr>
+                    <td class="postid">{$msg.id}</td>
+                    <td>{$msg.city}</td>
+                    <td><div>{$msg.content}.</div></td>
+                    <td>{$msg.range}</td>
+                    <td>{$msg.date}</td>
+                    <td><a class="publicsee">查看</a><a class="deleTe">删除</a></td>
+                </tr>
+                </volist>
+            </table>
+            <!-- 分页 -->
+            <div class="page"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.publicsee').on("click",function () {
+        var bef = window.location.href.split('index.php')[0];
+        var postid = $(this).parent().parent().children('.postid').text();
+        var userid = $('.userid').val();
+        window.location.replace(bef+'/index.php/Admin/UserManage/publishContentSee?userid='+userid+'&postid='+postid);
+    })
+    $('.deleTe').on('click',function () {
+        if((confirm('确定删除?'))){
+            var postid = $(this).parent().parent().children('.postid').text();
+                $.ajax({
+                    type:'post',
+                    url:'/index.php/Admin/UserManage/deletePublish',
+                    data:{postid:postid},
+                    success:function(data){
+                        if(data.status == 1){
+                            alert('删除成功！');
+                            var bef = window.location.href.split('index.php')[0];
+                            window.location.replace(bef+'/index.php/Admin/UserManage/publishContent?userid='+data.userid);
+                        }else{
+                            alert('删除失败！');
+                        }
+                    },
+                    error:function(){
+                        alert('删除失败！！！');
+                    }
+                })
+        }
+    })
+</script>
+</body>
+</html>

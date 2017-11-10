@@ -1,0 +1,13 @@
+.cen3{
+	width: 100% !important;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #D8D8D8;
+}
+.cen18{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}

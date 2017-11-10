@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/index.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>店铺管理 > 已拒绝认证店铺</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>店铺ID</td>
+                        <td>店铺名称</td>
+                        <td>联系电话</td>
+                        <td>状态</td>
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="result" key="k" item="v">
+                    <tr>
+                        <td class ="shopid">{$v.shopid}</td>
+                        <td>{$v.shopname}</td>
+                        <td>{$v.mobile}</td>
+                        <td>已拒绝</td>
+                        <td><a class="delete">删除</a></td>
+                    </tr>
+                    </foreach>
+                </table>
+                <!-- 分页 -->
+                <div class="page">
+                    <tr>
+                                {$show}
+                            </tr>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+           $(".delete").click(function() {
+               var shopi = $(this).parents('tr').find('.shopid').text();
+               var shopid = shopi *1;
+               var a = confirm("确认要删除吗？");
+               if(a == true){
+                   $.ajax({
+                   type:'POST',
+                   url:"{:U('Index/deleteshop')}",
+                   data:{shopid:shopid},
+                   dataType:'json',
+                   success:function(data){
+                       if(data.status == 1){
+                           alert("删除成功。");
+                           window.location.reload();
+                       }else if (data.status == 2){
+                           alert("删除失败。");
+                       }
+                   }
+               });
+               }
+               
+           }) 
+        })
+    </script>
+   
+</body>
+</html>

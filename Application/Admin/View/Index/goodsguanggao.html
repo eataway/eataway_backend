@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/tcal.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/storeIntroBanner.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <script src="__PUBLIC__/admin/js/tcal.js"></script>
+    <style>
+        #addBox>span{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            z-index: 9;
+        }
+        #addBox img{
+            width: 100%;
+        }
+    </style>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>店铺管理 > 店铺信息 > 广告管理</span>
+        </p>
+        <div class="content_left fl">
+            <div class="content_left_logo">
+                    <img src="/{$result.shophead}" alt="暂无图片"/>
+            </div>
+            <div class="content_left_name">
+                {$result.shopname}
+            </div>
+            <ul class="content_left_nav">
+                <li>
+                    <a href="__CONTROLLER__/shopdetail?shopid={$shop.shopid}">店铺信息</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/storeOrder?shopid={$shop.shopid}">订单</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="__CONTROLLER__/storeDish?shopid={$shop.shopid}">菜单</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/pingjia?shopid={$shop.shopid}">评论</a>
+                </li>
+<!--                <li>
+                    <a href="storeSend.html">配送费</a>
+                </li>-->
+                <li>
+                    <a href="__CONTROLLER__/emoney?shopid={$shop.shopid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="__CONTROLLER__/zizhi?shopid={$shop.shopid}">资质认证</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right fl">
+            <!--<form action="__CONTROLLER__/indextui" method="post" enctype="multipart/form-data">-->
+            <form id="form1">
+                <div class="content_right_one">
+                    <span>推荐到广告</span>
+                    <span class="fr"><input id="sub" type="button" value="确定"/></span>
+                </div>
+                <div class="content_right_two">
+                    <p>
+                        <span>推荐时间</span>
+                        <input type="hidden" class="shopid" name="shopid" value="{$result.shopid}">
+            <input type="hidden" class="cid" name="cid" value="{$goods.cid}">
+                        <input type="hidden" class="goodsid" name="goodsid" value="{$goodsid}"/>
+                        <input id="time" type="text" name="time" value="{$goods.ad_dietime}" class="tcal tcalInput"/>
+                    </p>
+                    <div>
+                        <span>添加图片</span>
+                        <div id="addBox">
+                            <input id="chooseImg" type="file" name="img" value=""/>
+                            <span>
+                                <if condition="$goods.ad_image eq null">
+                                    <img src="__PUBLIC__/admin/images/icon_add_01.png" />
+                                 <elseif condition="$goods.ad_image neq null"/>
+                                 <img src="/{$goods.ad_image}" />
+                                </if>
+                                
+                            <span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    //建立一個可存取到該file的url
+    function getObjectURL(file) {
+            var url = null;
+            if(window.createObjectURL != undefined) { // basic
+                    url = window.createObjectURL(file);
+            } else if(window.URL != undefined) { // mozilla(firefox)
+                    url = window.URL.createObjectURL(file);
+            } else if(window.webkitURL != undefined) { // webkit or chrome
+                    url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+    }
+    $("#chooseImg").change(function(){
+        var objUrl = getObjectURL(this.files[0]);
+        if(objUrl) {
+            $("#addBox img").attr("src", objUrl);
+        }
+    })
+    //提交图片文件和文字
+    $("#sub").click(function(){
+var time = $("#time").val(); var files = $('#chooseImg').val();
+var shopid = $(".shopid").val();
+var cid = $(".cid").val();
+if(time === '' ||  files ===''){
+    alert("时间或图片不能为空。");
+}else{
+    var form = new FormData(document.getElementById("form1"));
+    $.ajax({
+                cache: true,
+                type: "POST",
+                url:"__CONTROLLER__/addgoodstui",
+                data:form,
+                dataType:"json",
+                processData:false,
+                contentType:false,
+                success: function(data) {
+                    if(data.status == 1){
+                        alert("推荐成功。");
+                        window.location.href="__CONTROLLER__/goodslist?shopid="+shopid+"&cid="+cid;
+                    }else if(data.status == 0){
+                        alert("推荐失败。");
+                    }else if(data.status == 5){
+                        alert("已经有四条数据，请前往轮播管理先删除数据再添加。")
+                    }
+                },
+                error:function(){
+                    alert("error");
+                }
+            });
+}
+        
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1061 @@
+[ 2017-06-27T10:17:10+08:00 ] 192.168.0.115 /index.php/server/shop/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Shop
+
+[ 2017-06-27T10:17:21+08:00 ] 192.168.0.115 /index.php/server/shop/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Shop
+
+[ 2017-06-27T10:17:27+08:00 ] 192.168.0.115 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'headphoto' in 'field list'
+ [ SQL语句 ] : UPDATE `et_shopmessage` SET `content`='反反复复反反复复纷纷发',`shopname`='反反复复',`headphoto`='uploads/58765101881e9f0140e18a3a0c9d3c88.png' WHERE `shopid` = 1
+ERR: 1054:Unknown column 'headphoto' in 'field list'
+ [ SQL语句 ] : UPDATE `et_shopmessage` SET `content`='反反复复反反复复纷纷发',`shopname`='反反复复',`headphoto`='uploads/58765101881e9f0140e18a3a0c9d3c88.png' WHERE `shopid` = 1
+
+[ 2017-06-27T10:18:26+08:00 ] 192.168.0.115 /index.php/server/user/addjianjie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\UserController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0050s ]
+SQL: UPDATE `et_shopmessage` SET `content`='反反复复反反复复纷纷发',`shopname`='反反复复',`shophead`='uploads/5532ec38c8b0f5422d250751061c5b4d.png' WHERE `shopid` = 1 [ RunTime:0.1270s ]
+
+[ 2017-06-27T10:36:12+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Order
+
+[ 2017-06-27T10:36:50+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+
+[ 2017-06-27T10:59:14+08:00 ] 192.168.0.115 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 3  [ RunTime:0.0000s ]
+
+[ 2017-06-27T10:59:48+08:00 ] 192.168.0.115 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 3  [ RunTime:0.0010s ]
+
+[ 2017-06-27T11:32:55+08:00 ] 192.168.0.115 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 1  [ RunTime:0.0010s ]
+
+[ 2017-06-27T11:33:21+08:00 ] 192.168.0.115 /index.php/server/shop/categorylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 1 AND `cid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 1 AND `cid` = 2  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 1 AND `cid` = 3  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 1 AND `cid` = 4  [ RunTime:0.0000s ]
+
+[ 2017-06-27T11:53:16+08:00 ] 192.168.0.115 /index.php/server/shop/addcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 42 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: INSERT INTO `et_category` (`cname`,`shopid`,`addtime`) VALUES ('呜呜呜','1','2017-06-27 11:53:16') [ RunTime:0.2800s ]
+
+[ 2017-06-27T12:02:57+08:00 ] 192.168.0.115 /index.php/server/shop/editcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+
+[ 2017-06-27T12:03:34+08:00 ] 192.168.0.115 /index.php/server/shop/editcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0020s ]
+
+[ 2017-06-27T12:05:26+08:00 ] 192.168.0.115 /index.php/server/shop/editcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 68 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: UPDATE `et_category` SET `cname`='丸子' [ RunTime:0.0780s ]
+
+[ 2017-06-27T12:29:11+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column '1，2，3' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `et_category` WHERE ( 1，2，3 )
+ERR: 1054:Unknown column '1，2，3' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `et_category` WHERE ( 1，2，3 )
+
+[ 2017-06-27T12:30:09+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : DELETE FROM `et_category` WHERE ( 1,2,3 )
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : DELETE FROM `et_category` WHERE ( 1,2,3 )
+
+[ 2017-06-27T12:31:03+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `et_category` WHERE `cid` = 1 [ RunTime:0.1260s ]
+
+[ 2017-06-27T12:31:22+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `et_category` WHERE `cid` IN ('2','3','4') [ RunTime:0.1680s ]
+
+[ 2017-06-27T13:41:21+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 111 行.
+NOTIC: [8] Undefined index: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 112 行.
+NOTIC: [8] Undefined index: goodsname D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 113 行.
+NOTIC: [8] Undefined index: goodsprice D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 114 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 116 行.
+
+[ 2017-06-27T13:45:53+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: date D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 133 行.
+
+[ 2017-06-27T13:46:21+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 115 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.1080s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodsphoto`,`addtime`) VALUES ('1','1','faas','12','uploads/88cdf8f55b06b7e8178fdbff6436bcf3.png','2017-06-27 13:46:21') [ RunTime:0.1130s ]
+
+[ 2017-06-27T14:04:23+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 1  [ RunTime:0.0010s ]
+
+[ 2017-06-27T14:04:36+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 2  [ RunTime:0.0000s ]
+
+[ 2017-06-27T14:06:09+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: DELETE FROM `et_category` WHERE `cid` = 2 [ RunTime:0.0010s ]
+
+[ 2017-06-27T14:06:34+08:00 ] 192.168.0.115 /index.php/server/shop/deletecategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `cid` = 1  [ RunTime:0.0010s ]
+
+[ 2017-06-27T14:25:58+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1','2','3')  [ RunTime:0.0000s ]
+
+[ 2017-06-27T14:38:16+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('1','1','ewfaq','21','sadfa','uploads/5bd8bdacac1b55aae23836e7a2422c8e.png','2017-06-27 14:38:16') [ RunTime:0.1010s ]
+
+[ 2017-06-27T14:39:24+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1','2','3','4','5')  [ RunTime:0.0000s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` IN ('1','2','3','4','5') [ RunTime:0.1050s ]
+NOTIC: [8] Undefined index: goodsphoto D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 164 行.
+NOTIC: [2] unlink(): Invalid argument D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 164 行.
+
+[ 2017-06-27T14:43:16+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1')  [ RunTime:0.0010s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` = 1 [ RunTime:0.0770s ]
+NOTIC: [2] unlink(/uploads/5bd8bdacac1b55aae23836e7a2422c8e.png): No such file or directory D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 164 行.
+
+[ 2017-06-27T14:44:33+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1')  [ RunTime:0.0010s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` = 1 [ RunTime:0.2150s ]
+NOTIC: [2] unlink(): http does not allow unlinking D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 164 行.
+
+[ 2017-06-27T14:47:10+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1')  [ RunTime:0.0000s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` = 1 [ RunTime:0.0520s ]
+
+[ 2017-06-27T14:51:26+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goodscontent D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 118 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('1','1','1212','1',NULL,'uploads/0f04ef5f53ab12eff7edcf4833d32b64.png','2017-06-27 14:51:26') [ RunTime:0.1320s ]
+
+[ 2017-06-27T14:52:20+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goodscontent D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 118 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('1','1','dfasd','121',NULL,'uploads/6760a057c62afa820e8c5b5a02a56302.png','2017-06-27 14:52:20') [ RunTime:0.1090s ]
+
+[ 2017-06-27T14:52:59+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('1','2')  [ RunTime:0.0000s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` IN ('1','2') [ RunTime:0.0740s ]
+NOTIC: [2] unlink(D:/phpStudy/WWW/tpuploads/0f04ef5f53ab12eff7edcf4833d32b64.png): No such file or directory D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 165 行.
+NOTIC: [2] unlink(D:/phpStudy/WWW/tpuploads/6760a057c62afa820e8c5b5a02a56302.png): No such file or directory D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 165 行.
+
+[ 2017-06-27T14:55:33+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: goodsid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 154 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\tp\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `et_shopgoods` WHERE `goodsid` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `et_shopgoods` WHERE `goodsid` IN () 
+
+[ 2017-06-27T14:55:48+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: goodsid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 154 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0330s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\WWW\tp\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `et_shopgoods` WHERE `goodsid` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `et_shopgoods` WHERE `goodsid` IN () 
+
+[ 2017-06-27T14:56:02+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: goodscontent D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 118 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('1','1','sdfad','112',NULL,'uploads/1e75b691d0d9412421049893396d514e.png','2017-06-27 14:56:01') [ RunTime:0.0970s ]
+
+[ 2017-06-27T14:56:14+08:00 ] 192.168.0.115 /index.php/server/shop/addgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: goodscontent D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 118 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: INSERT INTO `et_shopgoods` (`cid`,`shopid`,`goodsname`,`goodsprice`,`goodscontent`,`goodsphoto`,`addtime`) VALUES ('1','1','sdfad','112',NULL,'uploads/cb38c98518a9b0beceb4c88f65ecc94a.png','2017-06-27 14:56:14') [ RunTime:0.1010s ]
+
+[ 2017-06-27T14:56:56+08:00 ] 192.168.0.115 /index.php/server/shop/deletegoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 156 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` IN ('9','10')  [ RunTime:0.0000s ]
+SQL: DELETE FROM `et_shopgoods` WHERE `goodsid` IN ('9','10') [ RunTime:0.0930s ]
+
+[ 2017-06-27T15:30:59+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:33:35+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:33:42+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 2  [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:33:50+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 3  [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:40:53+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0090s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = null LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:41:20+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = null LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:41:23+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = null LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:43:02+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T15:43:44+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0070s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2017-06-27T15:58:51+08:00 ] 192.168.0.115 /index.php/server/shop/menudetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 204 行.
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `goodsid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT `goodsname`,`goodsphoto`,`cid`,`goodsprice`,`flag`,`goodscontent` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T16:40:42+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 33 行.
+
+[ 2017-06-27T16:41:38+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-27T16:44:55+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: gb D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 24 行.
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = null  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: k D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-27T16:46:42+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'goodsname，goodsprice' in 'field list'
+ [ SQL语句 ] : SELECT `goodsname，goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'goodsname，goodsprice' in 'field list'
+ [ SQL语句 ] : SELECT `goodsname，goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1  
+
+[ 2017-06-27T16:48:10+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-27T16:50:34+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-27T16:51:02+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-27T16:52:33+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-27T16:54:15+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T16:55:25+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-27T16:55:56+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0020s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-27T16:56:35+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-27T16:57:39+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `shopid` = 1 AND `state` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0010s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-06-27T17:06:58+08:00 ] 192.168.0.115 /index.php/server/order/norderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: userid D:\phpStudy\WWW\tp\Application\Server\Controller\OrderController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `et_orders` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_orders` WHERE `state` IN ('1','5') AND `shopid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_ordergoods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498198936'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0050s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `et_ordergoods` WHERE `orderid` = '157331163181498199068'  [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `goodsname`,`goodsprice` FROM `et_shopgoods` WHERE `goodsid` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-06-27T17:34:45+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 237 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'cname' in 'field list'
+ [ SQL语句 ] : SELECT `cname` FROM `et_shopgoods` WHERE `shopid` = 1 
+ERR: 1054:Unknown column 'cname' in 'field list'
+ [ SQL语句 ] : SELECT `cname` FROM `et_shopgoods` WHERE `shopid` = 1 
+
+[ 2017-06-27T17:35:09+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 237 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0040s ]
+SQL: SELECT `cname` FROM `et_category` WHERE `shopid` = 1  [ RunTime:0.0000s ]
+
+[ 2017-06-27T17:35:51+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 237 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0370s ]
+SQL: SELECT `cname` FROM `et_category` WHERE `shopid` = 1  [ RunTime:0.0010s ]
+
+[ 2017-06-27T17:41:57+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:editgoods
+
+[ 2017-06-27T17:42:12+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:editgoods
+
+[ 2017-06-27T17:42:17+08:00 ] 192.168.0.115 /index.php/server/shop/fenleilist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 236 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0030s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 1  [ RunTime:0.0000s ]
+
+[ 2017-06-27T17:57:06+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:editgoods
+
+[ 2017-06-27T17:57:28+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 261 行.
+NOTIC: [8] Undefined variable: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 262 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `et_shopgoods` SET `goodsname`='丸子',`goodsphoto`='萨芬打算短发安抚',`goodsprice`='12.00',`goodscontent`='暗示打发打发的说法',`cid`='5' WHERE `goodsid` = 1 [ RunTime:0.0340s ]
+
+[ 2017-06-27T17:57:59+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 261 行.
+NOTIC: [8] Undefined variable: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 262 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `et_shopgoods` SET `goodsname`='速度发啊是短发啊双方的',`goodsprice`='12',`cid`='7',`goodscontent`='1123123423',`goodsphoto`='uploads/48fcfd6a1a554946081db4e6e1491cd6.png' WHERE `goodsid` = 1 [ RunTime:0.1100s ]
+NOTIC: [2] unlink(D:/phpStudy/WWW/tp/萨芬打算短发安抚): No such file or directory D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 284 行.
+
+[ 2017-06-27T17:59:34+08:00 ] 192.168.0.115 /index.php/server/shop/editgoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 261 行.
+NOTIC: [8] Undefined variable: shopid D:\phpStudy\WWW\tp\Application\Server\Controller\ShopController.class.php 第 262 行.
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `goodsid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `et_shopgoods` SET `goodsname`='速度发啊是短发啊双方的',`goodsprice`='12',`cid`='7',`goodscontent`='1123123423',`goodsphoto`='uploads/e5259a7074bae0f527f0cd558a987161.png' WHERE `goodsid` = 1 [ RunTime:0.0550s ]
+

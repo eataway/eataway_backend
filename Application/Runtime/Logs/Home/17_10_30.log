@@ -1,0 +1,108 @@
+[ 2017-10-30T12:14:32+10:30 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-30T13:32:33+10:30 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-30T13:36:38+10:30 ] 192.168.2.104 /tp/index.php/home/shop/shoplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_shopmessage` WHERE `state` IN ('1','2') ORDER BY shopid desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0070s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 62 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 61 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 59 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 58 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 57 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 56 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 54 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 53 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 52 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 51 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 50 ORDER BY num desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 45 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `cid`,`cname` FROM `et_category` WHERE `shopid` = 13 ORDER BY num desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT `shopid`,`shopphoto` FROM `et_shopmessage` WHERE `state` IN ('1','2') AND `states` = 2 LIMIT 4   [ RunTime:0.0010s ]
+
+[ 2017-10-30T13:36:38+10:30 ] 192.168.2.104 /tp/index.php/home/user/personal_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0160s ]
+SQL: SELECT `username`,`mobile`,`head_photo` FROM `et_user` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-30T13:36:39+10:30 ] 192.168.2.104 /tp/index.php/home/shop/menulist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: coor F:\phpStudy\WWW\tp\Application\Home\Controller\ShopController.class.php 第 259 行.
+SQL: SHOW COLUMNS FROM `et_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_category` WHERE `shopid` = 13  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_shopgoods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 140  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 141  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `et_shopgoods` WHERE `shopid` = 13 AND `cid` = 305  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `et_shopmessage` [ RunTime:0.0060s ]
+SQL: SELECT `maxmoney`,`shopname`,`shopphoto`,`mobile`,`lmoney`,`content`,`shophead`,`state`,`detailed_address`,`coordinate`,`gotime`,`long`,`maxprice`,`maxlong`,`lkmoney` FROM `et_shopmessage` WHERE `shopid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 F:\phpStudy\WWW\tp\Application\Home\Controller\ShopController.class.php 第 276 行.
+SQL: SHOW COLUMNS FROM `et_evaluate` [ RunTime:0.0360s ]
+NOTIC: [8] Undefined index: limit F:\phpStudy\WWW\tp\ThinkPHP\Library\Think\Db\Driver.class.php 第 961 行.
+SQL: SELECT * FROM `et_evaluate` WHERE `shopid` = 13 LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_user` [ RunTime:0.0060s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `et_backevaluate` [ RunTime:0.0080s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 13 AND `uid` = 37 AND `eid` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 13 AND `uid` = 37 AND `eid` = 41 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 37 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 13 AND `uid` = 37 AND `eid` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 13 AND `uid` = 17 AND `eid` = 49 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username`,`head_photo` FROM `et_user` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `backpingjia` FROM `et_backevaluate` WHERE `shopid` = 13 AND `uid` = 17 AND `eid` = 50 LIMIT 1   [ RunTime:0.0010s ]
+

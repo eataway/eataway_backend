@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/userManages.css"/>
+<a href="aa.html"></a>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/style.css"/>
+    <script src="__PUBLIC__/admin/js/style.js"></script>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <div class="rightmain">
+            <p class="title">当前位置<span>资金流水管理</span></p>
+            <div class="search_box">
+                <span>时间</span>
+                <input type="text" class="time" name="time" id="special_start_time" value="{$time}"/>
+                <input type="hidden" class="aid" name="aid" value="{$aid}"/>
+                <span class="cx">查询</span>
+            </div>
+            <table cellspacing="0" cellpadding="0" class="tableManage">
+                <tr class="title_table">
+                    <td>总入账金额</td>
+                    <td>总出账金额</td>
+                    <td>单日入账金额</td>
+                    <td>单日出账金额</td>
+                </tr>
+                <tr>
+                    <td>{$backmoney}</td>
+                    <td>{$chuzha}</td>
+                    <td>{$today}</td>
+                    <td>{$todayout}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    /*日期选择插件*/
+    $(function(){
+        $('input.time:text').datepicker()
+    });
+    $(function(){
+           $(".cx").click(function() {
+               var time = $('.time').val();
+               var aid = $('.aid').val();
+                 window.location.href="__CONTROLLER__/liushui?aid="+aid+"&time="+time;
+               
+           }) 
+        })
+</script>
+</body>
+</html>

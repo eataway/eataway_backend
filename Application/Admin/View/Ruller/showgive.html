@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>e币规则</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/Ebi.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<include file="Public:left" />
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>e币规则</span></p>
+                <div class="rule">
+                    <div class="title_rule">
+                        e币规则设置
+                        <a href="#" class="sure">确定</a>
+                    </div>
+                    <div class="rule_content">
+                        客户首次下单送<input type="text" class="e" name="emoney" value="{$result.emoney}"> e币
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="title_rule">
+                    e币规则设置
+                    <a href="#" class="sureshare">确定</a>
+                </div>
+                <div class="rule_content">
+                    用户首次分享送<input type="text" class="eshare" name="esharemoney" placeholder="{$esharemoney}">e币
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="title_rule">
+                    e币规则设置
+                    <a href="#" class="song">确定</a>
+                </div>
+                <div class="rule_content">
+                    满<input type="text" class="manemoney" name="manemoney" value="{$mansong.manemoney}">元，送<input type="text" class="ebi" name="ebi" value="{$mansong.ebi}">E币
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(".sure").on("click",function () {
+           var emoney = $('.e').val();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/editemoney')}",
+            data:{emoney:emoney},
+            success:function(data){
+                if(data.status == 1){
+                    alert('修改成功。');
+                    window.location.reload();
+                }else if(data.status == 0){
+                    alert("失败。");
+                }else if(data.status == 2){
+                    alert("没有修改。");
+                }
+            }
+        });
+        });
+        $('.sureshare').on('click',function () {
+            var eshare = $('.eshare').val();
+            $.ajax({
+                type:'post',
+                url:"{:U('Ruller/saveShare')}",
+                data:{number:eshare},
+                success:function (data) {
+                    if(data.status == 1){
+                        alert('修改成功！');
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert('修改失败！');
+                    }else{
+                        alert('修改失败！！')
+                    }
+                },
+                error:function () {
+                    alert('没有修改！')
+                }
+            })
+        })
+        $('.song').on('click',function () {
+            var manemoney = $('.manemoney').val();
+            var ebi = $('.ebi').val();
+            $.ajax({
+                type:'post',
+                url:"{:U('Ruller/editsongebi')}",
+                data:{manemoney:manemoney,ebi:ebi},
+                success:function (data) {
+                    if(data.status == 1){
+                        alert('修改成功！');
+                        window.location.reload();
+                    }else if(data.status == 2){
+                        alert('修改失败！');
+                    }else{
+                        alert('修改失败！！')
+                    }
+                },
+                error:function () {
+                    alert('没有修改！')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

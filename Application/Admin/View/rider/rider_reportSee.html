@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>查看举报管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/reportSee.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>举报管理 > 骑手举报管理 > 查看</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>举报骑手ID</td>
+                        <td>联系方式</td>
+                        <td>举报对象</td>
+                        <td>反馈时间</td>                    
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td>{$list.rid}</td>
+                        <td>{$list.phone}</td>
+                        <td>{$list.name}</td>
+                        <td>{$list.date}</td>
+                        <td><a href="" class="del">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan=5>
+                            <div class="main_fankui">
+                                反馈内容：
+                                <p>{$list.reason}</p>
+                            </div>
+                            
+                        </td> 
+                    </tr>
+                </table>
+                <!-- 分页 -->
+                <!--<div class="page">-->
+                    <!---->
+                <!--</div>-->
+            </div>
+        </div>
+</body>
+<script>
+    //获取url中的参数
+    $(function() {
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+        })(jQuery);
+        $('.del').click(function(){
+            if(confirm("您确定要删除吗?")){
+                var url="{:U('admin/rider/report_del')}";
+                var id = $.getUrlParam('id');
+                if(id != null && id.toString().length>1){
+                    $.post(url,{"id":id},function (data){
+                    if(data =='1'){
+                        window.self.location=document.referrer;
+                    }else {
+                        alert('删除失败');
+                    }
+                })}
+            }
+        })
+    })
+</script>
+</html>

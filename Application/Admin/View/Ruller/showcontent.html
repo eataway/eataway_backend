@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>查看意见反馈管理</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/rsSee.css"/>
+    <script src="__PUBLIC__/admin/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/admin/touchTouch/touchTouch.css"/>
+    <!--<link rel="stylesheet" href="__PUBLIC__/admin/css/zoomify.min.css">-->
+    <!--<script src="__PUBLIC__/admin/js/zoomify.min.js"></script>-->
+</head>
+<body>
+        <!-- 右侧主要内容-->
+        <div class="right">
+            <div class="rightmain">
+                <p class="title">当前位置<span>意见反馈管理 > 骑手意见反馈 > 查看</span></p>
+                <table cellspacing="0" cellpadding="0" class="tableManage">
+                    <tr class="title_table">
+                        <td>ID</td>
+                        <td>反馈人</td>
+                        <td>联系方式</td>
+                        <td>反馈时间</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td class="id">{$result.bid}</td>
+                        <td>{$result.username}</td>
+                        <td>{$result.mobile}</td>
+                        <td>{$result.addtime}</td>
+                        <td><a class="del">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan=4>
+                            <div class="main_fankui">
+                                反馈内容：
+                                {$result.content}
+                                <!--<p>在提交订单的时候，经常会出现卡顿的情况，希望能够及时的解决这个问题。</p>-->
+                            </div>
+                            
+                        </td> 
+                    </tr>
+                </table>
+                <!-- 分页 -->
+                <!--<div class="page">-->
+                    <!---->
+                <!--</div>-->
+            </div>
+        </div>
+</body>
+<script src="__PUBLIC__/admin/touchTouch/touchTouch.jquery.js"></script>
+<script>
+//    $(function() {
+//        $('.zoomify').zoomify();
+//    });
+//查看图片
+    $('#imgLists a').touchTouch();
+
+    //获取url中的参数
+    $(function() {
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+        })(jQuery);
+        $('.del').click(function(){
+            var bid = $(this).parents('tr').find('.id').text();
+           $.ajax({
+            type:"POST",
+            url:"{:U('Ruller/deletebackm')}",
+            data:{bid:bid},
+            success:function(data){
+                if(data.status == 1){
+                    alert('删除成功。');
+                    window.location.href="{:U('Ruller/backmessage')}";
+                }else if(data.status == 0){
+                    alert("失败。");
+                }
+            }
+        });
+        })
+    })
+</script>
+</html>

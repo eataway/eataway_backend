@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>订单</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/order.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css"/>
+</head>
+<include file="Public:left" />
+    <!-- 右侧主要内容-->
+    <div class="right">
+        <p class="current_location">
+            <span>当前位置</span><span>用户管理 > 订单</span>
+        </p>
+        <div class="content_left fl">
+            <volist name="user" id="usermsg">
+            <div class="content_left_logo">
+                <form action="" >
+
+                    <img style="height: 100px;" src="{$usermsg.userhead}" alt=""/>
+                    <!--<p>点击修改头像</p>-->
+                    <!--<input type="file" name=""/>-->
+
+                </form>
+            </div>
+            <div class="content_left_name">
+              {$usermsg.username}
+            </div>
+            </volist>
+            <volist name="user" id="userdetail">
+            <ul class="content_left_nav">
+                <li>
+                    <a href="/index.php/Admin/UserManage/EbiDetail?userid={$userdetail.userid}">e币明细</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/shoppingAddress?userid={$userdetail.userid}">收货地址</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/userinfo?userid={$userdetail.userid}">用户信息</a>
+                </li>
+                <li>
+                    <a class="left_nav_current" href="/index.php/Admin/UserManage/order?userid={$userdetail.userid}">订单</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/comment?userid={$userdetail.userid}">评论</a>
+                </li>
+                <li>
+                    <a href="/index.php/Admin/UserManage/publishContent?userid={$userdetail.userid}" style="border-bottom:none;">发布内容</a>
+                </li>
+            </ul>
+            </volist>
+        </div>
+        <div class="content_right fl">
+            <div class="content_right_one">
+                <span>{$address.mapaddress}{$address.wriaddress}</span>
+                <volist name="user" id="userdetail">
+                    <span><img src="__PUBLIC__/admin/images/12.png"></span>
+                    <span>{$userdetail.mobile}</span>
+                <span class="fr">
+                    <a class="todayorder">查看今日订单列表</a>
+                    <a href="/index.php/Admin/UserManage/order?userid={$userdetail.userid}">查看总订单列表</a>
+
+                </span>
+                </volist>
+            </div>
+            <div class="order cl">
+                <ul class="content_right_two cl">
+                    <li>
+                        <p>{$todaynum}</p>
+                        <span>今日订单数</span>
+                    </li>
+                    <li>
+                        <p>{$allnum}</p>
+                        <span>总订单数</span>
+                    </li>
+                    <li>
+                        <p>￥<span>{$todaysalemoney}</span></p>
+                        <span>今日成交额</span>
+                    </li>
+                    <li>
+                        <p>￥<span>{$allsalemoney}</span></p>
+                        <span>总成交额</span>
+                    </li>
+                </ul>
+                <div class="orderNumber">                
+                    <a class="overorder">已完成订单列表</a>
+                    <a class="notoverorder">未完成订单列表</a>
+                </div>
+             </div>
+            <table cellspacing="0" cellpadding="0" class="tableManage"> 
+                <tr class="title_table">
+                    <td>订单编号</td>
+                    <td>收货人</td>
+                    <td>菜品</td>
+                    <td>下单日期</td>
+                    <td>订单状态</td>
+                    <td>操作</td>
+                </tr>
+                <volist name="ordermsg" id="msg">
+                <tr>
+                    <td class="orderid">{$msg.orderid}</td>
+                    <td>{$msg.username}</td>
+                    <td>{$msg.goodsshow}</td>
+                    <td>{$msg.addtime}</td>
+                    <td>{$msg.orderstatus}</td>
+                    <td><a href="" class="deleTe">删除</a></td>
+                </tr>
+                </volist>
+            </table>
+            <!-- 分页 -->
+            <div class="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.deleTe').on('click',function () {
+        if((confirm('确定删除?'))){
+            var orderid = $(this).parent().parent().children('.orderid').text();
+            $.ajax({
+                type:'post',
+                url:'/index.php/Admin/UserManage/orderDelete',
+                data:{orderid:orderid},
+                datatype:'post',
+                success:function(data){
+                    if(data.status == 1){
+                        alert('删除成功！');
+                        window.location.reload();
+                    }else{
+                        alert('删除失败！');
+                    }
+                },
+                error:function(){
+                    alert('删除失败！！！');
+                }
+            })
+        }
+    })
+    $('.todayorder').on('click',function () {
+            var num = window.location.href.split('/p/')[0];
+            if(window.location.href.split('/p/')[1]){
+                // 有页数
+                window.location.replace(num+'?orderstatus=2');
+            }else{
+                // 无页数
+                var num = strorderstatus();
+                window.location.replace(num+'&orderstatus=2');
+            }
+    })
+    $('.overorder').on('click',function () {
+        var num = window.location.href.split('/p/')[0];
+        if(window.location.href.split('/p/')[1]){
+            window.location.replace(num+'?orderstatus=3');
+        }else{
+            var num = strorderstatus();
+            window.location.replace(num+'&orderstatus=3');
+        }
+
+    })
+    $('.notoverorder').on('click',function () {
+        var num = window.location.href.split('/p/')[0];
+       if(window.location.href.split('/p/')[1]){
+           window.location.replace(num+'?orderstatus=4');
+       }else{
+           var num = strorderstatus();
+           window.location.replace(num+'&orderstatus=4');
+       }
+
+    })
+    // 去掉订单状态后缀
+    function strorderstatus() {
+        var str = window.location.href;
+        var str1 = str.split('&orderstatus')[0];
+        var str2 = str1.split('/p/')[0]
+        return str2;
+    }
+</script>
+</body>
+</html>
