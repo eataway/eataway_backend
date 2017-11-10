@@ -1654,12 +1654,13 @@ class UserController extends Controller {
         }
     }
     /**
-     * 修改营业时间
+     * 查看营业时间
      */
     public function edityingye(){
         $get = I('get.');
         $result = M("shopmessage")->where(['shopid' => $get['shopid']])->find();
-        if(strpos($result['monday'],",")){
+        if($get['week'] == null || $get['week'] == 1 || $get['week'] == ""){
+            if(strpos($result['monday'],",")){
             $array = explode(",", $result['monday']);
             $up = explode("-", $array[0]);
             $end= explode("-", $array[1]);
@@ -1667,16 +1668,170 @@ class UserController extends Controller {
             $result['ups'] = $up[1];
             $result['endf'] = $end[0];
             $result['ends'] = $end[1];
-        }else{
-            $array = explode("-",$result['monday']);
-            $result['upf'] = $array[0];
-            $result['ups'] = $array[1];
-            $result['endf'] = "";
-            $result['ends'] = "";
+            }else{
+                $array = explode("-",$result['monday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 2){
+            if(strpos($result['tuesday'],",")){
+            $array = explode(",", $result['tuesday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['tuesday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 3){
+            if(strpos($result['wednesday'],",")){
+            $array = explode(",", $result['wednesday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['wednesday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 4){
+            if(strpos($result['thursday'],",")){
+            $array = explode(",", $result['thursday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['thursday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 5){
+            if(strpos($result['friday'],",")){
+            $array = explode(",", $result['friday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['friday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 6){
+            if(strpos($result['saturday'],",")){
+            $array = explode(",", $result['saturday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['saturday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
+        }else if($get['week'] == 7){
+            if(strpos($result['sunday'],",")){
+            $array = explode(",", $result['sunday']);
+            $up = explode("-", $array[0]);
+            $end= explode("-", $array[1]);
+            $result['upf'] = $up[0];
+            $result['ups'] = $up[1];
+            $result['endf'] = $end[0];
+            $result['ends'] = $end[1];
+            }else{
+                $array = explode("-",$result['sunday']);
+                $result['upf'] = $array[0];
+                $result['ups'] = $array[1];
+                $result['endf'] = "";
+                $result['ends'] = "";
+            }
         }
+        if($get['week'] == null || $get['week'] == ""){
+            $get['week'] =1;
+        }
+        $this->week = $get['week'];
         $this->result = $result;
         $session = session('username');
         $this->assign("session", $session);
         $this->display("particulars10");
+    }
+  /**
+   * 修改保存营业时间
+   */
+    public function edityysj(){
+        $post = I("post.");
+        $string = $post['upstart']."-".$post['upclose'].",".$post['endstart']."-".$post['endclose'];
+        if($post['week'] == 1){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['monday'=>$string]);
+        }else if($post['week'] == 2){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['tuesday'=>$string]);
+        }else if($post['week'] == 3){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['wednesday'=>$string]);
+        }else if($post['week'] == 4){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['thursday'=>$string]);
+        }else if($post['week'] == 5){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['friday'=>$string]);
+        }else if($post['week'] == 6){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['saturday'=>$string]);
+        }else if($post['week'] == 7){
+            $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save(['sunday'=>$string]);
+        }
+        if($result == true){
+            $this->ajaxReturn(['status'=>1]);
+        }else if($result == 0){
+            $this->ajaxReturn(['status'=>2]);
+        }else if($result == false){
+            $this->ajaxReturn(['status'=>0]);
+        }
+    }
+    /**
+     * 营业时间七天同一修改
+     */
+    public function tongyiqi(){
+        $post = I('post.');
+        $string = $post['tups']."-".$post['tupc'].",".$post['tends']."-".$post['tendc'];
+        $data = array(
+            'monday'=>$string,
+            'tuesday'=>$string,
+            'wednesday'=>$string,
+            'thursday'=>$string,
+            'friday'=>$string,
+            'saturday'=>$string,
+            'sunday'=>$string,
+        );
+        $result = M('shopmessage')->where(['shopid'=>$post['shopid']])->save($data);
+        if($result == true){
+            $this->ajaxReturn(['status'=>1]);
+        }else if($result == 0){
+            $this->ajaxReturn(['status'=>2]);
+        }else if($result == false){
+            $this->ajaxReturn(['status'=>0]);
+        }
     }
 }
