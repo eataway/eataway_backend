@@ -79,6 +79,7 @@
         .form_btn input{
             background: red;
             float: right;
+            margin-right: 35px;
         }
         /*弹框*/
         .shadow,.shadow_box{
@@ -205,7 +206,8 @@
                             <<img src="/{$result.shophead}" alt="">
                         </div>
                         <div class="zuo-2">
-                                <input type="hidden" value="{$result.shopid}">
+                                <input type="hidden" class="shopid" value="{$result.shopid}">
+                                <input type="hidden" class="week" value="{$week}">
                                 <input class="dle" type="submit" value="删除该用户">
                             </div>
                     </div>
@@ -258,21 +260,18 @@
                             </p>
                             <p>{$result.mobile}</p>
                         </div>
-                        <div style="width:135px;" class="you-3">
-                            <input type="button" value="Send Message">
-                        </div>
                     </div>
                     <div class="right_2">
                         <form action="">
                             <p class="right2_top">
-                                <select name="week" id="week">
-                                    <option value="1">星期一</option>
-                                    <option value="2">星期二</option>
-                                    <option value="3">星期三</option>
-                                    <option value="4">星期四</option>
-                                    <option value="5">星期五</option>
-                                    <option value="6">星期六</option>
-                                    <option value="7">星期日</option>
+                                <select onchange="window.location=this.value"  id="week">
+                                    <option <if condition='$week eq 1'>selected</if> value="__CONTROLLER__/edityingye?week=1&shopid={$result.shopid}">星期一</option>
+                                    <option <if condition='$week eq 2'>selected</if> value="__CONTROLLER__/edityingye?week=2&shopid={$result.shopid}">星期二</option>
+                                    <option <if condition='$week eq 3'>selected</if> value="__CONTROLLER__/edityingye?week=3&shopid={$result.shopid}">星期三</option>
+                                    <option <if condition='$week eq 4'>selected</if> value="__CONTROLLER__/edityingye?week=4&shopid={$result.shopid}">星期四</option>
+                                    <option <if condition='$week eq 5'>selected</if> value="__CONTROLLER__/edityingye?week=5&shopid={$result.shopid}">星期五</option>
+                                    <option <if condition='$week eq 6'>selected</if> value="__CONTROLLER__/edityingye?week=6&shopid={$result.shopid}">星期六</option>
+                                    <option <if condition='$week eq 7'>selected</if> value="__CONTROLLER__/edityingye?week=7&shopid={$result.shopid}">星期日</option>
                                 </select>
                                 <span id="updateAll">统一修改营业时间</span>
                             </p>
@@ -282,7 +281,7 @@
                                 <li>选填</li>
                                 <li class="input1"><input type="text" class="endstart" placeholder="请输入开店时间" name=""value ="{$result.endf}"/><span>~</span><input type="text" class="endclose" placeholder="请输入闭店时间" name=""value ="{$result.ends}"/></li>
                                 <li class="form_btn">
-                                    <span class="btn">取消</span>
+                                    <!--<span class="btn">取消</span>-->
                                     <input class="btn editss" type="button" value="保存"/>
                                 </li>
                             </ul>
@@ -301,19 +300,19 @@
                 <li class="title"><p>统一设定营业时间</p></li>
                 <li class="input2">
                     <span>必填：</span>
-                    <input type="text" name=""/>
+                    <input class='tups' type="text" name=""/>
                     <span>~</span>
-                    <input type="text" name=""/>
+                    <input class='tupc' type="text" name=""/>
                 </li>
                 <li class="input2">
                     <span>选填：</span>
-                    <input type="text" name=""/>
+                    <input class='tends' type="text" name=""/>
                     <span>~</span>
-                    <input type="text" name=""/>
+                    <input class='tendc' type="text" name=""/>
                 </li>
                 <li>
                     <span class="btn2 cancel">取消</span>
-                    <input class="btn2" type="button" value="保存"/>
+                    <input class="btn2 baocuntong" type="button" value="保存"/>
                 </li>
             </ul>
         </div>
@@ -409,28 +408,58 @@
                 }
             })
             $(".editss").click(function(){
-                var week = $("#week").val();
+                var shopid = $(".shopid").val();
+                var week = $(".week").val();
                 var upstart = $(".upstart").val();
                 var upclose = $(".upclose").val();
                 var endstart = $(".endstart").val();
                 var endclose = $(".endclose").val();
+                if(upstart == "" || upclose=="" || upstart == null || upclose == null){
+                    alert("必选框不能为空。");exit();
+                }
                 $.ajax({
                     type: 'POST',
-                    url: "{:U('User/edityingyetime')}",
-                    data: {shopid: shopid},
+                    url: "{:U('User/edityysj')}",
+                    data: {shopid: shopid,week:week,upstart:upstart,upclose:upclose,endstart:endstart,endclose,endclose},
                     dataType: "json",
                     success: function(data) {
                         if (data.status == 1) {
-                            alert("删除成功。");
-                            window.location.href="__CONTROLLER__/ready";
+                            alert("修改成功。");
+                            window.location.reload();
                         } else if (data.status == 2) {
-                            alert("删除商铺信息出错");
-                        } else if (data.status == 3) {
-                            alert("删除商铺基本信息出错");
+                            alert("修改信息无变化");
+                        } else if (data.status == 0) {
+                            alert("修改失败");
                         }
                     }
                 });
             });
+            $(".baocuntong").click(function(){
+                var shopid = $(".shopid").val();
+                var tups = $(".tups").val();
+                var tupc = $(".tupc").val();
+                if(tups == "" || tupc=="" || tups == null || tupc == null){
+                    alert("必选框不能为空。");exit();
+                }
+                var tends = $(".tends").val();
+                var tendc = $('.tendc').val();
+                $.ajax({
+                    type: 'POST',
+                    url: "{:U('User/tongyiqi')}",
+                    data: {shopid:shopid,tups:tups,tupc:tupc,tends:tends,tendc:tendc},
+                    dataType: "json",
+                    success: function(data) {
+                        if (data.status == 1) {
+                            alert("修改成功。");
+                            window.location.reload();
+                        } else if (data.status == 2) {
+                            alert("修改信息无变化");
+                        } else if (data.status == 0) {
+                            alert("修改失败");
+                        }
+                    }
+                });
+            })
         });
 </script>
 </html>
